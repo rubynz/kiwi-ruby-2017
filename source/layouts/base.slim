@@ -1,0 +1,12 @@
+doctype html
+html lang="en-au"
+  head
+    meta charset="utf-8"
+    title
+      => current_page.data.title
+      ' —
+      = data.site.name
+    link rel="stylesheet" type="text/css" href=asset_path(:css, "assets/public")
+    script async=true src=asset_path(:js, "assets/public")
+  body
+    = yield
