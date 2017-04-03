@@ -81,7 +81,7 @@ html {
   .body__text {
     color: var(--text-color);
     font-family: var(--font-body);
-    font-size: 1.7rem;
+    font-size: 1.5rem;
   }
   .body__header {
     color: var(--primary-color-darker);
