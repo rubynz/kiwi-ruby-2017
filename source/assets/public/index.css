@@ -94,8 +94,10 @@ html {
     font-family: var(--font-subtitle);
     font-size: 1.2rem;
     text-align: center;
+    padding-top: .5rem;
   }
     .body__subtitle--last{
+      padding-top: 0rem;
       padding-bottom: 2rem;
     }
 .emoji-break {
@@ -115,6 +117,7 @@ html {
   margin-right: auto;
   margin-top: 1rem;
   width: 15rem;
+  box-shadow: 0rem 0.7rem 1rem var(--footer-grey)
 }
   .button__text {
     align-content: center;
@@ -126,7 +129,6 @@ html {
     line-height: 4.5rem;
   }
 .footer {
-  background-color: var(--footer-grey);
   height: 7rem;
   width: 100%;
 }
