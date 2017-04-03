@@ -66,11 +66,15 @@ html {
   width: 50%;
   text-align: center;
   border: 1px red solid;
+  margin-left: auto;
+  margin-right: auto;
 }
 .body {
   width: 50%;
   padding: auto;
   border: 1px green dashed;
+  margin-right: auto;
+  margin-left: auto;
 }
 .body__text {
   font-family: var(--font-body);
