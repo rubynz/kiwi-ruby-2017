@@ -95,12 +95,12 @@ end
 # Deployment configuration -----------------------------------------------------
 
 # Deploy to GitHub Pages
-#
-# activate :deploy do |config|
-#   config.deploy_method = :git
-#   config.branch = "gh-pages"
-#   config.build_before = true
-# end
+
+activate :deploy do |config|
+  config.deploy_method = :git
+  config.branch = "gh-pages"
+  config.build_before = true
+end
 
 # Deploy to S3
 #
