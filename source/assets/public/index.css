@@ -33,6 +33,10 @@
 html {
   font-size: 62.5%;
 }
+.container {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
 .header {
   border: 1px red solid;
   position: relative;
@@ -75,6 +79,7 @@ html {
   border: 1px green dashed;
   margin-right: auto;
   margin-left: auto;
+  max-width: 1440px;
 }
 .body__text {
   font-family: var(--font-body);
