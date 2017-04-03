@@ -11,6 +11,10 @@
   --font-subtitle:"Source Code Pro", Courier, monospace;
 
 }
+/**
+ * Reset styles
+ */
+@import "./reset/index.css";
 
 /**
  * Import Fonts
@@ -31,7 +35,7 @@ html {
   border: 1px red solid;
 
 }
-.header__nav{
+.header__nav {
   text-align: right;
   border: 1px red solid;
 }
@@ -39,6 +43,6 @@ html {
   display: inline;
   padding-right: 1.2rem;
   font-family: var(--font-subtitle);
-  color: var(--primary-grey);
+  color: var(--text-color);
   font-size: 1.2rem;
 }
