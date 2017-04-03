@@ -2,13 +2,13 @@
  * Rubyconf Variables
  */
 :root {
-  --primary-color: #ef3f62;
+  --font-body: "Source Sans Pro", Helvetica, Arial, sans-serif;
+  --font-heading: "YoungSerif", Courier, monospace;
+  --font-subtitle: "Source Code Pro", Courier, monospace;
   --primary-color-darker: #e33558;
+  --primary-color: #ef3f62;
   --primary-grey: #4a4a4a;
-  --text-color: #767fb5;
-  --font-heading:"Roboto Slab", Courier, monospace;
-  --font-body:"Source Sans Pro", Helvetica, Arial, sans-serif;
-  --font-subtitle:"Source Code Pro", Courier, monospace;
+  --text-color: #767f85;
 
 }
 /**
@@ -19,8 +19,12 @@
 /**
  * Import Fonts
  */
-@import url("https://fonts.googleapis.com/css?family=Roboto+Slab|Source+Code+Pro|Source+Sans+Pro&subset=latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro&subset=latin-ext");
 
+@font-face {
+    font-family: YoungSerif;
+    src: url("../fonts/YoungSerif-Regular.woff2");
+}
 
 /**
  * Styling
@@ -30,19 +34,59 @@ html {
   font-size: 62.5%;
 }
 .header {
+  border: 1px red solid;
   position: relative;
   width: 100%;
-  border: 1px red solid;
 
 }
-.header__nav {
-  text-align: right;
+  .header__nav {
+    border: 1px red solid;
+    text-align: right;
+    padding-bottom: 1.5rem;
+  }
+    .header__nav ul li {
+      color: var(--text-color);
+      display: inline;
+      font-family: var(--font-subtitle);
+      font-size: 1.2rem;
+      padding-right: 1.2rem;
+    }
+.hero {
+  text-align: center;
+  padding-bottom: 1.5rem;
+}
+.hero__logo {
+  padding-bottom: 1.5rem;
+}
+.hero__slogan {
+  color: var(--primary-color-darker);
+  font-family: var(--font-heading);
+  display: block;
+  font-size: 3.5rem;
+  width: 50%;
+  text-align: center;
   border: 1px red solid;
 }
-.header__nav ul li {
-  display: inline;
-  padding-right: 1.2rem;
-  font-family: var(--font-subtitle);
-  color: var(--text-color);
-  font-size: 1.2rem;
+.body {
+  width: 50%;
+  padding: auto;
+  border: 1px green dashed;
 }
+.body__text {
+  font-family: var(--font-body);
+  font-size: 2rem;
+  color: var(--text-color);
+}
+.body__header {
+  font-family: var(--font-heading);
+  font-size: 1.75rem;
+  color: var(--primary-color-darker);
+  padding-top: 2rem;
+}
+
+
+
+
+
+
+
