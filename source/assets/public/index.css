@@ -39,16 +39,14 @@ html {
   padding-right: 2rem;
 }
 .header {
-  border: 1px red solid;
   position: relative;
   width: 100%;
 
 }
   .header__nav {
-    border: 1px red solid;
+    line-height: 3rem;
     padding-bottom: 1.5rem;
     text-align: right;
-    line-height: 3rem;
   }
     .header__nav ul li {
       color: var(--text-color);
@@ -65,7 +63,6 @@ html {
     padding-bottom: 1.5rem;
   }
   .hero__slogan {
-    border: 1px red solid;
     color: var(--primary-color-darker);
     display: block;
     font-family: var(--font-heading);
@@ -76,7 +73,6 @@ html {
     text-align: center;
   }
 .body {
-  border: 1px green dashed;
   margin-left: auto;
   margin-right: auto;
   max-width: 72rem;
@@ -99,18 +95,25 @@ html {
     font-size: 1.2rem;
     text-align: center;
   }
+    .body__subtitle--last{
+      padding-bottom: 2rem;
+    }
 .emoji-break {
   font-size: 2rem;
   padding-bottom: 2rem;
   padding-top: 2rem;
   text-align: center;
 }
+  .emoji-break--last {
+    padding-bottom: 0px;
+  }
 .button {
   background-color: #249903;
   border-radius: 5px;
   height: 5rem;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 1rem;
   width: 15rem;
 }
   .button__text {
@@ -123,27 +126,29 @@ html {
     line-height: 4.5rem;
   }
 .footer {
-  width: 100%;
   background-color: var(--footer-grey);
   height: 7rem;
+  width: 100%;
 }
   .footer__nav {
     margin-left: auto;
     margin-right: auto;
-    border: 2px red dashed;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
     text-align: center;
   }
     .footer__nav ul li {
       display: inline;
-      padding-left: .6rem;
-      padding-right: .6rem;
       font-family: var(--font-subtitle);
       font-size: 1.2rem;
+      padding-left: .6rem;
+      padding-right: .6rem;
+
     }
   .footer__credit {
     font-family: var(--font-subtitle);
     font-size: 1.2rem;
-    color: var(--primary-color);
+    text-align: center;
   }
 
 
