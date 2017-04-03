@@ -8,6 +8,7 @@
   --primary-color-darker: #e33558;
   --primary-color: #ef3f62;
   --primary-grey: #4a4a4a;
+  --footer-grey: #C2C2C2;
   --text-color: #767f85;
 
 }
@@ -45,8 +46,9 @@ html {
 }
   .header__nav {
     border: 1px red solid;
-    text-align: right;
     padding-bottom: 1.5rem;
+    text-align: right;
+    line-height: 3rem;
   }
     .header__nav ul li {
       color: var(--text-color);
@@ -59,43 +61,89 @@ html {
   text-align: center;
   padding-bottom: 1.5rem;
 }
-.hero__logo {
-  padding-bottom: 1.5rem;
-}
-.hero__slogan {
-  color: var(--primary-color-darker);
-  font-family: var(--font-heading);
-  display: block;
-  font-size: 3.5rem;
-  width: 50%;
-  text-align: center;
-  border: 1px red solid;
-  margin-left: auto;
-  margin-right: auto;
-}
+  .hero__logo {
+    padding-bottom: 1.5rem;
+  }
+  .hero__slogan {
+    border: 1px red solid;
+    color: var(--primary-color-darker);
+    display: block;
+    font-family: var(--font-heading);
+    font-size: 3.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 72rem;
+    text-align: center;
+  }
 .body {
-  width: 50%;
-  padding: auto;
   border: 1px green dashed;
-  margin-right: auto;
   margin-left: auto;
-  max-width: 1440px;
+  margin-right: auto;
+  max-width: 72rem;
+  padding: auto;
 }
-.body__text {
-  font-family: var(--font-body);
+  .body__text {
+    color: var(--text-color);
+    font-family: var(--font-body);
+    font-size: 1.7rem;
+  }
+  .body__header {
+    color: var(--primary-color-darker);
+    font-family: var(--font-heading);
+    font-size: 1.75rem;
+    padding-top: 2rem;
+  }
+  .body__subtitle {
+    color: var(--text-color);
+    font-family: var(--font-subtitle);
+    font-size: 1.2rem;
+    text-align: center;
+  }
+.emoji-break {
   font-size: 2rem;
-  color: var(--text-color);
-}
-.body__header {
-  font-family: var(--font-heading);
-  font-size: 1.75rem;
-  color: var(--primary-color-darker);
+  padding-bottom: 2rem;
   padding-top: 2rem;
+  text-align: center;
 }
-
-
-
-
-
+.button {
+  background-color: #249903;
+  border-radius: 5px;
+  height: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 15rem;
+}
+  .button__text {
+    align-content: center;
+    color: white;
+    display: flex;
+    font-family: var(--font-body);
+    font-size: 2rem;
+    justify-content: center;
+    line-height: 4.5rem;
+  }
+.footer {
+  width: 100%;
+  background-color: var(--footer-grey);
+  height: 7rem;
+}
+  .footer__nav {
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px red dashed;
+    text-align: center;
+  }
+    .footer__nav ul li {
+      display: inline;
+      padding-left: .6rem;
+      padding-right: .6rem;
+      font-family: var(--font-subtitle);
+      font-size: 1.2rem;
+    }
+  .footer__credit {
+    font-family: var(--font-subtitle);
+    font-size: 1.2rem;
+    color: var(--primary-color);
+  }
 
 
