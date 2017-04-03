@@ -10,7 +10,7 @@
   --font-body:"Source Sans Pro", Helvetica, Arial, sans-serif;
   --font-subtitle:"Source Code Pro", Courier, monospace;
 
-};
+}
 
 /**
  * Import Fonts
@@ -35,7 +35,7 @@ html {
   text-align: right;
   border: 1px red solid;
 }
-.header__nav ul li{
+.header__nav ul li {
   display: inline;
   padding-right: 1.2rem;
   font-family: var(--font-subtitle);
