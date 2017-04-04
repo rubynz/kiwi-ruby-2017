@@ -9,6 +9,7 @@
   --primary-color: #ef3f62;
   --primary-grey: #c2c2c2;
   --text-color: #767f85;
+  --primary-contrast: #73bc25;
 
 }
 /**
@@ -40,42 +41,46 @@ html {
 .header {
   position: relative;
   width: 100%;
-
 }
   .header__nav {
     line-height: 3rem;
     padding-bottom: 1.5rem;
-    text-align: right;
+    text-align: right
   }
     .header__nav ul li {
       color: var(--primary-color);
       display: inline;
       font-family: var(--font-subtitle);
-      font-size: 1.2rem;
-      padding-right: 2rem;
+      font-size: 1.6rem;
+      padding-right: 4rem;
     }
 .hero {
   text-align: center;
   padding-bottom: 1.5rem;
 }
   .hero__logo {
-    padding-bottom: 1.5rem;
+    margin-bottom: 3rem;
+    width: 22rem;
+    height: auto;
   }
   .hero__slogan {
     color: var(--primary-color-darker);
     display: block;
     font-family: var(--font-heading);
-    font-size: 3.5rem;
+    font-size: 6rem;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 2.5rem;
+    margin-top: 2.5rem;
     max-width: 72rem;
     text-align: center;
   }
   .hero__date {
     font-family: var(--font-subtitle);
-    font-size: 1.5rem;
-    color: var(--primary-grey);
+    font-size: 3rem;
+    color: var(--primary-contrast);
     padding-top: .5rem;
+    line-height: 3.5rem
   }
 .body {
   margin-left: auto;
@@ -83,25 +88,31 @@ html {
   max-width: 62rem;
   padding: auto;
 }
+  .body a {
+    color: var(--primary-contrast);
+    text-decoration: none;
+  }
   .body__text {
     color: var(--text-color);
     font-family: var(--font-body);
-    font-size: 1.5rem;
+    font-size: 2rem;
     padding-top: 0.5rem;
     padding-bottom: 1rem;
+    line-height: 3rem;
   }
-  .body__header {
+  .body h1 {
     color: var(--primary-color-darker);
     font-family: var(--font-heading);
-    font-size: 1.75rem;
-    padding-top: 2rem;
+    font-size: 3rem;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
   }
   .body__subtitle {
     color: var(--text-color);
     font-family: var(--font-subtitle);
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     text-align: center;
-    padding-top: .5rem;
+    margin-top: 1rem;
   }
     .body__subtitle--last{
       padding-top: 0rem;
@@ -109,7 +120,6 @@ html {
     }
 .emoji-break {
   font-size: 2rem;
-  padding-bottom: 2rem;
   padding-top: 2rem;
   text-align: center;
 }
@@ -117,14 +127,14 @@ html {
     padding-bottom: 0px;
   }
 .button {
-  background-color: #249903;
+  background-color: var(--primary-contrast);
   border-radius: 5px;
   height: 5rem;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 1rem;
+  margin-top: 2rem;
   width: 15rem;
-  box-shadow: 0rem 0.7rem 1rem var(--primary-grey)
+  box-shadow: 0rem 0.2rem .7rem var(--primary-grey)
 }
   .button__text {
     align-content: center;
@@ -133,7 +143,7 @@ html {
     font-family: var(--font-body);
     font-size: 2rem;
     justify-content: center;
-    line-height: 4.5rem;
+    line-height: 5rem;
   }
 .footer {
   height: 7rem;
@@ -141,7 +151,7 @@ html {
   text-align: center;
 }
   .footer__nav {
-    margin-left: auto;
+    margin-left: auto; 
     margin-right: auto;
     padding-bottom: 1rem;
     padding-top: 1rem;
@@ -150,7 +160,7 @@ html {
       color: var(--primary-color);
       display: inline;
       font-family: var(--font-subtitle);
-      font-size: 1.2rem;
+      font-size: 1.6rem;
       padding-left: .6rem;
       padding-right: .6rem;
 
@@ -158,8 +168,10 @@ html {
   .footer__credit {
     font-family: var(--font-subtitle);
     font-size: 1.2rem;
+    margin-top: 1rem;
   }
   .footer__birb {
-    border: 1px red solid;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
   }
 
