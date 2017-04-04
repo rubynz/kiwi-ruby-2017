@@ -9,7 +9,7 @@
   --primary-color: #ef3f62;
   --primary-grey: #c2c2c2;
   --text-color: #767f85;
-  --primary-contrast: #73bc25;
+  --primary-contrast: #07c199;
 
 }
 /**
@@ -24,8 +24,9 @@
 
 @font-face {
     font-family: YoungSerif;
-    src: url("../fonts/YoungSerif-Regular.woff2");
+    src: url("./fonts/YoungSerif-Regular.woff2");
 }
+@import "./font-awesome/index.css";
 
 /**
  * Styling
@@ -34,6 +35,9 @@
 html {
   font-size: 62.5%;
 }
+
+
+
 .container {
   padding-left: 2rem;
   padding-right: 2rem;
@@ -45,14 +49,15 @@ html {
   .header__nav {
     line-height: 3rem;
     padding-bottom: 1.5rem;
-    text-align: right
+    text-align: right;
   }
-    .header__nav ul li {
+    .header__nav ul li a {
       color: var(--primary-color);
       display: inline;
       font-family: var(--font-subtitle);
       font-size: 1.6rem;
-      padding-right: 4rem;
+      padding-left: 4rem;
+      text-decoration: none;
     }
 .hero {
   text-align: center;
@@ -62,6 +67,9 @@ html {
     margin-bottom: 3rem;
     width: 22rem;
     height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4rem;
   }
   .hero__slogan {
     color: var(--primary-color-darker);
@@ -80,7 +88,8 @@ html {
     font-size: 3rem;
     color: var(--primary-contrast);
     padding-top: .5rem;
-    line-height: 3.5rem
+    line-height: 3.5rem;
+    text-align: center;
   }
 .body {
   margin-left: auto;
@@ -134,7 +143,7 @@ html {
   margin-right: auto;
   margin-top: 2rem;
   width: 15rem;
-  box-shadow: 0rem 0.2rem .7rem var(--primary-grey)
+  box-shadow: 0rem 0.2rem .7rem var(--primary-grey);
 }
   .button__text {
     align-content: center;
@@ -151,7 +160,7 @@ html {
   text-align: center;
 }
   .footer__nav {
-    margin-left: auto; 
+    margin-left: auto;
     margin-right: auto;
     padding-bottom: 1rem;
     padding-top: 1rem;
@@ -161,10 +170,16 @@ html {
       display: inline;
       font-family: var(--font-subtitle);
       font-size: 1.6rem;
-      padding-left: .6rem;
-      padding-right: .6rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
 
     }
+    .footer__social a {
+      font-size: 2rem;
+      font-family: var(--font-subtitle);
+      color: var(--primary-color);
+      text-decoration: none;
+  }
   .footer__credit {
     font-family: var(--font-subtitle);
     font-size: 1.2rem;
