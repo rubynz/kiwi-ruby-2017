@@ -7,8 +7,7 @@
   --font-subtitle: "Source Code Pro", Courier, monospace;
   --primary-color-darker: #e33558;
   --primary-color: #ef3f62;
-  --primary-grey: #4a4a4a;
-  --footer-grey: #C2C2C2;
+  --primary-grey: #c2c2c2;
   --text-color: #767f85;
 
 }
@@ -53,7 +52,7 @@ html {
       display: inline;
       font-family: var(--font-subtitle);
       font-size: 1.2rem;
-      padding-right: 1.2rem;
+      padding-right: 2rem;
     }
 .hero {
   text-align: center;
@@ -72,16 +71,24 @@ html {
     max-width: 72rem;
     text-align: center;
   }
+  .hero__date {
+    font-family: var(--font-subtitle);
+    font-size: 1.5rem;
+    color: var(--primary-grey);
+    padding-top: .5rem;
+  }
 .body {
   margin-left: auto;
   margin-right: auto;
-  max-width: 72rem;
+  max-width: 62rem;
   padding: auto;
 }
   .body__text {
     color: var(--text-color);
     font-family: var(--font-body);
     font-size: 1.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
   }
   .body__header {
     color: var(--primary-color-darker);
@@ -117,7 +124,7 @@ html {
   margin-right: auto;
   margin-top: 1rem;
   width: 15rem;
-  box-shadow: 0rem 0.7rem 1rem var(--footer-grey)
+  box-shadow: 0rem 0.7rem 1rem var(--primary-grey)
 }
   .button__text {
     align-content: center;
@@ -131,13 +138,13 @@ html {
 .footer {
   height: 7rem;
   width: 100%;
+  text-align: center;
 }
   .footer__nav {
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 1rem;
     padding-top: 1rem;
-    text-align: center;
   }
     .footer__nav ul li {
       color: var(--primary-color);
@@ -151,7 +158,8 @@ html {
   .footer__credit {
     font-family: var(--font-subtitle);
     font-size: 1.2rem;
-    text-align: center;
   }
-
+  .footer__birb {
+    border: 1px red solid;
+  }
 
