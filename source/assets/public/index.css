@@ -35,12 +35,18 @@
 html {
   font-size: 62.5%;
 }
-
+.breakpoint-phone html {
+  font-size: 42.5%;
+}
 
 
 .container {
   padding-left: 2rem;
   padding-right: 2rem;
+}
+.breakpoint-phone .container {
+  padding-right: 1rem;
+  padding-left: 1rem;
 }
 .header {
   position: relative;
@@ -82,6 +88,9 @@ html {
     margin-top: 2.5rem;
     max-width: 72rem;
     text-align: center;
+  }
+  .breakpoint-phone .hero__slogan {
+    font-size: 3.5rem;
   }
   .hero__date {
     font-family: var(--font-subtitle);
@@ -145,6 +154,11 @@ html {
   width: 15rem;
   box-shadow: 0rem 0.2rem .7rem var(--primary-grey);
 }
+.breakpoint-phone .button{
+  width: 30rem;
+  height: 15rem;
+  margin-left: 0px;
+}
   .button__text {
     align-content: center;
     color: white;
@@ -153,6 +167,10 @@ html {
     font-size: 2rem;
     justify-content: center;
     line-height: 5rem;
+  }
+  .breakpoint-phone .button__text {
+    line-height: 15rem;
+    font-size: 5rem;
   }
 .footer {
   height: 7rem;
@@ -174,12 +192,24 @@ html {
       padding-right: 2rem;
 
     }
-    .footer__social a {
+    .footer__social {
       font-size: 2rem;
       font-family: var(--font-subtitle);
       color: var(--primary-color);
       text-decoration: none;
-  }
+    }
+      .footer__social a {
+        font-size: 2rem;
+        font-family: var(--font-subtitle);
+        color: var(--primary-color);
+        text-decoration: none;
+      }
+    .breakpoint-phone .footer__social a{
+      font-size: 8rem;
+    }
+    .breakpoint-phone .footer__social .hashtag{
+      display: none;
+    }
   .footer__credit {
     font-family: var(--font-subtitle);
     font-size: 1.2rem;

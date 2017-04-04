@@ -17,10 +17,10 @@ title: Home
           img.hero__logo alt="Kiwi Ruby - New Zealand Ruby Conference 2017" src="./images/rubylogo.png"
           .hero__slogan
             p
-             |The ruby conference you&rsquo;ve been looking for.
+             |The ruby conference you<span style="letter-spacing:-.1em">&rsquo;</span>ve been looking for.
           .hero__date
             p
-              |23-24 July 2017<br />Wellington NZ
+              |23 July 2017<br />Wellington NZ
     section
       .body
         h1 Sign me up!
@@ -30,10 +30,10 @@ title: Home
         .button
           .button__text SUBSCRIBE
         .body__subtitle We hate spam too
-        h1 Tell me more.
-        .body__text
-          p
-            |Tautem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut voluptates repudiandae molestiae non. Itaque earum rerum hic tenetur a sapiente delectus. <br />There are more details to come. Follow us on <a href="https://twitter.com/RubyConfNZ">Twitter</a> to stay updated!
+        / h1 Tell me more.
+        / .body__text
+        /   p
+        /     |Tautem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut voluptates repudiandae molestiae non. Itaque earum rerum hic tenetur a sapiente delectus. <br />There are more details to come. Follow us on <a href="https://twitter.com/RubyConfNZ">Twitter</a> to stay updated!
         h1 When? Where?
         .body__text
           p
@@ -57,7 +57,8 @@ title: Home
         /     li Sponsors
         /     li Workshops
         /     li About
-        .footer__social <a href="https://twitter.com/RubyConfNZ"><span class="fa fa-twitter"></span>#kiwiRuby</a>
+        .footer__social <a href="https://twitter.com/RubyConfNZ"><span class="fa fa-twitter"></span>
+          <span class="hashtag">#kiwiRuby</span></a>
         .footer__credit made by <a href="http://icelab.com.au">icelab</a>
         .footer__birb
           img alt="NZ Rubyconf 2017 mascot" src="./images/gembirb-up.png"
