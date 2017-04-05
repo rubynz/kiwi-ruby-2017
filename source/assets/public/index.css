@@ -39,7 +39,6 @@ html {
   font-size: 42.5%;
 }
 
-
 .container {
   padding-left: 2rem;
   padding-right: 2rem;
@@ -48,6 +47,7 @@ html {
   padding-right: 1rem;
   padding-left: 1rem;
 }
+
 .header {
   position: relative;
   width: 100%;
@@ -65,6 +65,7 @@ html {
       padding-left: 4rem;
       text-decoration: none;
     }
+
 .hero {
   text-align: center;
   padding-bottom: 1.5rem;
@@ -100,6 +101,7 @@ html {
     line-height: 3.5rem;
     text-align: center;
   }
+
 .body {
   margin-left: auto;
   margin-right: auto;
@@ -110,7 +112,7 @@ html {
     color: var(--primary-contrast);
     text-decoration: none;
   }
-  .body__text {
+  .body p {
     color: var(--text-color);
     font-family: var(--font-body);
     font-size: 2rem;
@@ -136,6 +138,7 @@ html {
       padding-top: 0rem;
       padding-bottom: 2rem;
     }
+
 .emoji-break {
   font-size: 2rem;
   padding-top: 2rem;
@@ -144,6 +147,7 @@ html {
   .emoji-break--last {
     padding-bottom: 0px;
   }
+
 .button {
   background-color: var(--primary-contrast);
   border-radius: 5px;
@@ -172,6 +176,7 @@ html {
     line-height: 15rem;
     font-size: 5rem;
   }
+
 .footer {
   height: 7rem;
   width: 100%;
