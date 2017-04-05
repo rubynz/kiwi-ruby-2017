@@ -18,56 +18,55 @@ title: Home
 
         .hero
           img.hero__logo alt="Kiwi Ruby - New Zealand Ruby Conference 2017" src="./images/rubylogo.png"
-          .hero__slogan
-            p
-              | The ruby conference you
-              span style="letter-spacing:-.1em" &rsquo;
-              ' ve been looking for.
-          .hero__date
-            p
-              ' 23 July 2017
-              br Wellington NZ
+          h1.hero__slogan
+            | The ruby conference you
+            span style="letter-spacing:-.1em" &rsquo;
+            ' ve been looking for. 23 July, Wellington NZ
+          / .hero__date
+          /   p
+          /     ' 23 July 2017
+          /     br Wellington NZ
     section
       .body
-        h1 Sign me up!
-        p
-          ' Tickets aren&apos;t available just yet, but subscribe below and you&apos;ll be the first to know when they become available!
 
-        .button
-          .button__text SUBSCRIBE
-        .body__subtitle We hate spam too
 
-        h1 Tell me more
-        p
-          ' Tautem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut voluptates repudiandae molestiae non. Itaque earum rerum hic tenetur a sapiente delectus.
+        .body__section
+          h2 Sign me up
+          p
+            ' Tickets aren&apos;t available just yet, but subscribe below and you&apos;ll be the first to know when they become available!
 
-        p
-          ' There are more details to come. Follow us on
-          a href="https://twitter.com/RubyConfNZ" Twitter 
-          ' to stay updated!
+          a.button.button--subscribe href="#"
+            ' Subscribe
+          .body__subtitle We hate spam too
 
-        h1 When? Where?
-        p
-          ' 9am-5pm, 23rd July 2017 
-          br
-          ' Wellington Convention Centre, 111 Wakefield St
-          br
-          a href="#" View Map
+        .body__section
+          h2 When? Where?
+          p
+            ' 9am-5pm, 23rd July 2017 
+            br
+            ' Wellington Convention Centre, 111 Wakefield St
+            br
+            a href="#" View Map
 
-        .emoji-break ❤️
+        .body__section
+          h2 Tell me more
+          p
+            ' Tautem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut voluptates repudiandae molestiae non. Itaque earum rerum hic tenetur a sapiente delectus.
+          p
+            ' Itaque earum rerum hic tenetur a sapiente delectus. There are more details to come. Follow us on
+            a> href="https://twitter.com/RubyConfNZ" Twitter
+            ' to stay updated!
 
-        h1 I want to help!
-        p
-          ' We&apos;re looking out for more organisations to support this great event. If you&apos;d like to help, please email us at
-          a href="mailto:conf@ruby.nz" conf@ruby.nz 
-          ' for more information.
+        .body__section
+          h2 I want to help
+          p
+            ' We&apos;re looking out for more organisations to support this great event. If you&apos;d like to help, please email us at
+            a> href="mailto:conf@ruby.nz" conf@ruby.nz
+            ' for more information.
 
-        .emoji-break.emoji-break--last &#9757;
-
-        .body__subtitle.body__subtitle--last
-          a href="#top" Back to top
-
-        .body__image
+        a.back-to-top href="#top"
+          .emoji-break.emoji-break--last
+            ' &#9757;
 
     section
       .footer
@@ -81,13 +80,14 @@ title: Home
         /     li Workshops
         /     li About
 
-        .footer__social
-          a href="https://twitter.com/RubyConfNZ"
-            span class="fa fa-twitter"
-            span class="hashtag" #kiwiRuby
+
 
         .footer__credit
-          ' made by
-          a href="http://icelab.com.au" icelab
+          a href="#" Back to top
+          ' . Made by
+          a href="http://icelab.com.au" Icelab
+          ' . Follow at
+          a href="https://twitter.com/RubyConfNZ" @RubyConfNZ
+
         .footer__birb
-          img alt="NZ Rubyconf 2017 mascot" src="./images/gembirb-up.png"
+          img width="60" alt="NZ Rubyconf 2017 mascot" src="./images/gembirb-up.png"
