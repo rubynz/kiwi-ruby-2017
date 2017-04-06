@@ -1,3 +1,250 @@
 /**
- * CSS goes here
+ * Rubyconf Variables
  */
+:root {
+  --font-body: "Source Sans Pro", Helvetica, Arial, sans-serif;
+  --font-heading: "YoungSerif", Courier, monospace;
+  --font-subtitle: "Source Code Pro", Courier, monospace;
+  --primary-color-darker: #e33558;
+  --primary-color: #FE3E62;
+  --primary-grey: #c2c2c2;
+  --text-color: #767F85;
+  --primary-contrast: #07c199;
+
+}
+/**
+ * Reset styles
+ */
+@import "./reset/index.css";
+
+/**
+ * Import Fonts
+ */
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro&subset=latin-ext");
+
+@font-face {
+  font-family: YoungSerif;
+  src: url("./fonts/YoungSerif-Regular.woff2");
+}
+@import "./font-awesome/index.css";
+
+/**
+ * Styling
+ */
+
+html {
+  font-size: 62.5%;
+}
+.breakpoint-phone {
+  font-size: 52.5%;
+}
+
+body {
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-size: 1.8rem;
+  line-height: 1;
+}
+
+.container {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.breakpoint-phone .container {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.header {
+  position: relative;
+  width: 100%;
+}
+  .header__nav {
+    line-height: 3rem;
+    padding-bottom: 1.5rem;
+    text-align: right;
+  }
+    .header__nav ul li a {
+      color: var(--primary-color);
+      display: inline;
+      font-family: var(--font-subtitle);
+      font-size: 1.6rem;
+      padding-left: 4rem;
+      text-decoration: none;
+    }
+
+.hero {
+  margin-top: 5rem;
+  margin-bottom: 0;
+}
+  .hero__logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3.5rem;
+    width: 20rem;
+  }
+  .hero__slogan {
+    color: var(--primary-color);
+    display: block;
+    font-family: var(--font-heading);
+    font-size: 5.5rem;
+    line-height: 6.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5rem;
+    max-width: 55rem;
+  }
+  .hero__slogan span {
+    color: #FF6683;
+    font-size: 4.5rem;
+    line-height: 5.5rem;
+  }
+  .breakpoint-phone .hero__slogan {
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+  .breakpoint-phone .hero__slogan span {
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+  .hero__date {
+    font-family: var(--font-subtitle);
+    font-size: 3rem;
+    color: var(--primary-contrast);
+    padding-top: .5rem;
+    line-height: 3.5rem;
+    text-align: center;
+  }
+
+.body {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 55rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+  .body p {
+    color: var(--text-color);
+    font-family: var(--font-body);
+    font-size: 2rem;
+    padding-top: 0rem;
+    margin-bottom: 2rem;
+    line-height: 2.9rem;
+  }
+  .body p:last-child {
+    margin-bottom: 0;
+  }
+  .body p a {
+    color: var(--primary-color);
+    text-decoration: none;
+  }
+  .body h2 {
+    color: var(--primary-color);
+    font-family: var(--font-heading);
+    font-size: 3.5rem;
+    margin-top: 0rem;
+    margin-bottom: 3rem;
+  }
+  .body__subtitle {
+    color: var(--text-color);
+    font-family: var(--font-subtitle);
+    font-size: 1.2rem;
+  }
+
+.body__section {
+  margin-bottom: 5rem;
+}
+
+.emoji-break {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 6.6rem;
+}
+
+.button {
+  background-color: var(--primary-contrast);
+  color: #fff;
+  padding: 3.2rem 7rem;
+  display: inline-block;
+  font-family: var(--font-subtitle);
+  font-size: 1.6rem;
+  letter-spacing: 0.15em;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background-color .3s ease;
+
+  /* Hiding this for now. Not sure about it.
+  /*box-shadow: 0rem 0.2rem .7rem var(--primary-grey);*/
+  /*border-radius: 3px;*/
+}
+
+.button:hover {
+  background-color: #04A481;
+}
+
+.button--subscribe {
+  margin-top: 3.2rem;
+  margin-bottom: 1.8rem;
+}
+  .button__text {
+    align-content: center;
+    color: white;
+    display: flex;
+    font-family: var(--font-body);
+    font-size: 2rem;
+    justify-content: center;
+    line-height: 5rem;
+  }
+
+.footer {
+  margin-bottom: 6rem;
+  width: 100%;
+  text-align: center;
+}
+  .footer__nav {
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+  }
+    .footer__nav ul li {
+      color: var(--primary-color);
+      display: inline;
+      font-family: var(--font-subtitle);
+      font-size: 1.6rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  .footer__credit {
+    color: var(--text-color);
+    font-family: var(--font-subtitle);
+    font-size: 1.2rem;
+    margin-top: 1rem;
+  }
+  .footer__credit a {
+    color: var(--primary-color);
+    text-decoration: none;
+  }
+  .footer__birb {
+    margin-top: 2rem;
+  }
+
+.back-to-top {
+  text-decoration: none;
+  display: block;
+  width: 10rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.back-to-top .body__subtitle {
+  margin-top: 1rem;
+}
+
+.back-to-top:hover .body__subtitle {
+  color: var(--primary-color);
+}
