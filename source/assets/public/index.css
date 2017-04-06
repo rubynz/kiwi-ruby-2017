@@ -6,9 +6,9 @@
   --font-heading: "YoungSerif", Courier, monospace;
   --font-subtitle: "Source Code Pro", Courier, monospace;
   --primary-color-darker: #e33558;
-  --primary-color: #ef3f62;
+  --primary-color: #FE3E62;
   --primary-grey: #c2c2c2;
-  --text-color: #767f85;
+  --text-color: #767F85;
   --primary-contrast: #07c199;
 
 }
@@ -23,8 +23,8 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro&subset=latin-ext");
 
 @font-face {
-    font-family: YoungSerif;
-    src: url("./fonts/YoungSerif-Regular.woff2");
+  font-family: YoungSerif;
+  src: url("./fonts/YoungSerif-Regular.woff2");
 }
 @import "./font-awesome/index.css";
 
@@ -35,8 +35,15 @@
 html {
   font-size: 62.5%;
 }
-.breakpoint-phone html {
-  font-size: 42.5%;
+.breakpoint-phone {
+  font-size: 52.5%;
+}
+
+body {
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-size: 1.8rem;
+  line-height: 1;
 }
 
 .container {
@@ -67,31 +74,34 @@ html {
     }
 
 .hero {
-  text-align: center;
-  padding-bottom: 1.5rem;
+  margin-top: 5rem;
+  margin-bottom: 0;
 }
   .hero__logo {
-    margin-bottom: 3rem;
-    width: 22rem;
-    height: auto;
+    display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 4rem;
+    margin-bottom: 3.5rem;
+    width: 20rem;
   }
   .hero__slogan {
-    color: var(--primary-color-darker);
+    color: var(--primary-color);
     display: block;
     font-family: var(--font-heading);
-    font-size: 6rem;
+    font-size: 5.5rem;
+    line-height: 6.5rem;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 2.5rem;
-    margin-top: 2.5rem;
-    max-width: 72rem;
-    text-align: center;
+    margin-bottom: 5rem;
+    max-width: 55rem;
+  }
+  .hero__slogan span {
+    color: #FF6683;
+    /*color: var(--primary-color-darker);*/
   }
   .breakpoint-phone .hero__slogan {
-    font-size: 3.5rem;
+    font-size: 4rem;
+    line-height: 5rem;
   }
   .hero__date {
     font-family: var(--font-subtitle);
@@ -105,63 +115,75 @@ html {
 .body {
   margin-left: auto;
   margin-right: auto;
-  max-width: 62rem;
-  padding: auto;
+  max-width: 55rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
-  .body a {
-    color: var(--primary-contrast);
-    text-decoration: none;
-  }
   .body p {
     color: var(--text-color);
     font-family: var(--font-body);
     font-size: 2rem;
-    padding-top: 0.5rem;
-    padding-bottom: 1rem;
-    line-height: 3rem;
+    padding-top: 0rem;
+    margin-bottom: 2rem;
+    line-height: 2.9rem;
   }
-  .body h1 {
-    color: var(--primary-color-darker);
+  .body p:last-child {
+    margin-bottom: 0;
+  }
+  .body p a {
+    color: var(--primary-color);
+    text-decoration: none;
+  }
+  .body h2 {
+    color: var(--primary-color);
     font-family: var(--font-heading);
-    font-size: 3rem;
-    margin-top: 4rem;
-    margin-bottom: 1rem;
+    font-size: 3.5rem;
+    margin-top: 0rem;
+    margin-bottom: 3rem;
   }
   .body__subtitle {
     color: var(--text-color);
     font-family: var(--font-subtitle);
-    font-size: 1.6rem;
-    text-align: center;
-    margin-top: 1rem;
+    font-size: 1.2rem;
   }
-    .body__subtitle--last{
-      padding-top: 0rem;
-      padding-bottom: 2rem;
-    }
+
+.body__section {
+  margin-bottom: 5rem;
+}
 
 .emoji-break {
-  font-size: 2rem;
-  padding-top: 2rem;
+  font-size: 3rem;
   text-align: center;
+  margin-bottom: 6.6rem;
 }
-  .emoji-break--last {
-    padding-bottom: 0px;
-  }
 
 .button {
   background-color: var(--primary-contrast);
-  border-radius: 5px;
-  height: 5rem;
+  color: #fff;
+  padding: 3.2rem 7rem;
+  display: inline-block;
+  font-family: var(--font-subtitle);
+  font-size: 1.6rem;
+  letter-spacing: 0.15em;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 2rem;
-  width: 15rem;
-  box-shadow: 0rem 0.2rem .7rem var(--primary-grey);
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background-color .3s ease;
+
+  /* Hiding this for now. Not sure about it.
+  /*box-shadow: 0rem 0.2rem .7rem var(--primary-grey);*/
+  /*border-radius: 3px;*/
 }
-.breakpoint-phone .button{
-  width: 30rem;
-  height: 15rem;
-  margin-left: 0px;
+
+.button:hover {
+  background-color: #04A481;
+}
+
+.button--subscribe {
+  margin-top: 3.2rem;
+  margin-bottom: 1.8rem;
 }
   .button__text {
     align-content: center;
@@ -172,13 +194,9 @@ html {
     justify-content: center;
     line-height: 5rem;
   }
-  .breakpoint-phone .button__text {
-    line-height: 15rem;
-    font-size: 5rem;
-  }
 
 .footer {
-  height: 7rem;
+  margin-bottom: 6rem;
   width: 100%;
   text-align: center;
 }
@@ -195,33 +213,33 @@ html {
       font-size: 1.6rem;
       padding-left: 2rem;
       padding-right: 2rem;
-
-    }
-    .footer__social {
-      font-size: 2rem;
-      font-family: var(--font-subtitle);
-      color: var(--primary-color);
-      text-decoration: none;
-    }
-      .footer__social a {
-        font-size: 2rem;
-        font-family: var(--font-subtitle);
-        color: var(--primary-color);
-        text-decoration: none;
-      }
-    .breakpoint-phone .footer__social a{
-      font-size: 8rem;
-    }
-    .breakpoint-phone .footer__social .hashtag{
-      display: none;
     }
   .footer__credit {
+    color: var(--text-color);
     font-family: var(--font-subtitle);
     font-size: 1.2rem;
     margin-top: 1rem;
   }
+  .footer__credit a {
+    color: var(--primary-color);
+    text-decoration: none;
+  }
   .footer__birb {
-    margin-top: 4rem;
-    margin-bottom: 4rem;
+    margin-top: 1rem;
   }
 
+.back-to-top {
+  text-decoration: none;
+  display: block;
+  width: 10rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.back-to-top .body__subtitle {
+  margin-top: 1rem;
+}
+
+.back-to-top:hover .body__subtitle {
+  color: var(--primary-color);
+}

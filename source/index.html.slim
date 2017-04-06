@@ -16,59 +16,56 @@ title: Home
         /     li Workshops
         /     li About
 
-        .hero
-          img.hero__logo alt="Kiwi Ruby - New Zealand Ruby Conference 2017" src="./images/rubylogo.png"
-          .hero__slogan
-            p
+        .body
+          .hero
+            a href="/"
+              img.hero__logo alt="Kiwi Ruby - New Zealand Ruby Conference 2017" src="./images/rubylogo.png"
+            h1.hero__slogan
               | The ruby conference you
               span style="letter-spacing:-.1em" &rsquo;
               ' ve been looking for.
-          .hero__date
-            p
-              ' Late 2017
-              br Wellington NZ
+              br
+              span
+                ' Late 2017 —
+                br
+                ' Wellington NZ
     section
       .body
-        h1 Sign me up!
-        p
-          ' Tickets aren&apos;t available just yet, but subscribe below and you&apos;ll be the first to know when they become available!
+        .body__section
+          h2 Sign me up
+          p
+            ' Tickets aren&apos;t available just yet, but subscribe below and you&apos;ll be the first to know when they become available!
 
-        .button
-          a.button__text href="#" SUBSCRIBE
-        .body__subtitle We hate spam too
+          a.button.button--subscribe href="#"
+            ' Subscribe
+          .body__subtitle We hate spam too
 
-        h1 Tell me more
-        p
-          ' Tautem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut voluptates repudiandae molestiae non. Itaque earum rerum hic tenetur a sapiente delectus.
+        .body__section
+          h2 When? Where?
+          p
+            ' Late 2017 
+            br
+            ' 6 October at Te Papa, 55 Cable St
 
-        p
-          ' There are more details to come. Follow us on
-          a href="https://twitter.com/kiwirubyconf" Twitter 
-          ' to stay updated!
+        .body__section
+          h2 Tell me more
+          p
+            ' Tautem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut voluptates repudiandae molestiae non. Itaque earum rerum hic tenetur a sapiente delectus.
+          p
+            ' Itaque earum rerum hic tenetur a sapiente delectus. There are more details to come. Follow us on
+            a> href="https://twitter.com/RubyConfNZ" Twitter
+            ' to stay updated!
 
-        h1 When? Where?
-        p
-          ' Late 2017 
-          br
-          ' Te Papa Tongarewa, 55 Cable St, Te Aro, Wellington 6011, New Zealand
-          br
-          a href="https://goo.gl/maps/LYAmoCHaim52" View Map
+        .body__section
+          h2 I want to help
+          p
+            ' We&apos;re looking out for more organisations to support this great event. If you&apos;d like to help, please email us at
+            a> href="mailto:conf@ruby.nz" conf@ruby.nz
+            ' for more information.
 
-        .emoji-break ❤️
-
-        h1 I want to help!
-        p
-          ' We&apos;re looking out for more organisations to support this great event. If you&apos;d like to help, please email us at
-          a href="mailto:conf@ruby.nz" conf@ruby.nz 
-          ' for more information.
-
-        .emoji-break.emoji-break--last &#9757;
-
-        .body__subtitle.body__subtitle--last
-          a href="#top" Back to top
-
-        .body__image
-
+        a.back-to-top href="#top"
+          .emoji-break.emoji-break--last
+            ' &#9757;
     section
       .footer
 
@@ -81,13 +78,14 @@ title: Home
         /     li Workshops
         /     li About
 
-        .footer__social
-          a href="https://twitter.com/RubyConfNZ"
-            span class="fa fa-twitter"
-            span class="hashtag" #kiwiRuby
+
 
         .footer__credit
-          ' made by
-          a href="http://icelab.com.au" icelab
+          a href="#" Back to top
+          ' . Made by
+          a href="http://icelab.com.au" Icelab
+          ' . Follow at
+          a href="https://twitter.com/RubyConfNZ" @RubyConfNZ
+
         .footer__birb
-          img alt="NZ Rubyconf 2017 mascot" src="./images/gembirb-up.png"
+          img width="50" alt="NZ Rubyconf 2017 mascot" src="./images/gembirb-up.png"
