@@ -97,11 +97,14 @@ body {
   }
   .hero__slogan span {
     color: #FF6683;
-    /*color: var(--primary-color-darker);*/
+    font-size: 4.5rem;
   }
   .breakpoint-phone .hero__slogan {
     font-size: 4rem;
     line-height: 5rem;
+  }
+  .breakpoint-phone .hero__slogan span {
+    font-size: 3rem;
   }
   .hero__date {
     font-family: var(--font-subtitle);
@@ -225,7 +228,7 @@ body {
     text-decoration: none;
   }
   .footer__birb {
-    margin-top: 1rem;
+    margin-top: 2rem;
   }
 
 .back-to-top {
