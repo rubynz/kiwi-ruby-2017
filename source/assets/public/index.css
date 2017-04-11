@@ -4,10 +4,12 @@
 :root {
   --font-body: "Source Sans Pro", Helvetica, Arial, sans-serif;
   --font-heading: "YoungSerif", Courier, monospace;
+  --font-subheading: "Source Sans Pro", Helvetica, Arial, sans-serif;
   --font-subtitle: "Source Code Pro", Courier, monospace;
   --primary-color-darker: #e33558;
   --primary-color: #FE3E62;
   --primary-grey: #c2c2c2;
+  --primary-grey-darker: #666666;
   --text-color: #767F85;
   --primary-contrast: #07c199;
 
@@ -20,7 +22,7 @@
 /**
  * Import Fonts
  */
-@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro&subset=latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro:400,600&subset=latin-ext");
 
 @font-face {
   font-family: YoungSerif;
@@ -153,11 +155,14 @@ body {
     text-decoration: none;
   }
   .body h2 {
-    color: var(--primary-color);
-    font-family: var(--font-heading);
-    font-size: 3.5rem;
+    color: var(--primary-grey-darker);
+    font-family: var(--font-subheading);
+    font-size: 2rem;
+    letter-spacing: .35rem;
+    text-transform: uppercase;
     margin-top: 0rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
   }
   .body__subtitle {
     color: var(--text-color);
