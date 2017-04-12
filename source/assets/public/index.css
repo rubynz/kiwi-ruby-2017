@@ -62,6 +62,7 @@ body {
 .header {
   position: relative;
   width: 100%;
+  border: 1px orange dashed
 }
   .header__nav {
     line-height: 3rem;
