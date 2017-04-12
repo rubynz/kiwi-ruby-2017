@@ -47,7 +47,7 @@ body {
   font-size: 1.8rem;
   line-height: 1;
 }
-
+/*overall element widths*/
 .container {
   padding-left: 2rem;
 }
@@ -60,13 +60,11 @@ body {
 .breakpoint-tablet-wide .container {
   padding-left: 9rem;
 }
-.breakpoint-desktop .container {
-  padding-left: 12rem;
-}
+
 .breakpoint-desktop-up .container {
   padding-left: 15rem;
 }
-
+/*header/nav*/
 .header {
   position: relative;
   width: 100%;
@@ -90,42 +88,14 @@ body {
   margin-bottom: 0;
   width: 80%;
 }
-.breakpoint-phone .hero {
-  width: 94%;
-}
-  .breakpoint-desktop-up .hero__logo-wrapper {
-    display: inline-block;
-    overflow: hidden;
-    vertical-align: middle;
-    padding-top: 1rem;
-  }
-
   .hero__logo {
     display: block;
     width: 100%;
     max-width: 50rem;
     height: auto;
   }
-  .breakpoint-phone .hero__logo {
-    max-width: 55%;
-  }
-/*  .breakpoint-tablet-wide .hero__logo {
-    margin-bottom: 0;
-    max-width: 44%;
-  }*/
-  .breakpoint-desktop-up .hero__logo {
-    margin-left: -38rem;
-    margin-right: 0;
-    width: 120rem;
-    max-width: 60rem;
-    height: auto;
-    margin-top: 2rem;
-  }
   .hero__hidden {
     display: none;
-  }
-  .breakpoint-desktop-up .hero__hidden {
-    display: inline;
   }
   .hero__slogan {
     color: var(--primary-color);
@@ -137,7 +107,57 @@ body {
     max-width: 70rem;
     margin-top: 0;
   }
-
+  .hero__date {
+    font-family: var(--font-subheading);
+    font-variant: small-caps;
+    font-size: 3.3rem;
+    color: var(--primary-grey-darker);
+    padding-top: .5rem;
+    line-height: 2rem;
+    text-align: center;
+    letter-spacing: 0.25rem;
+  }
+.breakpoint-phone .hero {
+  width: 94%;
+}
+  .breakpoint-phone .hero__logo {
+    max-width: 55%;
+  }
+  .breakpoint-phone .hero__slogan {
+    font-size: 3.3rem;
+    line-height: 4rem;
+    text-align: left;
+  }
+    .breakpoint-phone .hero__slogan span {
+      font-size: 3rem;
+      line-height: 4rem;
+    }
+  .breakpoint-phone .hero__date {
+    font-size: .1rem;
+  }
+/*.breakpoint-tablet-wide .hero*/
+  .breakpoint-tablet-wide .hero__logo {
+    margin-bottom: 0;
+    max-width: 44%;
+  }
+/*.breakpoint-desktop-up .hero*/
+  .breakpoint-desktop-up .hero__logo-wrapper {
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: middle;
+    padding-top: 1rem;
+  }
+    .breakpoint-desktop-up .hero__logo {
+      margin-left: -38rem;
+      margin-right: 0;
+      width: 120rem;
+      max-width: 60rem;
+      height: auto;
+      margin-top: 2rem;
+    }
+  .breakpoint-desktop-up .hero__hidden {
+    display: inline;
+  }
   .breakpoint-desktop-up .hero__slogan {
     display: inline-block;
     font-size: 5rem;
@@ -149,48 +169,17 @@ body {
     vertical-align: middle;
   }
 
-  .breakpoint-phone .hero__slogan {
-    font-size: 3.3rem;
-    line-height: 4rem;
-    text-align: left;
-  }
-  .breakpoint-phone .hero__slogan span {
-    font-size: 3rem;
-    line-height: 4rem;
-  }
-  .hero__date {
-    font-family: var(--font-subheading);
-    font-variant: small-caps;
-    font-size: 3.3rem;
-    color: var(--primary-grey-darker);
-    padding-top: .5rem;
-    line-height: 2rem;
-    text-align: center;
-    letter-spacing: 0.25rem;
-  }
-  .breakpoint-phone .hero__date {
-    font-size: .1rem;
-  }
 
+/*BODY TEXT*/
 .body-inner-wrapper {
   max-width: 80%;
 }
-.body-inner-wrapper p {
+  .body-inner-wrapper p {
     color: var(--text-color);
     font-family: var(--font-body);
     font-size: 2rem;
     margin-bottom: 2rem;
     line-height: 2.9rem;
-  }
-  .breakpoint-desktop-up .body-inner-wrapper {
-    margin-top: ;
-  }
-  .breakpoint-phone .body-inner-wrapper {
-    margin-top: 0;
-  }
-  .breakpoint-desktop-up .body-inner-wrapper p {
-    font-size: 2.5rem;
-    line-height: 3.5rem;
   }
   .body-inner-wrapper p:last-child {
     margin-bottom: 0;
@@ -209,10 +198,6 @@ body {
     margin-bottom: 2rem;
     font-weight: 600;
   }
-  .breakpoint-desktop-up .body-inner-wrapper h2 {
-    font-size: 3rem;
-    letter-spacing: .75rem;
-  }
   .body-inner-wrapper__subtitle {
     color: var(--text-color);
     font-family: var(--font-subtitle);
@@ -220,17 +205,24 @@ body {
     margin-left: auto;
     margin-right: auto;
   }
-
-.body-inner-wrapper__section {
-  margin-bottom: 5rem;
+  .body-inner-wrapper__section {
+    margin-bottom: 7rem;
+  }
+.breakpoint-desktop-up .body-inner-wrapper {
+  margin-top: ;
 }
-
-.emoji-break {
-  font-size: 3rem;
-  text-align: center;
-  margin-bottom: 6.6rem;
+  .breakpoint-desktop-up .body-inner-wrapper p {
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+  }
+  .breakpoint-desktop-up .body-inner-wrapper h2 {
+    font-size: 3rem;
+    letter-spacing: .75rem;
+  }
+.breakpoint-phone .body-inner-wrapper {
+  margin-top: 0;
 }
-
+/*BUTTON*/
 .button {
   background-color: var(--primary-contrast);
   color: #fff;
@@ -247,18 +239,6 @@ body {
   box-shadow: 0rem 0.2rem .7rem var(--primary-grey);
   border-radius: 3px;
 }
-.breakpoint-phone .button {
-  font-size: 1.6rem;
-  margin-top: -1rem;
-}
-.button:hover {
-  background-color: #04A481;
-}
-
-.button--subscribe {
-  margin-top: 3.2rem;
-  margin-bottom: 1.8rem;
-}
   .button__text {
     align-content: center;
     color: white;
@@ -268,6 +248,17 @@ body {
     justify-content: center;
     line-height: 5rem;
   }
+  .button--subscribe {
+    margin-top: 3.2rem;
+    margin-bottom: 1.8rem;
+  }
+.breakpoint-phone .button {
+  font-size: 1.6rem;
+  margin-top: -1rem;
+}
+
+
+
 
 .footer {
   margin-bottom: 6rem;
@@ -307,11 +298,10 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+  .back-to-top .body__subtitle {
+    margin-top: 1rem;
+  }
 
-.back-to-top .body__subtitle {
-  margin-top: 1rem;
-}
-
-.back-to-top:hover .body__subtitle {
-  color: var(--primary-color);
-}
+    .back-to-top:hover .body__subtitle {
+      color: var(--primary-color);
+    }
