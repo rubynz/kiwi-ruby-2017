@@ -121,7 +121,9 @@ body {
   width: 94%;
 }
   .breakpoint-phone .hero__logo {
-    max-width: 55%;
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
   }
   .breakpoint-phone .hero__slogan {
     font-size: 3.3rem;
@@ -135,10 +137,10 @@ body {
   .breakpoint-phone .hero__date {
     font-size: .1rem;
   }
-/*.breakpoint-tablet-wide .hero*/
-  .breakpoint-tablet-wide .hero__logo {
-    margin-bottom: 0;
-    max-width: 44%;
+/*.breakpoint-tablet .hero*/
+  .breakpoint-tablet .hero__logo {
+    margin-bottom: -1rem;
+    max-width: 50%;
   }
 /*.breakpoint-desktop-up .hero*/
   .breakpoint-desktop-up .hero__logo-wrapper {
