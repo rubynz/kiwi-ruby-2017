@@ -46,11 +46,13 @@ body {
   text-rendering: optimizeLegibility;
   font-size: 1.8rem;
   line-height: 1;
+  border: 2px green dashed;
 }
 
 .container {
   padding-left: 2rem;
   padding-right: 2rem;
+  border: 1px blue solid;
 }
 .breakpoint-phone .container {
   padding-right: 1rem;
@@ -78,13 +80,19 @@ body {
 .hero {
   margin-top: 5rem;
   margin-bottom: 0;
+  border: 1px purple solid;
+  width: 90rem;
+  margin-left: auto;
+  margin-right: auto;
 }
+
   .hero__logo {
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 3.5rem;
-    width: 20rem;
+    width: 75%;
+    height: auto;
   }
   .hero__slogan {
     color: var(--primary-color);
@@ -96,11 +104,6 @@ body {
     margin-right: auto;
     margin-bottom: 5rem;
     max-width: 55rem;
-  }
-  .hero__slogan span {
-    color: #FF6683;
-    font-size: 4.5rem;
-    line-height: 5.5rem;
   }
   .breakpoint-desktop-wide .hero__slogan {
     max-width: 80rem;
@@ -124,9 +127,10 @@ body {
     line-height: 4rem;
   }
   .hero__date {
-    font-family: var(--font-subtitle);
+    font-family: var(--font-subheading);
+    font-variant: small-caps;
     font-size: 3rem;
-    color: var(--primary-contrast);
+    color: var(--primary-grey-darker);
     padding-top: .5rem;
     line-height: 3.5rem;
     text-align: center;
