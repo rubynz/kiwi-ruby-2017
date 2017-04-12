@@ -82,46 +82,69 @@ body {
   margin-top: 5rem;
   margin-bottom: 0;
   border: 1px purple solid;
-  width: 90rem;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
 }
+.breakpoint-phone .hero {
+  width: 94%;
+}
+  .breakpoint-widescreen .hero__logo-wrapper {
+    height: 50%;
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: middle;
+    padding-top: 1rem;
+  }
 
   .hero__logo {
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 3.5rem;
-    width: 75%;
+    width: 100%;
+    max-width: 50rem;
     height: auto;
   }
+
+  .breakpoint-widescreen .hero__logo {
+    margin-left: -36rem;
+    margin-right: 0;
+    width: 120rem;
+    max-width: 60rem;
+    height: auto;
+    margin-bottom: 0;
+    margin-top: 2rem;
+  }
+
   .hero__slogan {
     color: var(--primary-color);
     display: block;
     font-family: var(--font-heading);
-    font-size: 5.5rem;
+    font-size: 4rem;
     line-height: 6.5rem;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 5rem;
-    max-width: 55rem;
+    max-width: 70rem;
   }
-  .breakpoint-desktop-wide .hero__slogan {
-    max-width: 80rem;
-    font-size: 5rem;
-    line-height: 6rem;
-    border: 2px red dashed;
-  }
+
   .breakpoint-widescreen .hero__slogan {
-    max-width: 150rem;
-    font-size: 5rem;
-    line-height: 6rem;
     border: 2px red dashed;
-  }
-  /*!!!breakpoint for span here*/
-  .breakpoint-phone .hero__slogan {
-    font-size: 4rem;
+    display: inline-block;
+    font-size: 5rem;
     line-height: 5rem;
+    margin-bottom: 0;
+    margin-left: 3rem;
+    margin-right: 0;
+    max-width: 60%;
+    vertical-align: middle;
+  }
+
+  .breakpoint-phone .hero__slogan {
+    font-size: 3rem;
+    line-height: 4rem;
+    text-align: center;
   }
   .breakpoint-phone .hero__slogan span {
     font-size: 3rem;
@@ -130,21 +153,26 @@ body {
   .hero__date {
     font-family: var(--font-subheading);
     font-variant: small-caps;
-    font-size: 3rem;
+    font-size: 3.3rem;
     color: var(--primary-grey-darker);
     padding-top: .5rem;
-    line-height: 3.5rem;
+    line-height: 2rem;
     text-align: center;
+    letter-spacing: 0.25rem;
+  }
+  .breakpoint-phone .hero__date {
+    font-size: .1rem;
   }
 
-.body {
+.body-inner-wrapper {
   margin-left: auto;
   margin-right: auto;
-  max-width: 55rem;
+  max-width: 66%;
   padding-left: 2rem;
   padding-right: 2rem;
+  border: 3px red solid;
 }
-  .body p {
+  .body-inner-wrapper p {
     color: var(--text-color);
     font-family: var(--font-body);
     font-size: 2rem;
@@ -152,14 +180,18 @@ body {
     margin-bottom: 2rem;
     line-height: 2.9rem;
   }
-  .body p:last-child {
+  .breakpoint-widescreen .body-inner-wrapper p {
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+  }
+  .body-inner-wrapper p:last-child {
     margin-bottom: 0;
   }
-  .body p a {
+  .body-inner-wrapper p a {
     color: var(--primary-color);
     text-decoration: none;
   }
-  .body h2 {
+  .body-inner-wrapper h2 {
     color: var(--primary-grey-darker);
     font-family: var(--font-subheading);
     font-size: 2rem;
@@ -169,13 +201,19 @@ body {
     margin-bottom: 2rem;
     font-weight: 600;
   }
-  .body__subtitle {
+  .breakpoint-widescreen .body-inner-wrapper h2 {
+    font-size: 3rem;
+    letter-spacing: .75rem;
+  }
+  .body-inner-wrapper__subtitle {
     color: var(--text-color);
     font-family: var(--font-subtitle);
     font-size: 1.2rem;
+    margin-left: auto;
+    margin-right: auto;
   }
 
-.body__section {
+.body-inner-wrapper__section {
   margin-bottom: 5rem;
 }
 
@@ -199,10 +237,8 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   transition: background-color .3s ease;
-
-  /* Hiding this for now. Not sure about it.
-  /*box-shadow: 0rem 0.2rem .7rem var(--primary-grey);*/
-  /*border-radius: 3px;*/
+  box-shadow: 0rem 0.2rem .7rem var(--primary-grey)
+  border-radius: 3px;
 }
 
 .button:hover {
