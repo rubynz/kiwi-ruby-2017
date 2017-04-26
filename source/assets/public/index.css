@@ -130,12 +130,9 @@ body {
     line-height: 4rem;
     text-align: left;
   }
-    .breakpoint-phone .hero__slogan span {
-      font-size: 3rem;
-      line-height: 4rem;
-    }
-  .breakpoint-phone .hero__date {
-    font-size: .1rem;
+  .breakpoint-phone .hero__slogan span {
+    font-size: 3rem;
+    line-height: 4rem;
   }
 /*.breakpoint-tablet .hero*/
   .breakpoint-tablet .hero__logo {
@@ -219,7 +216,7 @@ body {
   }
   .breakpoint-desktop-up .body-inner-wrapper h2 {
     font-size: 3rem;
-    letter-spacing: .75rem;
+    letter-spacing: .4rem;
   }
 .breakpoint-phone .body-inner-wrapper {
   margin-top: 0;
