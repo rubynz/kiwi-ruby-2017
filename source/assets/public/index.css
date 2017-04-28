@@ -117,13 +117,18 @@ body {
   }
   .hero__date {
     font-family: var(--font-subheading);
-    font-variant: small-caps;
+    transform:scale(.9,.9); /* W3C */
+    -webkit-transform:scale(.9,.9); /* Safari and Chrome */
+    -moz-transform:scale(.9,.9); /* Firefox */
+    -ms-transform:scale(.9,.9); /* IE 9 */
+    -o-transform:scale(.9,.9); /* Opera */
+    font-weight: 600;
     font-size: 3.3rem;
     color: var(--primary-grey-darker);
-    padding-top: .5rem;
+    padding-top: .8rem;
     line-height: 2rem;
     text-align: center;
-    letter-spacing: 0.25rem;
+    letter-spacing: 0.2rem;
   }
 .breakpoint-phone .hero {
   width: 94%;
@@ -167,7 +172,7 @@ body {
   .breakpoint-desktop-up .hero__hidden {
     display: inline;
     font-size: 7rem;
-    font-family: var(--font-logotype);
+    font-family: var(--font-logotype)
   }
   .breakpoint-desktop-up .hero__slogan {
     display: inline-block;
