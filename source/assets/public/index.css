@@ -3,6 +3,7 @@
  */
 :root {
   --font-body: "Source Sans Pro", Helvetica, Arial, sans-serif;
+  --font-logotype: "OleoSwash", Courier, monospace;
   --font-heading: "YoungSerif", Courier, monospace;
   --font-subheading: "Source Sans Pro", Helvetica, Arial, sans-serif;
   --font-subtitle: "Source Code Pro", Courier, monospace;
@@ -24,9 +25,16 @@
  */
 @import url("https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro:400,600&subset=latin-ext");
 
+@import url('https://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps&subset=latin-ext');
+
 @font-face {
   font-family: YoungSerif;
   src: url("./fonts/YoungSerif-Regular.woff2");
+}
+
+@font-face {
+  font-family: OleoSwash;
+  src: url("./fonts/OleoScriptSwashCaps-Regular.woff2");
 }
 @import "./font-awesome/index.css";
 
@@ -158,6 +166,8 @@ body {
     }
   .breakpoint-desktop-up .hero__hidden {
     display: inline;
+    font-size: 7rem;
+    font-family: var(--font-logotype);
   }
   .breakpoint-desktop-up .hero__slogan {
     display: inline-block;
