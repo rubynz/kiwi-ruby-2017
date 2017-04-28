@@ -138,6 +138,8 @@ body {
   .breakpoint-tablet .hero__logo {
     margin-bottom: -1rem;
     max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
   }
 /*.breakpoint-desktop-up .hero*/
   .breakpoint-desktop-up .hero__logo-wrapper {
@@ -216,7 +218,7 @@ body {
   }
   .breakpoint-desktop-up .body-inner-wrapper h2 {
     font-size: 3rem;
-    letter-spacing: .75rem;
+    letter-spacing: .4rem;
   }
 .breakpoint-phone .body-inner-wrapper {
   margin-top: 0;
