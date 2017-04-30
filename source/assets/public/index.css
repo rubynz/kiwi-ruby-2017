@@ -117,6 +117,7 @@ body {
   }
   .hero__date {
     font-family: var(--font-subheading);
+    text-transform: uppercase;
     transform:scale(.9,.9); /* W3C */
     -webkit-transform:scale(.9,.9); /* Safari and Chrome */
     -moz-transform:scale(.9,.9); /* Firefox */
