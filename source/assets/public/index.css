@@ -3,6 +3,7 @@
  */
 :root {
   --font-body: "Source Sans Pro", Helvetica, Arial, sans-serif;
+  --font-logotype: "OleoSwash", Courier, monospace;
   --font-heading: "YoungSerif", Courier, monospace;
   --font-subheading: "Source Sans Pro", Helvetica, Arial, sans-serif;
   --font-subtitle: "Source Code Pro", Courier, monospace;
@@ -24,9 +25,16 @@
  */
 @import url("https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro:400,600&subset=latin-ext");
 
+@import url('https://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps&subset=latin-ext');
+
 @font-face {
   font-family: YoungSerif;
   src: url("./fonts/YoungSerif-Regular.woff2");
+}
+
+@font-face {
+  font-family: OleoSwash;
+  src: url("./fonts/OleoScriptSwashCaps-Regular.woff2");
 }
 @import "./font-awesome/index.css";
 
@@ -109,13 +117,19 @@ body {
   }
   .hero__date {
     font-family: var(--font-subheading);
-    font-variant: small-caps;
+    text-transform: uppercase;
+    transform:scale(.9,.9); /* W3C */
+    -webkit-transform:scale(.9,.9); /* Safari and Chrome */
+    -moz-transform:scale(.9,.9); /* Firefox */
+    -ms-transform:scale(.9,.9); /* IE 9 */
+    -o-transform:scale(.9,.9); /* Opera */
+    font-weight: 600;
     font-size: 3.3rem;
     color: var(--primary-grey-darker);
-    padding-top: .5rem;
+    padding-top: .8rem;
     line-height: 2rem;
     text-align: center;
-    letter-spacing: 0.25rem;
+    letter-spacing: 0.2rem;
   }
 .breakpoint-phone .hero {
   width: 94%;
@@ -158,6 +172,8 @@ body {
     }
   .breakpoint-desktop-up .hero__hidden {
     display: inline;
+    font-size: 7rem;
+    font-family: var(--font-logotype)
   }
   .breakpoint-desktop-up .hero__slogan {
     display: inline-block;
