@@ -1,7 +1,9 @@
 
-# KiwiRuby
+# Kiwi Ruby
 
-Built with [Middleman][middleman].
+The website for New Zealand's premier (only) Ruby conference, [Kiwi Ruby][kiwiruby]. 
+
+Built with [Middleman][middleman] and also with 💖love💖. 
 
 ## Development
 
@@ -33,32 +35,11 @@ bundle exec rake build
 
 ## Deployment
 
-The [`middleman-deploy`][middleman-deploy] and [`middleman-s3_sync`][middleman-s3_sync] gems are included to make it easy to deploy to either GitHub Pages or Amazon S3.
+The website is hosted on GitHub Pages, and deployed using the [`middleman-deploy`][middleman-deploy] gem.
 
-Check the deployment section at the bottom of `config.rb` to see their example configurations.
+Provided you have write access to this repository, you should be able to deploy with the following command:
 
-### Heroku
-
-You’ll need to adjust a few settings when you set things up:
-
-```
-heroku buildpacks:add heroku/nodejs
-heroku buildpacks:add heroku/ruby
-```
-
-Include devDependencies in the production build:
-
-```
-heroku config:set NPM_CONFIG_PRODUCTION=false
-```
-
-Then configure the production timezone on Heroku:
-
-```
-heroku config:set TZ="Australia/Melbourne"
-```
-
-Once that’s done you can also push this repository to Heroku and it should build it on deploy, and serve it automatically.
+`middleman deploy`
 
 ## Assets
 
@@ -96,6 +77,7 @@ assets/public.css
 assets/another-target.js
 ```
 
+[kiwiruby]: http://kiwi.ruby.nz
 [middleman]: https://middlemanapp.com/
 [webpack]: https://webpack.github.io/
 [middleman-deploy]: https://github.com/middleman-contrib/middleman-deploy
