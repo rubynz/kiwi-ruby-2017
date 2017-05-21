@@ -1,0 +1,32 @@
+sponsorship_levels:
+  - ruby:
+    name: "Ruby sponsors"
+    sponsors:
+      - name: "Loyalty NZ"
+        logo: "loyalty.png"
+        website: "https://www.loyalty.co.nz"
+      - name: "Trineo"
+        logo: "trineo.png"
+        website: "https://www.trineo.co.nz"
+  - design:
+    name: "Design sponsor"
+    sponsors:
+      - name: "Icelab"
+        logo: "icelab.png"
+        website: "https://www.icelab.com.au"
+  - gold:
+    name: "Gold sponsors"
+  - silver:
+    name: "Silver sponsors"
+  - supporter:
+    name: "Supporters"
+    sponsors:
+      - name: "Last Pickle"
+        logo: "last-pickle.png"
+        website: "http://thelastpickle.com/"
+  - diversity:
+    name: "Diversity program sponsor"
+    sponsors:
+      - name: "Rabid"
+        logo: "rabid.png"
+        website: "https://www.rabid.co.nz"

@@ -315,10 +315,28 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-  .back-to-top .body__subtitle {
-    margin-top: 1rem;
-  }
+.back-to-top .body__subtitle {
+  margin-top: 1rem;
+}
+.back-to-top:hover .body__subtitle {
+  color: var(--primary-color);
+}
 
-    .back-to-top:hover .body__subtitle {
-      color: var(--primary-color);
-    }
+.c-sponsor-list {
+
+}
+.c-sponsor-list__level {
+
+}
+.c-sponsor {
+
+}
+.c-sponsor__name {
+
+}
+.c-sponsor__description {
+
+}
+.c-sponsor__logo {
+
+}
