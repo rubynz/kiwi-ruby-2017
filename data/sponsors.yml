@@ -1,32 +1,93 @@
 sponsorship_levels:
+  - diamond:
+    logo_size: 1
+    name: "Diamond sponsor"
+    sponsors:
+      - name: "Friendly Friends"
+        logo: "placeholder-logo-1.png"
+        website: "http://www.example.com"
+        description_paragraphs:
+          - "These are our very best friends. They are paying a lot of money because they are lovely people who care about the community. It's because of them that this conference is going to be extremely good."
+          - "Not to say that it wouldn't be extremely good otherwise. It would just be more difficult to make it extremely good."
   - ruby:
+    logo_size: 2
     name: "Ruby sponsors"
     sponsors:
-      - name: "Loyalty NZ"
-        logo: "loyalty.png"
-        website: "https://www.loyalty.co.nz"
-      - name: "Trineo"
-        logo: "trineo.png"
-        website: "https://www.trineo.co.nz"
+      - name: "A Great Company"
+        logo: "placeholder-logo-2.png"
+        website: "https://www.example.com"
+        description_paragraphs:
+          - "These are some very good friends. They're extremely nice people to give us a bunch of money."
+          - "They do some Ruby stuff for a job."
+      - name: "Amicab.ly"
+        logo: "placeholder-logo-3.png"
+        website: "https://www.example.com"
+        description_paragraphs:
+          - "These people are really great. They are very friendly and just the best."
+          - "They do some Ruby stuff. Maybe they're a startup too."
   - design:
+    logo_size: 2
     name: "Design sponsor"
     sponsors:
       - name: "Icelab"
         logo: "icelab.png"
         website: "https://www.icelab.com.au"
+        description_paragraphs:
+          - "Icelab has been with us from Day One. From scheming in the back of the bus back from Rails Camp right through to the beautiful and sleek logo and website, Icelab has been a delight to work with, and their commitment to the Ruby community is legendary."
+          - "They are great at design, they are great at websites, and we love them."
   - gold:
+    logo_size: 3
     name: "Gold sponsors"
+    sponsors:
+      - name: "Friendly"
+        logo: "placeholder-logo-3.png"
+        website: "http://www.example.com"
+        description_paragraphs:
+          - "Friendly company is a company. <a href='http://www.example.com'>They are hiring.</a>"
+      - name: "Nice"
+        logo: "placeholder-logo-4.png"
+        website: "http://www.example.com"
+        description_paragraphs:
+          - "It's true that Nice is a nice company."
+      - name: "Cool Company"
+        logo: "placeholder-logo-5.png"
+        website: "http://www.example.com"
+        description_paragraphs:
+          - "It's probably some kind of internet startup."
+      - name: "Another Company"
+        logo: "placeholder-logo-1.png"
+        website: "http://www.example.com"
+        description_paragraphs:
+          - "It's probably some kind of internet startup."
   - silver:
+    logo_size: 4
     name: "Silver sponsors"
   - supporter:
+    logo_size: 5
     name: "Supporters"
     sponsors:
-      - name: "Last Pickle"
-        logo: "last-pickle.png"
+      - logo: "placeholder-logo-7.png"
         website: "http://thelastpickle.com/"
+      - logo: "placeholder-logo-6.png"
+        website: "http://example.com/"
   - diversity:
+    logo_size: 5
     name: "Diversity program sponsor"
     sponsors:
-      - name: "Rabid"
-        logo: "rabid.png"
+      - name: "Friends"
+        logo: "placeholder-logo-3.png"
         website: "https://www.rabid.co.nz"
+  - childcare:
+    logo_size: 5
+    name: "Childcare program sponsor"
+    sponsors:
+      - name: "Great Friends"
+        logo: "placeholder-logo-2.png"
+        website: "https://www.storypark.com"
+  - coffee:
+    logo_size: 5
+    name: "Coffee sponsor"
+    sponsors:
+      - name: "Sponsorio"
+        logo: "placeholder-logo-4.png"
+        website: "https://www.example.com"
