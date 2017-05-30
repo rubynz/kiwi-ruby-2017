@@ -3,12 +3,6 @@ sponsorship_levels:
     logo_size: 1
     name: "Diamond sponsor"
     sponsors:
-      - name: "Friendly Friends"
-        logo: "placeholder-logo-1.png"
-        website: "http://www.example.com"
-        description_paragraphs:
-          - "These are our very best friends. They are paying a lot of money because they are lovely people who care about the community. It's because of them that this conference is going to be extremely good."
-          - "Not to say that it wouldn't be extremely good otherwise. It would just be more difficult to make it extremely good."
   - ruby:
     logo_size: 2
     name: "Ruby sponsors"
@@ -26,7 +20,7 @@ sponsorship_levels:
           - "These people are really great. They are very friendly and just the best."
           - "They do some Ruby stuff. Maybe they're a startup too."
   - design:
-    logo_size: 2
+    logo_size: 1
     name: "Design sponsor"
     sponsors:
       - name: "Icelab"
@@ -39,26 +33,6 @@ sponsorship_levels:
     logo_size: 3
     name: "Gold sponsors"
     sponsors:
-      - name: "Friendly"
-        logo: "placeholder-logo-3.png"
-        website: "http://www.example.com"
-        description_paragraphs:
-          - "Friendly company is a company. <a href='http://www.example.com'>They are hiring.</a>"
-      - name: "Nice"
-        logo: "placeholder-logo-4.png"
-        website: "http://www.example.com"
-        description_paragraphs:
-          - "It's true that Nice is a nice company."
-      - name: "Cool Company"
-        logo: "placeholder-logo-5.png"
-        website: "http://www.example.com"
-        description_paragraphs:
-          - "It's probably some kind of internet startup."
-      - name: "Another Company"
-        logo: "placeholder-logo-1.png"
-        website: "http://www.example.com"
-        description_paragraphs:
-          - "It's probably some kind of internet startup."
   - silver:
     logo_size: 4
     name: "Silver sponsors"
@@ -68,8 +42,6 @@ sponsorship_levels:
     sponsors:
       - logo: "placeholder-logo-7.png"
         website: "http://thelastpickle.com/"
-      - logo: "placeholder-logo-6.png"
-        website: "http://example.com/"
   - diversity:
     logo_size: 5
     name: "Diversity program sponsor"
@@ -79,7 +51,8 @@ sponsorship_levels:
         website: "https://www.rabid.co.nz"
   - childcare:
     logo_size: 5
-    name: "Childcare program sponsor"
+    name: "Childcare sponsor"
+    description: "Thanks to this sponsor, we can offer on-site childcare to attendees at no charge."
     sponsors:
       - name: "Great Friends"
         logo: "placeholder-logo-2.png"
@@ -88,6 +61,3 @@ sponsorship_levels:
     logo_size: 5
     name: "Coffee sponsor"
     sponsors:
-      - name: "Sponsorio"
-        logo: "placeholder-logo-4.png"
-        website: "https://www.example.com"
