@@ -341,10 +341,12 @@ strong {
 .breakpoint-desktop-up .c-sponsor-level--size-5 .c-sponsor-level__sponsor {
   flex-basis: 20%;
 }
-
+.c-sponsor-level--size-2 .c-sponsor-level__sponsor {
+  flex-basis: 100%;
+}
 .c-sponsor-level__sponsor {
-  flex-grow: 0;
   flex-basis: 50%;
+  flex-grow: 0;
 }
 .c-sponsor {
   box-sizing: border-box;

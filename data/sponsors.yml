@@ -7,12 +7,12 @@ sponsorship_levels:
     logo_size: 2
     name: "Ruby sponsors"
     sponsors:
-      - name: "A Great Company"
-        logo: "placeholder-logo-2.png"
-        website: "https://www.example.com"
+      - name: "Loyalty"
+        logo: "loyalty.png"
+        website: "https://www.loyalty.co.nz"
         description_paragraphs:
-          - "These are some very good friends. They're extremely nice people to give us a bunch of money."
-          - "They do some Ruby stuff for a job."
+          - "Loyalty New Zealand is New Zealand’s expert in loyalty and runs the most comprehensive coalition loyalty programme in New Zealand, Fly Buys. We love to enable smarter business for our clients using customer insights and data analytics under our brand Lab360."
+          - "We are proud to sponsor Kiwi Ruby to support our talented Technology team and help promote diversity in the local Ruby community, because we love to give."
   - design:
     logo_size: 1
     name: "Design sponsor"
@@ -34,8 +34,6 @@ sponsorship_levels:
     logo_size: 5
     name: "Supporters"
     sponsors:
-      - logo: "placeholder-logo-7.png"
-        website: "http://thelastpickle.com/"
   - diversity:
     logo_size: 5
     name: "Diversity program sponsor"
