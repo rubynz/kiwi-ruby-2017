@@ -13,12 +13,6 @@ sponsorship_levels:
         description_paragraphs:
           - "These are some very good friends. They're extremely nice people to give us a bunch of money."
           - "They do some Ruby stuff for a job."
-      - name: "Amicab.ly"
-        logo: "placeholder-logo-3.png"
-        website: "https://www.example.com"
-        description_paragraphs:
-          - "These people are really great. They are very friendly and just the best."
-          - "They do some Ruby stuff. Maybe they're a startup too."
   - design:
     logo_size: 1
     name: "Design sponsor"
@@ -46,17 +40,11 @@ sponsorship_levels:
     logo_size: 5
     name: "Diversity program sponsor"
     sponsors:
-      - name: "Friends"
-        logo: "placeholder-logo-3.png"
-        website: "https://www.rabid.co.nz"
   - childcare:
     logo_size: 5
     name: "Childcare sponsor"
     description: "Thanks to this sponsor, we can offer on-site childcare to attendees at no charge."
     sponsors:
-      - name: "Great Friends"
-        logo: "placeholder-logo-2.png"
-        website: "https://www.storypark.com"
   - coffee:
     logo_size: 5
     name: "Coffee sponsor"

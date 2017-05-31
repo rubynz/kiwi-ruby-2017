@@ -1,0 +1,7 @@
+nav_items:
+  - title: "About"
+    link: "/about"
+  - title: "CFP"
+    link: "/#cfp"
+  - title: "Sponsor"
+    link: "/#sponsors"

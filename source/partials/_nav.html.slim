@@ -1,0 +1,8 @@
+.nav class=("nav--#{nav_type}")
+  ul
+    - unless current_page.data.home
+      li.nav__item
+        a.swash href="/" Kiwi Ruby
+    - data.nav.nav_items.each do |item|
+      li.nav__item
+        a href="#{item.link}" = item.title

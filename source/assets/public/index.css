@@ -54,6 +54,8 @@ body {
   text-rendering: optimizeLegibility;
   font-size: 1.8rem;
   line-height: 1;
+  color: var(--text-color);
+  font-family: var(--font-body);
 }
 /*overall element widths*/
 .container {
@@ -72,25 +74,29 @@ body {
 .breakpoint-desktop-up .container {
   padding-left: 15rem;
 }
+
+/* Navigation */
+
+.nav {
+  line-height: 3rem;
+  padding-bottom: 1.5rem;
+  padding-right: 1rem;
+  text-align: right;
+}
+  .nav__item {
+    color: var(--primary-color);
+    display: inline;
+    font-family: var(--font-subtitle);
+    font-size: 1.6rem;
+    padding-left: 4rem;
+    text-decoration: none;
+  }
+
 /*header/nav*/
 .header {
   position: relative;
   width: 100%;
 }
-  .header__nav {
-    line-height: 3rem;
-    padding-bottom: 1.5rem;
-    text-align: right;
-  }
-    .header__nav ul li a {
-      color: var(--primary-color);
-      display: inline;
-      font-family: var(--font-subtitle);
-      font-size: 1.6rem;
-      padding-left: 4rem;
-      text-decoration: none;
-    }
-
 .hero {
   margin-top: 5rem;
   margin-bottom: 0;
@@ -189,18 +195,19 @@ body {
 /*Body text defaults*/
 
 p {
-  color: var(--text-color);
-  font-family: var(--font-body);
   font-size: 2rem;
   line-height: 1.45;
   margin-bottom: 2rem;
 }
+
 p:last-child {
   margin-bottom: 0;
 }
+
 .breakpoint-desktop-up p {
   font-size: 2.5rem;
 }
+
 a {
   color: var(--primary-color);
   text-decoration: none;
@@ -216,9 +223,22 @@ h2 {
   margin-top: 0rem;
   margin-bottom: 2rem;
 }
+
 .breakpoint-desktop-up h2 {
   font-size: 3rem;
   letter-spacing: .4rem;
+}
+strong {
+  font-weight: bold;
+}
+.t-list {
+  list-style-type: disc;
+}
+.t-list li {
+  margin-bottom: 1rem;
+}
+.swash {
+  font-family: var(--font-logotype)
 }
 
 /*BODY TEXT*/
@@ -273,26 +293,10 @@ h2 {
   margin-top: -1rem;
 }
 
-
-
-
 .footer {
   margin-bottom: 6rem;
-  width: 90%;
   text-align: center;
 }
-  .footer__nav {
-    padding-bottom: 1rem;
-    padding-top: 1rem;
-  }
-    .footer__nav ul li {
-      color: var(--primary-color);
-      display: inline;
-      font-family: var(--font-subtitle);
-      font-size: 1.6rem;
-      padding-left: 2rem;
-      padding-right: 2rem;
-    }
   .footer__credit {
     color: var(--text-color);
     font-family: var(--font-subtitle);
@@ -307,25 +311,7 @@ h2 {
     margin-top: 2rem;
   }
 
-.back-to-top {
-  text-decoration: none;
-  display: block;
-  width: 10rem;
-  margin-left: auto;
-  margin-right: auto;
-}
-.back-to-top .body__subtitle {
-  margin-top: 1rem;
-}
-.back-to-top:hover .body__subtitle {
-  color: var(--primary-color);
-}
-
 /* Sponsorship section */
-
-.c-sponsor-level {
-
-}
 
 .c-sponsor-level__name {
   font-family: var(--font-heading);

@@ -1,90 +1,42 @@
 ---
 title: Home
+home: true
 ---
 
-.container
-  .container__inner
-    section
-      .header
+section
+  = partial "partials/head_big"
+section
+  .body-inner-wrapper
+    .body-inner-wrapper__section#info
+      h2 🤔 Tell me more
+      p
+        ' Kiwi Ruby is a new Ruby conference being held in Wellington, New Zealand.
+      p
+        ' With a mixture of local and international speakers, there will be one day of workshops and one single-track day of talks. We'll cover topics that interest, excite, and delight Rubyists and the Ruby-curious of all levels.
+      p
+        ' It's being held on Thursday 2 November (workshops) and Friday 3 November (conference) at Te Papa on the Wellington waterfront.
+    .body-inner-wrapper__section#cfp
+      h2 🎤 I want to speak
+      p Our CFP for speakers is now open!
 
-        / Hiding nav until required
-        / .header__nav
-        /   ul
-        /     li Tickets
-        /     li Speakers
-        /     li Sponsors
-        /     li Workshops
-        /     li About
+      p <a href="http://papercall.io/kiwi-ruby-2017" target="_blank">Head over to PaperCall</a> for more details on the CFP and to make your submissions. Submissions are anonymised, and you can submit as many as you like. The CFP closes on Sunday 3rd July at midnight (NZST).
 
-        .inner-wrapper
-          .hero
-            a.hero__logo-wrapper href="/"
-              img.hero__logo alt="Kiwi Ruby - New Zealand Ruby Conference 2017" src="./images/kiwiruby.svg"
-            h1.hero__slogan
-              span.hero__hidden Kiwi Ruby
-              br
-              p.hero__date
-                ' November 2-3 2017
-              p.hero__date
-                ' Wellington, NZ
-    section
-      .body-inner-wrapper
-        .body-inner-wrapper__section
-          h2 🤔 Tell me more
-          p
-            ' Kiwi Ruby is a new Ruby conference being held in Wellington, New Zealand.
-          p
-            ' With a mixture of local and international speakers, there will be one day of workshops and one single-track day of talks. We'll cover topics that interest, excite, and delight Rubyists and the Ruby-curious of all levels.
-          p
-            ' It's being held on Thursday 2 November (workshops) and Friday 3 November (conference) at Te Papa on the Wellington waterfront.
-        .body-inner-wrapper__section
-          h2 🎤 I want to speak
-          p Our CFP for speakers is now open!
+      p We'll be announcing more information about workshops in the coming weeks, so <a href="http://eepurl.com/cMyn29" target="_blank" rel="noopener noreferrer">sign up to the mailing list</a> to stay up-to-date.
 
-          p <a href="http://papercall.io/kiwi-ruby-2017" target="_blank">Head over to PaperCall</a> for more details on the CFP and to make your submissions. Submissions are anonymised, and you can submit as many as you like. The CFP closes on Sunday 3rd July at midnight (NZST).
+      a.button.button--with-spacing href="http://papercall.io/kiwi-ruby-2017" target="_blank" Apply to speak at Kiwi Ruby
+    .body-inner-wrapper__section#signup
+      h2 ✨ Sign me up
+      p
+        'Sign up to the mailing list to be the first to find out about Kiwi Ruby news.
 
-          p We'll be announcing more information about workshops in the coming weeks, so <a href="http://eepurl.com/cMyn29" target="_blank" rel="noopener noreferrer">sign up to the mailing list</a> to stay up-to-date.
-
-          a.button.button--with-spacing href="http://papercall.io/kiwi-ruby-2017" target="_blank" Apply to speak at Kiwi Ruby
-        .body-inner-wrapper__section
-          h2 ✨ Sign me up
-          p
-            'Sign up to the mailing list to be the first to find out about Kiwi Ruby news.
-
-          a.button.button--with-spacing href="http://eepurl.com/cMyn29" target="_blank" rel="noopener noreferrer"
-            ' Subscribe
-        .body-inner-wrapper__section
-          h2 🙋 I want to help
-          p
-            ' If you're keen to volunteer, <a href="http://eepurl.com/cOApHP">sign up here</a> and we'll send you an email when we need help.
-        .body-inner-wrapper__section
-          h2 😎 Sponsors
-          p Kiwi Ruby wouldn't be possible without the support of our friends.
-          = partial "partials/sponsors"
-
-
-    section
-      .footer
-
-        / Hiding nav until required
-        / .footer__nav
-        /   ul
-        /     li Tickets
-        /     li Speakers
-        /     li Sponsors
-        /     li Workshops
-        /     li About
-
-
-
-        .footer__credit
-          a href="#" Back to top
-          ' . Made by
-          a href="http://icelab.com.au" Icelab
-          ' . A
-          a href="http://www.ruby.nz" Ruby New Zealand
-          ' &nbsp;event.
-          a href="https://twitter.com/KiwiRubyConf" @kiwirubyconf
-
-        .footer__birb
-          img width="50" alt="NZ Rubyconf 2017 mascot" src="./images/gembirb-up.svg"
+      a.button.button--with-spacing href="http://eepurl.com/cMyn29" target="_blank" rel="noopener noreferrer"
+        ' Subscribe
+    .body-inner-wrapper__section#volunteer
+      h2 🙋 I want to help
+      p
+        ' If you're keen to volunteer, <a href="http://eepurl.com/cOApHP">sign up here</a> and we'll send you an email when we need help.
+    .body-inner-wrapper__section#sponsors
+      h2 😎 Sponsors
+      p Kiwi Ruby wouldn't be possible without the support of our friends.
+      p If you're interested in sponsoring, please get in touch with us at <a href="mailto:kiwi@ruby.nz">kiwi@ruby.nz</a>.
+      = partial "partials/sponsors"
