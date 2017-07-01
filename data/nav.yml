@@ -1,7 +1,5 @@
 nav_items:
   - title: "About"
     link: "/about"
-  - title: "CFP"
-    link: "http://papercall.io/kiwi-ruby-2017"
   - title: "Sponsor"
     link: "/#sponsors"
