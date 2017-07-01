@@ -21,7 +21,7 @@ html lang="en-au"
     link rel="stylesheet" type="text/css" href=asset_path(:css, "assets/public")
     link rel="icon" type="image/png" sizes="32x32" href="./images/favicon.png"
     script async=true src=asset_path(:js, "assets/public")
-  body
+  body.nav__room
     = partial "partials/nav", locals: { nav_type: "header" }
     .container
       .container__inner
