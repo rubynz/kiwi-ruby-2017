@@ -21,5 +21,9 @@ html lang="en-nz"
     link rel="stylesheet" type="text/css" href=asset_path(:css, "assets/public")
     link rel="icon" type="image/png" sizes="32x32" href="./images/favicon.png"
     script async=true src=asset_path(:js, "assets/public")
-  body
-    = yield
+  body.nav__room
+    = partial "partials/nav", locals: { nav_type: "header" }
+    .container
+      .container__inner
+        = yield
+    = partial "partials/footer"

@@ -1,0 +1,49 @@
+sponsorship_levels:
+  - diamond:
+    logo_size: 1
+    name: "Diamond sponsor"
+    sponsors:
+  - ruby:
+    logo_size: 2
+    name: "Ruby sponsors"
+    sponsors:
+      # - name: "Loyalty"
+      #   logo: "loyalty.png"
+      #   website: "https://www.loyalty.co.nz"
+      #   description_paragraphs:
+      #     - "Loyalty New Zealand is New Zealand’s expert in loyalty and runs the most comprehensive coalition loyalty programme in New Zealand, Fly Buys. We love to enable smarter business for our clients using customer insights and data analytics under our brand Lab360."
+      #     - "We are proud to sponsor Kiwi Ruby to support our talented Technology team and help promote diversity in the local Ruby community, because we love to give."
+  - design:
+    logo_size: 1
+    name: "Design sponsor"
+    sponsors:
+      - name: "Icelab"
+        logo: "icelab.png"
+        website: "https://www.icelab.com.au"
+        description_paragraphs:
+          - "Icelab has been with us from Day One. From scheming in the back of the bus back from Rails Camp right through to the beautiful and sleek logo and website, Icelab has been a delight to work with, and their commitment to the Ruby community is legendary."
+          - "They are great at design, they are great at websites, and we love them."
+  - gold:
+    logo_size: 3
+    name: "Gold sponsors"
+    sponsors:
+  - silver:
+    logo_size: 4
+    name: "Silver sponsors"
+  - supporter:
+    logo_size: 5
+    name: "Supporters"
+    sponsors:
+  - diversity:
+    logo_size: 5
+    name: "Diversity program sponsor"
+    sponsors:
+  - childcare:
+    logo_size: 5
+    name: "Childcare sponsor"
+    description: "Thanks to this sponsor, we can offer on-site childcare to attendees at no charge."
+    sponsors:
+  - coffee:
+    logo_size: 5
+    name: "Coffee sponsor"
+    sponsors:

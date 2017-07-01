@@ -1,0 +1,19 @@
+div.c-sponsor-list
+  - data.sponsors.sponsorship_levels.each do |level|
+    - if level.sponsors
+      h3.c-sponsor-level__name = level.name
+      - if level.description
+        p.c-sponsor-level__description = level.description
+      div.c-sponsor-level class=("c-sponsor-level--size-#{level.logo_size}")
+        - level.sponsors.each do |sponsor|
+          div.c-sponsor.c-sponsor-level__sponsor
+            - if sponsor.logo
+              a.c-sponsor__logo href=("#{sponsor.website}")
+                img src=("/images/sponsor-logos/#{sponsor.logo}") alt=("#{sponsor.name}")
+            - if sponsor.show_name
+              a href=("#{sponsor.website}")
+                h4.c-sponsor__name = sponsor.name
+            - if sponsor.description_paragraphs
+              div.c-sponsor__description
+                - sponsor.description_paragraphs.each do |paragraph|
+                  p = paragraph
