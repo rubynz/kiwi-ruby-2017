@@ -250,6 +250,9 @@ strong {
 }
 .t-list {
   list-style-type: disc;
+  font-size: 2rem;
+  line-height: 1.45;
+  margin-bottom: 2rem;
 }
 .t-list li {
   margin-bottom: 1rem;
@@ -391,6 +394,20 @@ strong {
 .c-sponsor__logo img {
   max-height: 150px;
   max-width: 100%;
+}
+.c-responsive-map {
+    max-width: 800px;
+    position: relative;
+    padding-bottom: 55%;
+    height: 0;
+    overflow: hidden;
+}
+.c-responsive-map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
 }
 
 .h-lots-of-padding-top {
