@@ -1,5 +1,7 @@
 nav_items:
   - title: "About"
     link: "/about"
+  - title: "Childcare"
+    link: "/childcare"
   - title: "Sponsor"
     link: "/#sponsors"
