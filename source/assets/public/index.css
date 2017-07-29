@@ -482,6 +482,12 @@ strong {
   justify-content: space-between;
 }
 
+.c-talk-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
 .c-speaker__talk-title {
   font-family: var(--font-heading);
   color: var(--primary-color);
@@ -510,7 +516,8 @@ strong {
   margin-bottom: 1rem;
 }
 
-.c-speaker__bio p {
+.c-speaker__bio p,
+.c-talk__abstract p {
   font-family: var(--font-subtitle);
   font-size: 1.5rem;
   margin-bottom: 1rem;
