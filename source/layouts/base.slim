@@ -19,9 +19,13 @@ html lang="en-nz"
     meta property="og:image:width" content="955"
     link rel="stylesheet" type="text/css" href=asset_path(:css, "assets/public")
     link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png"
+    script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
     script async=true src=asset_path(:js, "assets/public")
   body.nav__room
+    div.nav--mobile__show
+      i.fa.fa-bars.fa-2x aria-hidden="true"
     = partial "partials/nav", locals: { nav_type: "header" }
+    = partial "partials/nav", locals: { nav_type: "mobile" }
     .container
       .container__inner
         = yield

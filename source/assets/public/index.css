@@ -87,6 +87,10 @@ body {
   .nav__room {
     padding-top: 6rem;
   }
+  .breakpoint-phone .nav--header {
+    display: none;
+  }
+
   .nav--header {
     position: fixed;
     background-color: white;
@@ -95,6 +99,45 @@ body {
     z-index: 5;
     box-shadow: 1px 5px 5px rgba(0,0,0,0.1);
   }
+
+  .breakpoint-phone .nav__room {
+    padding: 0;
+  }
+
+  .breakpoint-phone .nav__content {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 1em;
+    background: white;
+    box-shadow: rgba(167, 167, 167, 0.43) 0px 3px 8px;
+  }
+
+  .nav--mobile,
+  .breakpoint-tablet .nav--mobile__show,
+  .breakpoint-desktop-up .nav--mobile__show {
+    display: none;
+  }
+
+  .nav--mobile__show {
+    padding: 6px;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+  }
+
+  .breakpoint-phone .nav__content {
+    width: 100%;
+    padding-top: 10px;
+    z-index: 1;
+  }
+
+   .nav.nav--mobile {
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    top: 0;
+  }
+
   .nav__content {
     max-width: var(--max-width);
     margin: 0 auto;
