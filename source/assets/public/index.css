@@ -423,3 +423,52 @@ strong {
 .h-lots-of-padding-top {
   padding-top: 3rem;
 }
+
+/* Speakers */
+
+.c-speaker-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.c-speaker__talk-title {
+  font-family: var(--font-heading);
+  color: var(--primary-color);
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  margin-top: 3rem;
+}
+
+.breakpoint-desktop-up .c-speaker {
+  flex-basis: 45%;
+}
+
+.c-speaker {
+  margin: 2rem;
+  text-align: center;
+}
+
+.c-speaker__name {
+  max-width: 50rem;
+  margin: 1rem auto;
+}
+
+.c-speaker__talk-description p {
+  font-family: var(--font-subtitle);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.c-speaker__bio p {
+  font-family: var(--font-subtitle);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.c-speaker__avatar {
+  border-radius: 50%;
+  max-width: 300px;
+  max-height: 300px;
+}

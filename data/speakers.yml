@@ -1,0 +1,54 @@
+speaker_list:
+  - name: "Jeremy Flores"
+    bio: "With a philosophy that eyes technology as the means rather than the end, Jeremy takes a human-centric approach to software development. He utilizes technology as a medium for human expression, building real-world communities, and solving real problems.
+
+He specializes in open-source development using languages like Ruby, JavaScript, and Elixir. Jeremy is also a conference organizer, community advocate, teacher, and world-class hugger."
+    avatar: "jeremy.jpeg"
+    talk:
+      title: "Hello Gmom!: Pushing back against loneliness in end-of-life care."
+  - name: "Lena Plaksina"
+    bio: "RailsGirls Wellington Organising Committee Member, Railsn00bs Co-Organiser, Digital enthusiast.
+Love learning, love pairing, love drawing on sticky notes."
+    avatar: "lena.jpeg"
+    talk:
+      title: "Choosing Failure"
+  # - name: "Jojo Hall"
+  #   bio: "Jojo is a web developer who enjoys working across all aspects of modern web application development. She is the token kiwi at Australian design agency Icelab, where she builds beautiful web apps and interactives with JavaScript and Ruby. In her spare time she loves trail running, pottering around in her garden, and her favourite emoji is :kissing_heart:"
+  #   avatar: "jojo.jpeg"
+  #   talk:
+  #     title: "A New Ruby Toolbox"
+  # - name: "Eoin Kelly"
+  #   bio: "Eoin has been a bitherd since he (mostly) successfully first put data between brackets in 1998. Starting in electronic engineering and working his way up, he knows enough to be dangerous at many levels of the software stack. He tries very hard not to be dangerous. He enjoys boxing, deleting code, and finding new ways to make software more boring in production."
+  #   avatar: "eoin.jpeg"
+  #   talk:
+  #     title: "Understanding 'Hello World'"
+  # - name: "Eleanor Kiefel Haggerty"
+  #   bio: "Classicist turned developer. Food lover, wine drinker, world explorer."
+  #   avatar: "eleanor.jpeg"
+  #   talk:
+  #     title: "Here's to History: Programming Through Archaeology."
+  # - name: "Daniel Fone"
+  #   bio: "Daniel has been writing Ruby/Rails for about 10 years. In recent years he's been helping to organise the Christchurch Ruby meetups and serving as secretary on the Ruby New Zealand committee. He lives in ⛪️ with 👨‍👩‍👧‍👦👶, and enjoys 🏃, 🍺, and 🔎 📖 ἡ κοινὴ διάλεκτος."
+  #   avatar: "daniel.jpeg"
+  #   talk:
+  #     title: "A Brief History of Time.new"
+  # - name: "Graham Jenson"
+  #   bio: "Graham builds deploy pipelines for software that secures billions of dollars in digital currency at Coinbase. He writes Ruby when he can, Javascript when he must, and wants to build scalable systems out of cloud."
+  #   avatar: "graham.jpeg"
+  #   talk:
+  #     title: "Security Without Friction"
+  # - name: "Caitlin Palmer-Bright"
+  #   bio: "Caitlin is a junior Rails developer from Brisbane who loves problem solving, cheese pizza and watching puppy videos on YouTube. With a background in education and science communication she is also an active member of the local tech community. She is a member of the Ruby Australia committee, and has recently launched the Brisbane Tech Newbies meet-up group to help support others considering making coding their new career."
+  #   avatar: "caitlin.jpeg"
+  #   talk:
+  #     title: "Help Me Help You - Levelling up your juniors more effectively"
+  # - name: "Mark Rickerby"
+  #   bio: "Mark Rickerby is a writer, programmer and designer working at the intersection of software architecture and storytelling. He’s happiest when inventing things and teaching others to do the same. Before setting off on an odyssey of creative and technical leadership in the startup world, he worked with some of New Zealand’s leading design agencies and app developers. He’s from Wellington and is currently based in Sydney, Australia."
+  #   avatar: "mark.jpeg"
+  #   talk:
+  #     title: "Ruby Writing Machines"
+  # - name: "Amanda Wagener"
+  #   bio: ""
+  #   avatar: "amanda.jpeg"
+  #   talk:
+  #     title: "Parenting + Programming"

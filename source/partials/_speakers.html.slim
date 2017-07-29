@@ -1,0 +1,9 @@
+div.c-speaker-list
+  - data.speakers.speaker_list.each do |speaker|
+    div.c-speaker
+      img.c-speaker__avatar src=("/images/speaker-avatars/#{speaker.avatar}") alt=(speaker.name)
+      h3.c-speaker__talk-title = speaker.talk.title
+      h4.c-speaker__name = speaker.name
+      div.c-speaker__bio
+        p = speaker.bio
+
