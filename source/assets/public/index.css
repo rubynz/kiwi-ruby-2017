@@ -273,7 +273,7 @@ strong {
 
 /*BODY TEXT*/
 .body-inner-wrapper {
-  max-width: 80%;
+  max-width: 90%;
 }
   .body-inner-wrapper__subtitle {
     color: var(--text-color);
