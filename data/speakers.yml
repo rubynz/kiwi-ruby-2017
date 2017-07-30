@@ -32,7 +32,7 @@ He specializes in open-source development using languages like Ruby, JavaScript,
   #     abstract: "puts 'Hello, World!' is the first step of many a ruby journey. How much can we learn by going deep on everything it can teach us? Join me on a fun dive down through the stack as we go deep on everything from Strings, IO, Unix, the Ruby VM and x86 Assembler letting the simplest of programs be our guide."
   # - name: "Eleanor Kiefel Haggerty"
   #   slug: "eleanor"
-  #   bio: "Classicist turned developer. Food lover, wine drinker, world explorer."
+  #   bio: "Eleanor began tinkering with code after she completed studies in Ancient History and Archaeology. She now writes Ruby at The Conversation in Melbourne, Australia."
   #   avatar: "eleanor.jpeg"
   #   talk:
   #     title: "Here's to History: Programming Through Archaeology."
@@ -44,7 +44,6 @@ He specializes in open-source development using languages like Ruby, JavaScript,
   #   talk:
   #     title: "A Brief History of Time.new"
   #     abstract: "Few topics confound developers as much as Date and Time calculations. TimeWithZone#dst?, Date#gregorian_leap?, what does it all mean? Combining modern Ruby with ancient history, let’s untangle the humanity underpinning the interminable strangeness of our modern timekeeping APIs."
-  
   # - name: "Graham Jenson"
   #   slug: "graham"
   #   bio: "Graham builds deploy pipelines for software that secures billions of dollars in digital currency at Coinbase. He writes Ruby when he can, Javascript when he must, and wants to build scalable systems out of cloud."
