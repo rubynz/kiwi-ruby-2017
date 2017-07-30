@@ -8,22 +8,22 @@ workshop_list:
       name: "Jon Rowe"
       avatar: "jon"
       bio: "Tinker. Sailor. Developer. Spy? Originally from a tiny cold island nation, Britain, Jon now lives in Sydney where he spends time sailing the high seas, plotting and working as a gun for hire, I mean freelance Ruby developer. When not working on client work you can find Jon hacking on RSpec (as a core team member), helping other open source projects and working on his own little side project(s)."
-  - title: "Defensive DevOps"
-    slug: "defensive-devops"
-    long: "Half-day"
-    level: "Intermediate"
-    description: "The DevOps revolution is in full swing, with a variety of tools and techniques being announced and implemented every day. Our systems no longer look to deploy on physical hardware, instead aiming to be hosted on the cloud and other virtualised systems.
-But, how do we do this securely? All these automation tools are still programming, and programming is always filled with bugs and security holes.
-In this session, we will go through the rise of the DevOps revolution, and what it means both from a technical and cultural standpoint. We’ll talk about how to model where your points of failure will be, and which ones will be the most catastrophic. We’ll talk about security, how it’s a reliability concern, and how best to make it part of your journey to sustainability."
-    presenter:
-      name: "aurynn shaw"
-      avatar: "aurynn"
-      bio: "aurynn is the founder of Eiara, a DevOps consultancy based out of Wellington, New Zealand, focussing on helping clients develop technical DevOps capability, and the cultural knowledge to use it.
+  # - title: "Defensive DevOps"
+  #   slug: "defensive-devops"
+  #   long: "Half-day"
+  #   level: "Intermediate"
+  #   description: "The DevOps revolution is in full swing, with a variety of tools and techniques being announced and implemented every day. Our systems no longer look to deploy on physical hardware, instead aiming to be hosted on the cloud and other virtualised systems.
+# But, how do we do this securely? All these automation tools are still programming, and programming is always filled with bugs and security holes.
+# In this session, we will go through the rise of the DevOps revolution, and what it means both from a technical and cultural standpoint. We’ll talk about how to model where your points of failure will be, and which ones will be the most catastrophic. We’ll talk about security, how it’s a reliability concern, and how best to make it part of your journey to sustainability."
+  #   presenter:
+  #     name: "aurynn shaw"
+  #     avatar: "aurynn"
+  #     bio: "aurynn is the founder of Eiara, a DevOps consultancy based out of Wellington, New Zealand, focussing on helping clients develop technical DevOps capability, and the cultural knowledge to use it.
 
-aurynn brings a unique expertise in integrating deployment and security to the modern software development process, by treating both as part of the broader reliability and maintenance workflow.
+# aurynn brings a unique expertise in integrating deployment and security to the modern software development process, by treating both as part of the broader reliability and maintenance workflow.
 
-With over a decade as a professional software developer, aurynn’s expertise ranges from modern cloud deployments to massively parallel supercomputer environments."
-  # - title: "Exploring Machine Learning through Chatbots"
+# With over a decade as a professional software developer, aurynn’s expertise ranges from modern cloud deployments to massively parallel supercomputer environments."
+  # # - title: "Exploring Machine Learning through Chatbots"
   #   slug: "machine-learning-chatbots"
   #   workshop-length: ""
   #   level: ""
