@@ -7,6 +7,8 @@ nav_items:
     link: "/talks"
   - title: "Speakers"
     link: "/speakers"
+  - title: "Workshops"
+    link: "/workshops"
   # - title: "Tickets"
   #   link: "/tickets"
   - title: "Childcare"
