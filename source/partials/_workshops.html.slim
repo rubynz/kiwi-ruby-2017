@@ -1,0 +1,16 @@
+div.c-workshop-list
+  - data.workshops.workshop_list.each do |workshop|
+    div.c-workshop id=workshop.slug
+      div.c-workshop__details
+        h3.c-workshop__title = workshop.title
+        div.c-workshop__detail
+          p = "#{workshop.long} | #{workshop.level}"
+        div.c-workshop__description
+          p = workshop.description
+
+      div.c-workshop__presenter
+        h3.c-workshop__title = "About #{workshop.presenter.name}"
+        div.c-workshop__presenter-details
+          img.c-speaker__avatar src=("/images/workshop-avatars/#{workshop.presenter.avatar}.jpeg") alt=(workshop.presenter.name)
+          div.c-workshop__presenter-bio
+            p = workshop.presenter.bio
