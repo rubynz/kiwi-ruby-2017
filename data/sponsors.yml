@@ -7,12 +7,19 @@ sponsorship_levels:
     logo_size: 2
     name: "Ruby sponsors"
     sponsors:
-      # - name: "Loyalty"
-      #   logo: "loyalty.png"
-      #   website: "https://www.loyalty.co.nz"
-      #   description_paragraphs:
-      #     - "Loyalty New Zealand is New Zealand’s expert in loyalty and runs the most comprehensive coalition loyalty programme in New Zealand, Fly Buys. We love to enable smarter business for our clients using customer insights and data analytics under our brand Lab360."
-      #     - "We are proud to sponsor Kiwi Ruby to support our talented Technology team and help promote diversity in the local Ruby community, because we love to give."
+      - name: "Loyalty"
+        logo: "loyalty.png"
+        website: "https://www.loyalty.co.nz"
+        description_paragraphs:
+          - "Loyalty New Zealand is New Zealand’s expert in loyalty and runs the most comprehensive coalition loyalty programme in New Zealand, Fly Buys. We love to enable smarter business for our clients using customer insights and data analytics under our brand Lab360."
+          - "We are proud to sponsor Kiwi Ruby to support our talented Technology team and help promote diversity in the local Ruby community, because we love to give."
+      - name: "Trineo"
+        logo: "trineo.png"
+        website: "https://www.trineo.co.nz"
+        description_paragraphs:
+          - "Trineo is a highly capable team with expertise in building software and experiences that drive value for businesses around the world. Every day we wrangle complex problems in data brokering, consumer/employee identity management, CRM and modern system integration on the web."
+          - "Our projects deliver these at scale and provide effortless user experience through snappy performance, sublime interactions and engaging interface design."
+          - "We offer engineering excellence, product strategy/execution and strategic consulting. Our dynamic team are found in offices in the US (Boulder), New Zealand (Christchurch and Auckland) and Australia (Sydney)."
   - design:
     logo_size: 1
     name: "Design sponsor"
@@ -27,13 +34,26 @@ sponsorship_levels:
     logo_size: 3
     name: "Gold sponsors"
     sponsors:
+      - name: "Youdo"
+        logo: "youdo.png"
+        website: "https://www.youdo.co.nz"
+        description_paragraphs:
+          - "YouDo is a Wellington software house with a country wide customer base.  We have been at the forefront of a number of energy industry and fintech innovations since our inception 10 years ago."
+          - "Ruby at YouDo is an integral part of our web, mobile and data science applications.  Ruby’s beauty and elegance allows us to build complex solutions in a highly interactive environment."
   - silver:
     logo_size: 4
     name: "Silver sponsors"
+    sponsors:
+      - name: "Boost"
+        logo: "boost-tall.png"
+        website: "https://www.boost.co.nz"
   - supporter:
     logo_size: 5
     name: "Supporters"
     sponsors:
+      - name: "The Last Pickle"
+        logo: "the-last-pickle.png"
+        website: "http://thelastpickle.com/"
   - diversity:
     logo_size: 5
     name: "Diversity program sponsor"
