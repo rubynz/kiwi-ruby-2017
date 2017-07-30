@@ -87,6 +87,10 @@ body {
   .nav__room {
     padding-top: 6rem;
   }
+  .breakpoint-phone .nav--header {
+    display: none;
+  }
+
   .nav--header {
     position: fixed;
     background-color: white;
@@ -95,6 +99,46 @@ body {
     z-index: 5;
     box-shadow: 1px 5px 5px rgba(0,0,0,0.1);
   }
+
+  .breakpoint-phone .nav__room {
+    padding: 0;
+  }
+
+  .breakpoint-phone .nav__content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .nav.nav--mobile,
+  .breakpoint-tablet .nav--mobile__show,
+  .breakpoint-desktop-up .nav--mobile__show {
+    display: none;
+  }
+
+  .nav--mobile__show {
+    padding: 6px;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+  }
+
+  .breakpoint-phone .nav--mobile .nav__content {
+    padding-bottom: 1em;
+    background: white;
+    box-shadow: rgba(167, 167, 167, 0.43) 0px 3px 8px;
+    width: 100%;
+    padding-top: 10px;
+    z-index: 1;
+  }
+
+   .breakpoint-phone .nav.nav--mobile {
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    width: 100%;
+  }
+
   .nav__content {
     max-width: var(--max-width);
     margin: 0 auto;
@@ -111,7 +155,6 @@ body {
 
 /*header/nav*/
 .header {
-  position: relative;
   width: 100%;
 }
 .hero {
@@ -137,6 +180,12 @@ body {
     margin-bottom: 5rem;
     max-width: 70rem;
     margin-top: 0;
+  }
+
+  /* the new stacking context created by the transform */
+  /* was giving me grief with the mobile nav */
+  .breakpoint-phone .hero__date {
+    transform: none;
   }
   .hero__date {
     font-family: var(--font-subheading);
@@ -422,4 +471,91 @@ strong {
 
 .h-lots-of-padding-top {
   padding-top: 3rem;
+}
+
+/* Speakers */
+
+.c-talk-list,
+.c-speaker-list,
+.c-workshop-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.c-workshop-list {
+  flex-direction: column;
+}
+
+.breakpoint-desktop-up .c-speaker {
+  flex-basis: 45%;
+}
+
+.c-workshop__presenter {
+  display: flex;
+  flex-direction: column;
+}
+
+.breakpoint-desktop-up .c-workshop__presenter-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.c-speaker,
+.c-workshop {
+  margin: 2rem;
+  text-align: center;
+}
+
+.c-workshop {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.c-workshop__presenter-details .c-speaker__avatar {
+  flex-basis: 25%;
+}
+
+.c-workshop__presenter-details .c-workshop__presenter-bio {
+  flex-basis: 65%;
+}
+
+.c-speaker__talk-title,
+.c-workshop__title {
+  font-family: var(--font-heading);
+  color: var(--primary-color);
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  margin-top: 3rem;
+}
+
+.c-speaker__name {
+  max-width: 50rem;
+  margin: 1rem auto;
+}
+
+.c-speaker__talk-description p {
+  font-family: var(--font-subtitle);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.c-speaker__bio p,
+.c-talk__abstract p,
+.c-workshop__description p,
+.c-workshop__presenter-bio p,
+.c-workshop__detail p{
+  font-family: var(--font-subtitle);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.c-speaker__avatar {
+  border-radius: 50%;
+  max-width: 250px;
+  max-height: 250px;
 }
