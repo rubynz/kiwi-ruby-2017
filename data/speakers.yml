@@ -17,7 +17,7 @@ He specializes in open-source development using languages like Ruby, JavaScript,
       abstract: "I have a simple proposal: Let’s choose to fail! My talk will explore how we can utilise deliberate failure to accelerate our personal learning, foster a creative and brave environment we’re proud of, and even prepare for worst-case scenarios in our production environments."
   - name: "Jojo Hall"
     slug: "jojo"
-    bio: "Jojo is a web developer and the token kiwi at Australian design agency Icelab, where she makes beautiful web apps and interactives with JavaScript and Ruby. Her favourite emoji is :kissing_heart:"
+    bio: "Jojo is a web developer and the token kiwi at Australian design agency Icelab, where she makes beautiful web apps and interactives with JavaScript and Ruby. Her favourite emoji is :kissing_heart: 😘"
     avatar: "jojo.jpeg"
     talk:
       title: "A New Ruby Toolbox"
