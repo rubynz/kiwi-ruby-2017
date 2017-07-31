@@ -45,10 +45,11 @@ sponsorship_levels:
         website: "http://blog.addressfinder.nz/post/162066941338/kiwi-ruby"
         description_paragraphs:
           - "AddressFinder is your cost-effective solution for collecting and verifying NZ and Australian addresses. Within a few keystrokes users get a predictive dropdown of suggested addresses. The selected address autocompletes all the address fields accurately."
-      # - name: "Flux Federation"
-      #   logo: "flux.png"
-      #   website: "https://www.flux.co.nz"
-      #   description_paragraphs:
+      - name: "Flux Federation"
+        logo: "flux.png"
+        website: "https://fluxfederation.com"
+        description_paragraphs:
+          - "Flux Federation is the engine that powers Powershop in NZ, Australia and the UK. With a team of 100+ developers and designers (and the odd office dog) we deliver marvellous products and experiences for energy teams and their customers, all around the world."
   - silver:
     logo_size: 4
     name: "Silver sponsors"
