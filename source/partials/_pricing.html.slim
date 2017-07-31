@@ -1,0 +1,17 @@
+dl.c-price-list
+  - data.pricing.prices.each do |price|
+    .c-price-list__item
+      dt.c-price-list__type=price.type
+      dd.c-price-list__description=price.description
+      .c-price-list__rate.c-price-list__rate class=("c-price-list__rate--#{price.css_class}")
+        ' Early bird - closes September 4
+        .c-price-list__price=price.early_bird_price
+      .c-price-list__rate.c-price-list__rate class=("c-price-list__rate--#{price.css_class}")
+        ' Normal bird
+        .c-price-list__price=price.normal_bird_price
+      .c-price-list__action-section
+        - if price.link
+          a.c-price-list__action href=("#{price.link}") target="_blank"
+            =price.link_text
+        - else
+          p.t-disclaimer=price.link_text

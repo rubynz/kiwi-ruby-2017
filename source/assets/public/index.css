@@ -559,3 +559,50 @@ strong {
   max-width: 250px;
   max-height: 250px;
 }
+
+.c-price-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.c-price-list__item {
+  padding: 1rem;
+  flex-basis: 30%;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+.c-price-list__description {
+  margin-bottom: 1.5rem;
+}
+.c-price-list__type {
+  text-align: center;
+  text-transform: uppercase;
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+}
+.c-price-list__rate {
+  margin-bottom: 1rem;
+}
+
+.c-price-list__rate--inactive {
+  color: rgba(0,0,0,0.4);
+}
+.c-price-list__rate--sold-out {
+  text-decoration: line-through;
+}
+
+.c-price-list__price {
+  font-weight: bold;
+}
+.c-price-list__action-section {
+  margin-top: 2rem;
+  text-align: center;
+}
+.c-price-list__action {
+  background-color: var(--primary-contrast);
+  color: white;
+  padding: 1rem;
+  display: block;
+}
