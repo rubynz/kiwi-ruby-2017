@@ -32,7 +32,6 @@ workshop_list:
       name: "Mai Nguyen"
       avatar: "mai"
       bio: "After several years in Java and Ruby software development in Washington, DC, Mai left IT to pursue her passion for food and wine. She earned a Masters degree in wine science at the University of Adelaide, and continued on her journey, working in wine production in Australia, France, California, and New Zealand. Mai is now based in Wellington, and has since returned to the tech industry. Since then, she has been exploring ways to use technology to make wine more accessible to the public."
-
   # - title: "Next Generation Web-Apps with dry-rb"
   #   slug: "dry-rb"
   #   workshop-length: ""

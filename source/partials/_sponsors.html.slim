@@ -8,10 +8,10 @@ div.c-sponsor-list
         - level.sponsors.each do |sponsor|
           div.c-sponsor.c-sponsor-level__sponsor
             - if sponsor.logo
-              a.c-sponsor__logo href=("#{sponsor.website}")
+              a.c-sponsor__logo href=("#{sponsor.website}") target="_blank"
                 img src=("/images/sponsor-logos/#{sponsor.logo}") alt=("#{sponsor.name}")
             - if sponsor.show_name
-              a href=("#{sponsor.website}")
+              a href=("#{sponsor.website}") target="_blank"
                 h4.c-sponsor__name = sponsor.name
             - if sponsor.description_paragraphs
               div.c-sponsor__description
