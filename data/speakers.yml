@@ -15,21 +15,21 @@ He specializes in open-source development using languages like Ruby, JavaScript,
     talk:
       title: "Choosing Failure"
       abstract: "I have a simple proposal: Let’s choose to fail! My talk will explore how we can utilise deliberate failure to accelerate our personal learning, foster a creative and brave environment we’re proud of, and even prepare for worst-case scenarios in our production environments."
-  # - name: "Jojo Hall"
-  #   slug: "jojo"
-  #   bio: "Jojo is a web developer who enjoys working across all aspects of modern web application development. She is the token kiwi at Australian design agency Icelab, where she builds beautiful web apps and interactives with JavaScript and Ruby. In her spare time she loves trail running, pottering around in her garden, and her favourite emoji is :kissing_heart:"
-  #   avatar: "jojo.jpeg"
-  #   talk:
-  #     title: "A New Ruby Toolbox"
-  #     abstract: "dry-rb and rom-rb are libraries for Rubyists who are looking for a different set of tools for web app development. Let’s take a walk through how to build an app with these families of gems, and look at some lessons I’ve learnt during my own dry-rb/rom-rb journey."
+  - name: "Jojo Hall"
+    slug: "jojo"
+    bio: "Jojo is a web developer and the token kiwi at Australian design agency Icelab, where she makes beautiful web apps and interactives with JavaScript and Ruby. Her favourite emoji is :kissing_heart:"
+    avatar: "jojo.jpeg"
+    talk:
+      title: "A New Ruby Toolbox"
+      abstract: "dry-rb and rom-rb are libraries for Rubyists who are looking for a different set of tools for web app development. Let’s take a walk through how to build an app with these families of gems, and look at some lessons I’ve learnt during my own dry-rb/rom-rb journey."
 
-  # - name: "Eoin Kelly"
-  #   slug: "eoin"
-  #   bio: "Eoin has been a bitherd since he (mostly) successfully first put data between brackets in 1998. Starting in electronic engineering and working his way up, he knows enough to be dangerous at many levels of the software stack. He tries very hard not to be dangerous. He enjoys boxing, deleting code, and finding new ways to make software more boring in production."
-  #   avatar: "eoin.jpeg"
-  #   talk:
-  #     title: "Understanding 'Hello World'"
-  #     abstract: "puts 'Hello, World!' is the first step of many a ruby journey. How much can we learn by going deep on everything it can teach us? Join me on a fun dive down through the stack as we go deep on everything from Strings, IO, Unix, the Ruby VM and x86 Assembler letting the simplest of programs be our guide."
+  - name: "Eoin Kelly"
+    slug: "eoin"
+    bio: "Eoin has been a bitherd since he (mostly) successfully first put data between brackets in 1998. Starting in electronic engineering and working his way up, he knows enough to be dangerous at many levels of the software stack. He tries very hard not to be dangerous. He enjoys boxing, deleting code, and finding new ways to make software more boring in production."
+    avatar: "eoin.jpeg"
+    talk:
+      title: "Understanding 'Hello World'"
+      abstract: "puts 'Hello, World!' is the first step of many a ruby journey. How much can we learn by going deep on everything it can teach us? Join me on a fun dive down through the stack as we go deep on everything from Strings, IO, Unix, the Ruby VM and x86 Assembler letting the simplest of programs be our guide."
   # - name: "Eleanor Kiefel Haggerty"
   #   slug: "eleanor"
   #   bio: "Eleanor began tinkering with code after she completed studies in Ancient History and Archaeology. She now writes Ruby at The Conversation in Melbourne, Australia."
@@ -53,14 +53,14 @@ He specializes in open-source development using languages like Ruby, JavaScript,
   #     abstract: "How do you build an app that holds billions of dollars of assets without sacrificing security for developer happiness? I want to talk about some of the ideas and tools that you can use to build and secure your code, environment and company without increasing friction with developers."
   # - name: "Caitlin Palmer-Bright"
   #   slug: "caitlin"
-  #   bio: "Caitlin is a junior Rails developer from Brisbane who loves problem solving, cheese pizza and watching puppy videos on YouTube. With a background in education and science communication she is also an active member of the local tech community. She is a member of the Ruby Australia committee, and has recently launched the Brisbane Tech Newbies meet-up group to help support others considering making coding their new career."
+  #   bio: "Caitlin is a Rails developer, a committee member for Ruby Australia and organiser of Brisbane Tech Newbies. As a former teacher she is passionate about lifelong learning and helping others discover how fun and rewarding programming can be."
   #   avatar: "caitlin.jpeg"
   #   talk:
   #     title: "Help Me Help You - Levelling up your juniors more effectively"
   #     abstract: "Are you making the most of your juniors? Supporting your juniors to help them reach their potential will pay off for them, you and your whole team. We’ll discuss how you can identify the right level of challenge to provide and ways to make the most of the time you have to give."
   # - name: "Mark Rickerby"
   #   slug: "mark"
-  #   bio: "Mark Rickerby is a writer, programmer and designer working at the intersection of software architecture and storytelling. He’s happiest when inventing things and teaching others to do the same. Before setting off on an odyssey of creative and technical leadership in the startup world, he worked with some of New Zealand’s leading design agencies and app developers. He’s from Wellington and is currently based in Sydney, Australia."
+  #   bio: "Mark Rickerby is a Sydney-based product manager, writer and programmer, interested in computational creativity, interactive storytelling and new ways of making books. He’s been working with Ruby for more than 10 years and is still learning how to use it better. In his spare time he likes to read books the old fashioned way."
   #   avatar: "mark.jpeg"
   #   talk:
   #     title: "Ruby Writing Machines"
