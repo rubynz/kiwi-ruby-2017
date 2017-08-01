@@ -32,6 +32,16 @@ workshop_list:
       name: "Mai Nguyen"
       avatar: "mai"
       bio: "Mai is a Senior Developer at Loyalty NZ. Before moving to Wellington, she took a hiatus from tech to study winemaking, and travel the world. In her spare time she explores ways to use technology to make wine information more accessible to the public."
+  - title: "Engineering Empathy"
+    slug: "engineering-empathy"
+    long: "Half-day"
+    level: "Any level"
+    description: "This is a fun and interactive workshop where you will learn skills for giving and receiving effective feedback and having difficult conversations with confidence and empathy. You learn how trust and empathy affect your work and how to enhance your natural empathy to make your teams more productive. You will practice techniques that combat impostor syndrome and leave you feeling bold and courageous."
+    presenter:
+      name: "Sarrah Jayne"
+      avatar: "sarrah"
+      bio: "Sarrah is a teacher at Enspiral Dev Academy; for the last 2 years she has developed and delivered the soft skills programme that runs alongside the technical curriculum. Sarrah has a background in yoga and mindfulness and with that brings a unique perspective to empathy in the tech culture. She has taught about 300 students all of whom have found ample personal and professional growth.
+Sarrah and Enspiral Dev Academy have recently started to expand the curriculum to take it into tech start ups and established businesses who are ready to take their team to the next level."
   # - title: "Next Generation Web-Apps with dry-rb"
   #   slug: "dry-rb"
   #   workshop-length: ""
@@ -45,3 +55,5 @@ workshop_list:
   #     name: "Tim Riley"
   #     avatar: ""
   #     bio: ""
+
+  #
