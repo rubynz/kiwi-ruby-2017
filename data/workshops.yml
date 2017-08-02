@@ -2,7 +2,7 @@ workshop_list:
   - title: "RSpec++"
     slug: "rspec"
     long: "Half-day"
-    level: "Advanced level"
+    level: "Intermediate level"
     description: "You've been using RSpec for a while, you know how to write tests, but you're not sure you're getting the most from it. Let's spend some time working with the more advanced features, changes in newer versions and how to customise your setup."
     presenters:
       - name: "Jon Rowe"
@@ -11,7 +11,7 @@ workshop_list:
   # - title: "Defensive DevOps"
   #   slug: "defensive-devops"
   #   long: "Half-day"
-  #   level: "Intermediate"
+  #   level: "Intermediate level"
   #   description: "The DevOps revolution is in full swing, with a variety of tools and techniques being announced and implemented every day. Our systems no longer look to deploy on physical hardware, instead aiming to be hosted on the cloud and other virtualised systems.
 # But, how do we do this securely? All these automation tools are still programming, and programming is always filled with bugs and security holes.
 # In this session, we will go through the rise of the DevOps revolution, and what it means both from a technical and cultural standpoint. We’ll talk about how to model where your points of failure will be, and which ones will be the most catastrophic. We’ll talk about security, how it’s a reliability concern, and how best to make it part of your journey to sustainability."
@@ -26,7 +26,7 @@ workshop_list:
   - title: "Machine Learning for Developers"
     slug: "machine-learning"
     long: "Half-day"
-    level: "Advanced level"
+    level: "Intermediate level"
     description: "You don't have to be a data scientist or an algorithm guru to effectively use machine learning. Come to this workshop to try machine learning out for yourself, and learn the main principles and processes for implementing machine learning. By the end of this workshop, you  will be able to identify problems that can be solved with machine learning, understand what makes a good training dataset, and validate your solutions."
     presenters:
       - name: "Mai Nguyen"
