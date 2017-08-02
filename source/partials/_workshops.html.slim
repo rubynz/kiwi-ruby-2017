@@ -9,8 +9,9 @@ div.c-workshop-list
           p = workshop.description
 
       div.c-workshop__presenter
-        h3.c-workshop__title = "About #{workshop.presenter.name}"
-        div.c-workshop__presenter-details
-          img.c-speaker__avatar src=("/images/workshop-avatars/#{workshop.presenter.avatar}.jpeg") alt=(workshop.presenter.name)
-          div.c-workshop__presenter-bio
-            p = workshop.presenter.bio
+        - workshop.presenters.each do |presenter|
+          h3.c-workshop__title = "About #{presenter.name}"
+          div.c-workshop__presenter-details
+            img.c-speaker__avatar src=("/images/workshop-avatars/#{presenter.avatar}.jpeg") alt=(presenter.name)
+            div.c-workshop__presenter-bio
+              p = presenter.bio
