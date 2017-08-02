@@ -42,7 +42,7 @@ workshop_list:
         avatar: "sarrah"
         bio: "Sarrah is a teacher at Enspiral Dev Academy; for the last 2 years she has developed and delivered the soft skills programme that runs alongside the technical curriculum. Sarrah has a background in yoga and mindfulness and with that brings a unique perspective to empathy in the tech culture. She has taught about 300 students all of whom have found ample personal and professional growth.
   Sarrah and Enspiral Dev Academy have recently started to expand the curriculum to take it into tech start ups and established businesses who are ready to take their team to the next level."
-  - title: "Next Generation Web-Apps with dry-rb"
+  - title: "Next Generation Web Apps with dry-rb"
     slug: "dry-rb"
     long: "Full day"
     level: "Intermediate level"
