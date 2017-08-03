@@ -331,6 +331,11 @@ strong {
 }
 
 /*BODY TEXT*/
+
+.body-inner-wrapper__section {
+  margin-bottom: 6rem;
+}
+
 .body-inner-wrapper__subtitle {
   color: var(--text-color);
   font-family: var(--font-subtitle);
@@ -432,7 +437,7 @@ strong {
   }
 
 .c-responsive-map {
-    max-width: 800px;
+    max-width: 85rem;
     position: relative;
     padding-bottom: 55%;
     height: 0;
