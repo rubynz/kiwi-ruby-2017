@@ -28,6 +28,5 @@ html lang="en-nz"
     = partial "partials/nav", locals: { nav_type: "mobile" }
     .mw-spacer
       .container
-        .container__inner
-          = yield
-      = partial "partials/footer"
+        = yield
+        = partial "partials/footer"

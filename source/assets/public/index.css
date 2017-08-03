@@ -36,8 +36,11 @@
   font-family: OleoSwash;
   src: url("./fonts/OleoScriptSwashCaps-Regular.woff2");
 }
+
+/* Importing css files */
 @import "./font-awesome/index.css";
-@import "./grid/index.css";
+@import "./grid";
+@import "./footer";
 
 /**
  * Styling
@@ -335,12 +338,7 @@ strong {
   margin-left: auto;
   margin-right: auto;
 }
-.body-inner-wrapper__section {
-  margin-bottom: 7rem;
-}
-.breakpoint-phone .body-inner-wrapper {
-  margin-top: 0;
-}
+
 /*BUTTON*/
 .button {
   background-color: var(--primary-contrast);
@@ -375,24 +373,6 @@ strong {
   font-size: 1.6rem;
   margin-top: -1rem;
 }
-
-.footer {
-  margin-bottom: 6rem;
-  text-align: center;
-}
-  .footer__credit {
-    color: var(--text-color);
-    font-family: var(--font-subtitle);
-    font-size: 1.2rem;
-    margin-top: 1rem;
-  }
-  .footer__credit a {
-    color: var(--primary-color);
-    text-decoration: none;
-  }
-  .footer__birb {
-    margin-top: 2rem;
-  }
 
 /* Sponsorship section */
 
