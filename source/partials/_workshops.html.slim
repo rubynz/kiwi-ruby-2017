@@ -13,7 +13,7 @@
       .c-workshop__presenter
         - workshop.presenters.each do |presenter|
           .c-workshop__presenter-details
-            img.c-speaker__avatar.c-speaker__avatar--small src=("/images/workshop-avatars/#{presenter.avatar}.jpeg") alt=(presenter.name)
+            img.c-speaker__avatar.c-speaker__avatar--small src=("/images/workshop-avatars/#{presenter.avatar}") alt=(presenter.name)
             span.c-presenter__title = "#{presenter.name}"
             .c-workshop__presenter-bio
               p = presenter.bio
