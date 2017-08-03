@@ -58,17 +58,17 @@ He specializes in open-source development using languages like Ruby, JavaScript,
     talk:
       title: "Help Me Help You - Levelling up your juniors more effectively"
       abstract: "Are you making the most of your juniors? Supporting your juniors to help them reach their potential will pay off for them, you and your whole team. We’ll discuss how you can identify the right level of challenge to provide and ways to make the most of the time you have to give."
-  # - name: "Mark Rickerby"
-  #   slug: "mark"
-  #   bio: "Mark Rickerby is a Sydney-based product manager, writer and programmer, interested in computational creativity, interactive storytelling and new ways of making books. He’s been working with Ruby for more than 10 years and is still learning how to use it better. In his spare time he likes to read books the old fashioned way."
-  #   avatar: "mark.jpeg"
-  #   talk:
-  #     title: "Ruby Writing Machines"
-  #     abstract: "From the earliest days of computing, people have tried to devise programs to generate comprehensible and authentic creative writing. From spam email to Twitter bots, to entire novels generated from code, we’ll explore the world of generative text via tools and techniques implemented in Ruby."
-  # - name: "Amanda Wagener"
-  #   slug: "amanda"
-  #   bio: ""
-  #   avatar: "amanda.jpeg"
-  #   talk:
-  #     title: "Parenting + Programming"
-  #     abstract: "The demands of programming can be extensive. So can the demands of parenting. This talk collates advice from parent programmers around the world on working, working from home, staying sane, returning after extended leave, and what the wider community can or should do to support parents."
+  - name: "Mark Rickerby"
+    slug: "mark"
+    bio: "Mark Rickerby is a Sydney-based product manager, writer and programmer, interested in computational creativity, interactive storytelling and new ways of making books. He’s been working with Ruby for more than 10 years and is still learning how to use it better. In his spare time he likes to read books the old fashioned way."
+    avatar: "mark.jpeg"
+    talk:
+      title: "Ruby Writing Machines"
+      abstract: "From the earliest days of computing, people have tried to devise programs to generate comprehensible and authentic creative writing. From spam email to Twitter bots, to entire novels generated from code, we’ll explore the world of generative text via tools and techniques implemented in Ruby."
+  - name: "Amanda Wagener"
+    slug: "amanda"
+    bio: "Amanda is a developer from Christchurch. She has served on the Ruby New Zealand committee as President, and is currently a general member. She's a mother to two young kids."
+    avatar: "amanda.jpeg"
+    talk:
+      title: "Parenting + Programming"
+      abstract: "The demands of programming can be extensive. So can the demands of parenting. This talk collates advice from parent programmers around the world on working, working from home, staying sane, returning after extended leave, and what the wider community can or should do to support parents."
