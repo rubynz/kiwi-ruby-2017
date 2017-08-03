@@ -26,7 +26,7 @@ html lang="en-nz"
       i.fa.fa-bars.fa-2x aria-hidden="true"
     = partial "partials/nav", locals: { nav_type: "header" }
     = partial "partials/nav", locals: { nav_type: "mobile" }
-    .container
-      .container__inner
+    .mw-spacer
+      .container
         = yield
-    = partial "partials/footer"
+        = partial "partials/footer"

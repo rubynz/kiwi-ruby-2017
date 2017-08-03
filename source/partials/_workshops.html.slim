@@ -1,17 +1,19 @@
-div.c-workshop-list
+.grid.c-workshop-list
   - data.workshops.workshop_list.each do |workshop|
-    div.c-workshop id=workshop.slug
-      div.c-workshop__details
+    .c-workshop.col-1-2 id=workshop.slug
+      .c-workshop__details
         h3.c-workshop__title = workshop.title
-        div.c-workshop__detail
-          p = "#{workshop.long} | #{workshop.level}"
-        div.c-workshop__description
+        .c-workshop__detail
+          p
+            span= "#{workshop.long}"
+            = "#{workshop.level}"
+        .c-workshop__description
           p = workshop.description
 
-      div.c-workshop__presenter
+      .c-workshop__presenter
         - workshop.presenters.each do |presenter|
-          h3.c-workshop__title = "About #{presenter.name}"
-          div.c-workshop__presenter-details
-            img.c-speaker__avatar src=("/images/workshop-avatars/#{presenter.avatar}.jpeg") alt=(presenter.name)
-            div.c-workshop__presenter-bio
+          .c-workshop__presenter-details
+            img.c-speaker__avatar.c-speaker__avatar--small src=("/images/workshop-avatars/#{presenter.avatar}.jpeg") alt=(presenter.name)
+            span.c-presenter__title = "#{presenter.name}"
+            .c-workshop__presenter-bio
               p = presenter.bio

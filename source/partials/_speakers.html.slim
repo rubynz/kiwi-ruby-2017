@@ -1,11 +1,11 @@
-div.c-speaker-list
+.grid.c-speaker-list
   - data.speakers.speaker_list.each do |speaker|
-    div.c-speaker id=speaker.slug
+    .c-speaker.col-1-2 id=speaker.slug
       img.c-speaker__avatar src=("/images/speaker-avatars/#{speaker.avatar}") alt=(speaker.name)
       h3.c-speaker__talk-title = speaker.name
-      h4.c-speaker__name
+      p.c-speaker__name
         a href="/talks/##{speaker.slug}"
           = speaker.talk.title
-      div.c-speaker__bio
+      .c-speaker__bio
         p = speaker.bio
 
