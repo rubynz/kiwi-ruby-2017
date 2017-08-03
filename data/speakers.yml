@@ -67,7 +67,7 @@ He specializes in open-source development using languages like Ruby, JavaScript,
       abstract: "From the earliest days of computing, people have tried to devise programs to generate comprehensible and authentic creative writing. From spam email to Twitter bots, to entire novels generated from code, we’ll explore the world of generative text via tools and techniques implemented in Ruby."
   - name: "Amanda Wagener"
     slug: "amanda"
-    bio: "Amanda is a developer from Christchurch. She has served on the Ruby New Zealand committee as President, and is currently a general member. She's a mother to two young kids."
+    bio: "Amanda fled academia for the Ruby world almost a decade ago, and has been loving the language and the community ever since. She has attended Ruby events at either end of the earth and points in between. Currently she divides her time between wrangling code and wrangling small children."
     avatar: "amanda.jpeg"
     talk:
       title: "Parenting + Programming"
