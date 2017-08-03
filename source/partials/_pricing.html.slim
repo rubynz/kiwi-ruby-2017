@@ -1,0 +1,15 @@
+.grid.c-price-list
+  - data.pricing.prices.each do |price|
+    .col-1-3.c-price-list__item
+      span.c-price-list__type=price.type
+      p.c-price-list__description=price.description
+      - price.price_categories.each do |price_category|
+        .c-price-list__rate class=("c-price-list__rate--#{price_category.state}")
+          p=price_category.type
+          span.c-price-list__price=price_category.price
+      .c-price-list__action-section
+        - if price.link
+          a.c-price-list__action href=("#{price.link}") target="_blank"
+            =price.link_text
+        - elsif price.link_text
+          span.c-price-list__action.c-price-list__action--inactive=price.link_text
