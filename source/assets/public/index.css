@@ -455,55 +455,50 @@ strong {
   padding-top: 3rem;
 }
 
-/* Speakers */
+/* Talks, Speakers & Workshops  */
 
 .c-talk-list,
 .c-speaker-list,
 .c-workshop-list {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-between;
 }
 
-.c-workshop-list {
-  flex-direction: column;
+.c-speaker:nth-child(odd),
+.c-workshop:nth-child(odd) {
+  clear:left;
 }
 
-.breakpoint-desktop-up .c-speaker {
-  flex-basis: 45%;
+.c-speaker {
+  margin-bottom: 6rem;
 }
-
-.c-workshop__presenter {
-  display: flex;
-  flex-direction: column;
-}
-
-.breakpoint-desktop-up .c-workshop__presenter-details {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.c-speaker,
-.c-workshop {
-  margin: 2rem;
-  text-align: center;
-}
+  .breakpoint-phone .c-speaker {
+    margin-bottom: 4rem;
+  }
 
 .c-workshop {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+  margin-bottom: 3rem;
 }
 
-.c-workshop__presenter-details .c-speaker__avatar {
-  flex-basis: 25%;
+.c-speaker__avatar {
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+  max-width: 16rem;
 }
+  .breakpoint-phone .c-speaker__avatar {
+    max-width: 14rem;
+  }
 
-.c-workshop__presenter-details .c-workshop__presenter-bio {
-  flex-basis: 65%;
+.c-speaker__avatar--small {
+  border-radius: 50%;
+  max-width: 6rem;
+  position: absolute;
+  right: 0;
+  top: 0.5rem;
+}
+.breakpoint-phone .c-speaker__avatar--small {
+  max-width: 6rem;
 }
 
 .c-speaker__talk-title,
@@ -511,33 +506,59 @@ strong {
   font-family: var(--font-heading);
   color: var(--primary-color);
   font-size: 3rem;
-  margin-bottom: 2rem;
-  margin-top: 3rem;
-}
-
-.c-speaker__name {
-  max-width: 50rem;
-  margin: 1rem auto;
-}
-
-.c-speaker__talk-description p {
-  font-family: var(--font-subtitle);
-  font-size: 1.5rem;
+  line-height: 1.2;
   margin-bottom: 1rem;
+}
+
+c-workshop__detail {
+  margin-bottom: 2rem;
+}
+
+p.c-speaker__name,
+p.c-workshop__detail {
+  font-size: 1.8rem;
+  line-height: 1.3;
+  margin-bottom: 2rem;
+}
+
+.c-workshop__detail span {
+  color: var(--primary-grey-darker);
+  font-weight: bold;
+  margin-right: 1rem;
 }
 
 .c-speaker__bio p,
 .c-talk__abstract p,
 .c-workshop__description p,
 .c-workshop__presenter-bio p,
-.c-workshop__detail p{
-  font-family: var(--font-subtitle);
-  font-size: 1.5rem;
+.c-workshop__detail p {
+  font-size: 1.8rem;
+  line-height: 1.3;
   margin-bottom: 1rem;
 }
 
-.c-speaker__avatar {
-  border-radius: 50%;
-  max-width: 250px;
-  max-height: 250px;
+.c-workshop__description {
+  margin-bottom: 3rem;
+}
+.c-workshop__presenter-details {
+  position: relative;
+  padding-right: 8rem;
+  margin-bottom: 3rem;
+}
+
+.c-presenter__title {
+  color: var(--primary-grey-darker);
+  font-size: 1.8rem;
+  line-height: 1.3;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.c-workshop__presenter-details {
+}
+
+.c-workshop__presenter-bio p {
+  font-size: 1.3rem;
+  line-height: 1.4;
+  margin-bottom: 0;
 }

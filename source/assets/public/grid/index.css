@@ -28,6 +28,14 @@
   float: left;
 }
 
+/* wrap cols in .row where necessary */
+.row:after {
+  /* Or @extend clearfix */
+  content: "";
+  display: table;
+  clear: both;
+}
+
 /* on phones stack all columns */
 .breakpoint-phone [class*='col-'],
 .breakpoint-phone .c-sponsor-level [class*='col-'] {
