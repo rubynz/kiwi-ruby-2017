@@ -2,8 +2,11 @@
 
 /* margin right - negative right margin to allow for last col's gutter */
 .grid {
-  margin-right: -3rem;
+  margin-right: -4rem;
 }
+  .breakpoint-phone .grid {
+    margin-right: -2rem;
+  }
 .grid:after {
   content: "";
   display: table;
@@ -26,11 +29,41 @@
 }
 
 /* on phones stack all columns */
-.breakpoint-phone [class*='col-'] {
+.breakpoint-phone [class*='col-'],
+.breakpoint-phone .c-sponsor-level [class*='col-'] {
   width: 100%;
 }
 
 /* setting gutter size - must match margin right on grid above */
 [class*='col-'] {
-  padding-right: 3rem;
+  padding-right: 4rem;
+}
+.breakpoint-phone [class*='col-'] {
+  padding-right: 2rem;
+}
+
+/* Applying Grid to sponsor cols using existing logic */
+
+/* full width feels too large for a single sponsor */
+.c-sponsor-level--size-1 .col-1 {
+  width: 50%;
+}
+.breakpoint-tablet .c-sponsor-level--size-1 .col-1 {
+  width: 100%;
+}
+
+.c-sponsor-level--size-2 .col-1 {
+  width: 50%;
+}
+
+.c-sponsor-level--size-3 .col-1 {
+  width: 33.33%;
+}
+
+.c-sponsor-level--size-4 .col-1 {
+  width: 25%;
+}
+
+.c-sponsor-level--size-5 .col-1 {
+  width: 20%;
 }
