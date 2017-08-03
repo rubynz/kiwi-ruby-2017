@@ -3,18 +3,13 @@
     .col-1-3.c-price-list__item
       span.c-price-list__type=price.type
       p.c-price-list__description=price.description
-
-      .c-price-list__rate class=("c-price-list__rate--#{price.css_class}")
-        p Early bird - closes September 4
-        span.c-price-list__price=price.early_bird_price
-
-      .c-price-list__rate class=("c-price-list__rate--#{price.css_class}")
-        p Normal bird
-        span.c-price-list__price=price.normal_bird_price
-
+      - price.price_categories.each do |price_category|
+        .c-price-list__rate class=("c-price-list__rate--#{price_category.state}")
+          p=price_category.type
+          span.c-price-list__price=price_category.price
       .c-price-list__action-section
         - if price.link
           a.c-price-list__action href=("#{price.link}") target="_blank"
             =price.link_text
-        - else
+        - elsif price.link_text
           span.c-price-list__action.c-price-list__action--inactive=price.link_text
