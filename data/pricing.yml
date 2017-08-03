@@ -8,7 +8,7 @@ prices:
       - type: "Normal bird"
         price: "$180"
         state: "active"
-      - type: "<a href='/students'>Student tickets</a>"
+      - type: "Student tickets"
         price: "$50"
         state: "active"
   - type: "Workshop day"
