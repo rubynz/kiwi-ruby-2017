@@ -37,6 +37,7 @@
   src: url("./fonts/OleoScriptSwashCaps-Regular.woff2");
 }
 @import "./font-awesome/index.css";
+@import "./grid/index.css";
 
 /**
  * Styling
