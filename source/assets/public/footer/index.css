@@ -1,0 +1,30 @@
+.footer {
+  margin-bottom: 6rem;
+}
+  .footer__credit {
+    color: var(--text-color);
+    font-size: 1.3rem;
+    margin-top: 1rem;
+  }
+  .footer__credit a {
+    color: var(--primary-color);
+    text-decoration: none;
+  }
+  .footer__birb {
+    margin-top: 2rem;
+    width: 4rem;
+  }
+
+/* Footer nav */
+.footer-nav {
+  margin-bottom: 4rem;
+}
+
+.footer-nav__list {
+}
+
+.footer-nav__list-item {
+  display: inline-block;
+  padding-right: 3rem;
+  font-size: 1.5rem;
+}
