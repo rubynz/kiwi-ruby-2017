@@ -333,6 +333,12 @@ strong {
 .t-list li {
   margin-bottom: 1rem;
 }
+.t-small-caps {
+  text-transform: uppercase;
+  color: var(--primary-color);
+  font-weight: bold;
+  letter-spacing: 0.05rem;
+}
 .swash {
   font-family: var(--font-logotype)
 }

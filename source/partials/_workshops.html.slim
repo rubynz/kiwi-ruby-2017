@@ -17,3 +17,13 @@
             span.c-presenter__title = "#{presenter.name}"
             .c-workshop__presenter-bio
               p = presenter.bio
+      - if workshop.sponsors
+        - workshop.sponsors.each do |sponsor|
+          .c-workshop__presenter-details
+            h3.t-small-caps Sponsored by:
+            a href=(sponsor.link) target="_blank" rel="noopener noreferrer"
+              img.c-workshop__sponsor.c-speaker__avatar src=("/images/workshop-avatars/#{sponsor.avatar}") alt=(sponsor.name)
+            a.c-presenter__title href=(sponsor.link) target="_blank" rel="noopener noreferrer"
+              ="#{sponsor.name}"
+            .c-workshop__presenter-bio
+              p = sponsor.bio
