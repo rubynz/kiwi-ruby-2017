@@ -8,12 +8,14 @@
     font-size: 1.1rem;
     margin-bottom: 2rem;
   }
+
   .footer__credit a {
     color: var(--primary-color);
     text-decoration: none;
   }
   .footer__birb {
     width: 3rem;
+    margin-top: 2rem;
   }
 
 /* Footer nav */

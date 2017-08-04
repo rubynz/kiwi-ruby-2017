@@ -15,6 +15,7 @@
   --text-color: #767F85;
   --primary-contrast: #07c199;
   --max-width: 80rem;
+  --primary-contrast-darker: #03A280;
 }
 /**
  * Reset styles
@@ -59,6 +60,12 @@ html {
 }
 .breakpoint-phone {
   font-size: 52.5%;
+}
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -360,6 +367,12 @@ strong {
 .t-list li {
   margin-bottom: 1rem;
 }
+.t-small-caps {
+  text-transform: uppercase;
+  color: var(--primary-color);
+  font-weight: bold;
+  letter-spacing: 0.05rem;
+}
 .swash {
   font-family: var(--font-logotype)
 }
@@ -544,6 +557,22 @@ strong {
 }
 
 .c-workshop__detail {
+
+  font-family: var(--font-heading);
+  color: var(--primary-color);
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+c-workshop__detail {
+  margin-bottom: 2rem;
+}
+
+p.c-speaker__name,
+p.c-workshop__detail {
+  font-size: 1.8rem;
+  line-height: 1.3;
   margin-bottom: 2rem;
 }
 
@@ -552,6 +581,9 @@ strong {
   text-transform: none;
   letter-spacing: 0;
   margin-left: 0.5rem;
+  color: var(--primary-grey-darker);
+  font-weight: bold;
+  margin-right: 1rem;
 }
 
 .c-speaker__bio p,
@@ -560,6 +592,7 @@ strong {
 .c-workshop__presenter-bio p,
 .c-workshop__detail p {
   font-size: 1.8rem;
+  line-height: 1.3;
   margin-bottom: 1rem;
 }
 
@@ -584,3 +617,136 @@ strong {
   line-height: 1.4;
   margin-bottom: 0;
 }
+
+/* Basic CSS grid */
+
+/* margin right - negative right margin to allow for last col's gutter */
+.grid {
+  margin-right: -3rem;
+}
+.grid:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* setting col widths */
+.col-1-3 {
+  width: 33.33%;
+}
+.col-1-2 {
+  width: 50%;
+}
+.col-1-4 {
+  width: 25%;
+}
+
+[class*='col-'] {
+  float: left;
+}
+
+/* on phones stack all columns */
+.breakpoint-phone [class*='col-'] {
+  width: 100%;
+}
+
+/* setting gutter size - must match margin right on grid above */
+[class*='col-'] {
+  padding-right: 3rem;
+}
+
+/* Price table */
+
+.c-price-list {
+  padding-top: 3rem;
+}
+
+.c-price-list__item {
+}
+  .breakpoint-phone .c-price-list__item {
+    margin-bottom: 4rem;
+  }
+
+.c-price-list__type {
+  color: var(--primary-grey-darker);
+  display: block;
+  border-bottom: 2px solid #DDD;
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+}
+
+p.c-price-list__description {
+  font-size: 1.8rem;
+  line-height: 1.3;
+}
+
+.c-price-list__rate {
+  margin-bottom: 2rem;
+  display: block;
+  position: relative;
+  padding-right: 7rem;
+}
+.c-price-list__rate p {
+  font-size: 1.8rem;
+  line-height: 1.3;
+  margin-bottom: 0;
+}
+.c-price-list__rate:last-child {
+  margin-bottom: 0;
+}
+
+.c-price-list__rate--inactive {
+  color: rgba(0,0,0,0.4);
+}
+.c-price-list__rate--sold-out,
+.c-price-list__rate--sold-out span {
+  text-decoration: line-through;
+  color: rgba(0,0,0,0.4);
+}
+
+.c-price-list__price {
+  font-size: 1.8rem;
+  line-height: 1.3;
+  font-weight: bold;
+  display: block;
+  color: var(--primary-grey-darker);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.c-price-list__action-section {
+  padding-top: 1rem;
+}
+
+.c-price-list__action-section p {
+  font-size: 1.8rem;
+  line-height: 1.3;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.c-price-list__action {
+  background-color: var(--primary-contrast);
+  border-radius: 4px;
+  color: white;
+  padding: 1rem 1.5rem;
+  display: inline-block;
+  transition: background 0.2s linear;
+}
+  .c-price-list__action:hover {
+    background-color: var(--primary-contrast-darker);
+  }
+
+  .c-price-list__action--inactive {
+    background-color: #FFF;
+    color: var(--primary-grey-darker);
+    border:1px solid #DDD;
+    font-weight: normal;
+    opacity: 0.5;
+  }
+
+  .c-price-list__action--inactive:hover {
+    background-color: #FFF;
+  }
