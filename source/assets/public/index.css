@@ -110,45 +110,6 @@ body {
     box-shadow: 1px 5px 5px rgba(0,0,0,0.1);
   }
 
-  .breakpoint-phone .nav__room {
-    padding: 0;
-  }
-
-  .breakpoint-phone .nav__content {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .nav.nav--mobile,
-  .breakpoint-tablet .nav--mobile__show,
-  .breakpoint-desktop-up .nav--mobile__show {
-    display: none;
-  }
-
-  .nav--mobile__show {
-    padding: 6px;
-    position: fixed;
-    top: 0;
-    z-index: 2;
-  }
-
-  .breakpoint-phone .nav--mobile .nav__content {
-    padding-bottom: 1em;
-    background: white;
-    box-shadow: rgba(167, 167, 167, 0.43) 0px 3px 8px;
-    width: 100%;
-    padding-top: 10px;
-    z-index: 1;
-  }
-
-   .breakpoint-phone .nav.nav--mobile {
-    position: fixed;
-    padding: 0;
-    margin: 0;
-    top: 0;
-    width: 100%;
-  }
-
   .nav__content {
     max-width: var(--max-width);
     margin: 0 auto;
@@ -157,11 +118,65 @@ body {
   .nav__item {
     color: var(--primary-color);
     display: inline;
-    font-family: var(--font-subtitle);
     font-size: 1.6rem;
     padding-left: 4rem;
     text-decoration: none;
   }
+
+  .nav.nav--mobile,
+  .breakpoint-tablet .nav--mobile__show,
+  .breakpoint-desktop-up .nav--mobile__show {
+    display: none;
+  }
+
+  .breakpoint-phone .nav__room {
+    padding: 0;
+  }
+
+  .nav--mobile__show {
+    top: 0;
+    z-index: 2;
+    padding: 2rem;
+    font-size: 2rem;
+    border-bottom: 1px solid #EEE;
+  }
+  .nav--mobile__show:hover {
+    cursor: pointer;
+  }
+  .nav--mobile__show span {
+    margin-left: 1rem;
+  }
+
+  .breakpoint-phone .nav--mobile .nav__content {
+    background: var(--primary-contrast);
+    width: 100%;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    z-index: 1;
+    text-align: left;
+  }
+
+  .breakpoint-phone .nav.nav--mobile {
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    width: 100%;
+  }
+
+  .nav--mobile .nav__item {
+    font-size: 2rem;
+    padding: 1rem 0rem;
+    display: block;
+    margin-left: 4rem;
+    margin-right: 2rem;  }
+
+  .nav--mobile .nav__item a {
+    padding: 0.5rem;
+    padding-left: 0;
+    color: #FFF;
+  }
+
 
 /*header/nav*/
 .header {
