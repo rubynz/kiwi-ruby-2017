@@ -2,7 +2,8 @@
  * Rubyconf Variables
  */
 :root {
-  --font-body: "Source Sans Pro", Helvetica, Arial, sans-serif;
+  /*--font-body: "Source Sans Pro", Helvetica, Arial, sans-serif;*/
+  --font-body: "Work sans", Helvetica, Arial, sans-serif;
   --font-logotype: "OleoSwash", Courier, monospace;
   --font-heading: "YoungSerif", Courier, monospace;
   --font-subheading: "Source Sans Pro", Helvetica, Arial, sans-serif;
@@ -10,10 +11,10 @@
   --primary-color-darker: #e33558;
   --primary-color: #FE3E62;
   --primary-grey: #c2c2c2;
-  --primary-grey-darker: #666666;
+  --primary-grey-darker: #555555;
   --text-color: #767F85;
   --primary-contrast: #07c199;
-  --max-width: 85rem;
+  --max-width: 80rem;
 }
 /**
  * Reset styles
@@ -23,10 +24,17 @@
 /**
  * Import Fonts
  */
+
+ /* Work sans */
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,700');
+
+/* Source sans */
 @import url("https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro:400,600&subset=latin-ext");
 
+/* Swash */
 @import url('https://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps&subset=latin-ext');
 
+/* Young serif */
 @font-face {
   font-family: YoungSerif;
   src: url("./fonts/YoungSerif-Regular.woff2");
@@ -296,7 +304,7 @@ p:last-child {
 }
 
 .breakpoint-desktop-up p {
-  font-size: 2.5rem;
+  font-size: 1.8rem;
 }
 
 a {
@@ -306,29 +314,40 @@ a {
 
 h1 {
   color: var(--primary-color);
-  font-size: 3.4rem;
-  font-family: var(--font-heading);
-  margin-bottom: 1.5rem;
+  font-size: 4rem;
+  font-weight: 600;
+  font-family: var(--font-body);
+  margin-bottom: 8rem;
+  text-align: center;
 }
+  .breakpoint-desktop-up h1 {
+    font-size: 4rem;
+  }
 
 h2 {
   color: var(--primary-grey-darker);
-  font-family: var(--font-subheading);
+  font-family: var(--font-body);
   font-size: 2rem;
-  letter-spacing: .35rem;
-  text-transform: uppercase;
   font-weight: 600;
   margin-top: 0rem;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
+  line-height: 1.2;
+}
+  .breakpoint-desktop-up h2 {
+    font-size: 2.5rem;
+  }
+
+h3 {
+  color: var(--primary-grey-darker);
+  font-family: var(--font-body);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-top: 0rem;
+  margin-bottom: 3rem;
 }
 
-.breakpoint-desktop-up h2 {
-  font-size: 3rem;
-  letter-spacing: .4rem;
-}
-.breakpoint-desktop-up h1 {
-  font-size: 4rem;
-}
 strong {
   font-weight: bold;
 }
@@ -467,7 +486,7 @@ strong {
 }
 
 .h-lots-of-padding-top {
-  padding-top: 3rem;
+  padding-top: 6rem;
 }
 
 /* Talks, Speakers & Workshops  */
@@ -516,30 +535,23 @@ strong {
   max-width: 6rem;
 }
 
-.c-speaker__talk-title,
-.c-workshop__title {
-  font-family: var(--font-heading);
-  color: var(--primary-color);
-  font-size: 3rem;
-  line-height: 1.2;
-  margin-bottom: 1rem;
+.c-speaker__talk-title {
+  margin-bottom: 0.5rem;
 }
 
-c-workshop__detail {
+.c-workshop__title {
   margin-bottom: 2rem;
 }
 
-p.c-speaker__name,
-p.c-workshop__detail {
-  font-size: 1.8rem;
-  line-height: 1.3;
+.c-workshop__detail {
   margin-bottom: 2rem;
 }
 
 .c-workshop__detail span {
-  color: var(--primary-grey-darker);
-  font-weight: bold;
-  margin-right: 1rem;
+  font-weight: 300;
+  text-transform: none;
+  letter-spacing: 0;
+  margin-left: 0.5rem;
 }
 
 .c-speaker__bio p,
@@ -548,7 +560,6 @@ p.c-workshop__detail {
 .c-workshop__presenter-bio p,
 .c-workshop__detail p {
   font-size: 1.8rem;
-  line-height: 1.3;
   margin-bottom: 1rem;
 }
 
@@ -562,11 +573,7 @@ p.c-workshop__detail {
 }
 
 .c-presenter__title {
-  color: var(--primary-grey-darker);
-  font-size: 1.8rem;
-  line-height: 1.3;
-  margin-bottom: 0.5rem;
-  display: block;
+  margin-bottom: 1rem;
 }
 
 .c-workshop__presenter-details {

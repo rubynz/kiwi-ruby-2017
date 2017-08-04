@@ -1,7 +1,7 @@
 - data.sponsors.sponsorship_levels.each do |level|
   .c-sponsor-group
     - if level.sponsors
-      h3.c-sponsor-level__name = level.name
+      h3 = level.name
       - if level.description
         p.c-sponsor-level__description = level.description
 

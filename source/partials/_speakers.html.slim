@@ -2,7 +2,7 @@
   - data.speakers.speaker_list.each do |speaker|
     .c-speaker.col-1-2 id=speaker.slug
       img.c-speaker__avatar src=("/images/speaker-avatars/#{speaker.avatar}") alt=(speaker.name)
-      h3.c-speaker__talk-title = speaker.name
+      h2.c-speaker__talk-title = speaker.name
       p.c-speaker__name
         a href="/talks/##{speaker.slug}"
           = speaker.talk.title

@@ -1,24 +1,19 @@
 .footer {
   position: relative;
   margin-bottom: 4rem;
-  padding-left: 7rem;
+  padding-right: 7rem;
 }
-  .breakpoint-phone .footer {
-    padding-left: 7rem;
-  }
   .footer__credit {
     color: #999;
     font-size: 1.1rem;
+    margin-bottom: 2rem;
   }
   .footer__credit a {
     color: var(--primary-color);
     text-decoration: none;
   }
   .footer__birb {
-    position: absolute;
-    top: 0.4rem;
-    left: 0;
-    width: 4rem;
+    width: 3rem;
   }
 
 /* Footer nav */

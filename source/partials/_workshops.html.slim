@@ -2,11 +2,10 @@
   - data.workshops.workshop_list.each do |workshop|
     .c-workshop.col-1-2 id=workshop.slug
       .c-workshop__details
-        h3.c-workshop__title = workshop.title
-        .c-workshop__detail
-          p
-            span= "#{workshop.long}"
-            = "#{workshop.level}"
+        h2.c-workshop__title = workshop.title
+        h3.c-workshop__detail
+          = "#{workshop.long}"
+          span= "#{workshop.level}"
         .c-workshop__description
           p = workshop.description
 
@@ -14,6 +13,6 @@
         - workshop.presenters.each do |presenter|
           .c-workshop__presenter-details
             img.c-speaker__avatar.c-speaker__avatar--small src=("/images/workshop-avatars/#{presenter.avatar}.jpeg") alt=(presenter.name)
-            span.c-presenter__title = "#{presenter.name}"
+            h3.c-presenter__title = "#{presenter.name}"
             .c-workshop__presenter-bio
               p = presenter.bio
