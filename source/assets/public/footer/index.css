@@ -1,24 +1,32 @@
 .footer {
-  margin-bottom: 6rem;
+  position: relative;
+  margin-bottom: 4rem;
+  padding-left: 7rem;
 }
+  .breakpoint-phone .footer {
+    padding-left: 7rem;
+  }
   .footer__credit {
-    color: var(--text-color);
-    font-size: 1.3rem;
-    margin-top: 1rem;
+    color: #999;
+    font-size: 1.1rem;
   }
   .footer__credit a {
     color: var(--primary-color);
     text-decoration: none;
   }
   .footer__birb {
-    margin-top: 2rem;
+    position: absolute;
+    top: 0.4rem;
+    left: 0;
     width: 4rem;
   }
 
 /* Footer nav */
 .footer-nav {
-  margin-bottom: 4rem;
 }
+  .breakpoint-phone .footer-nav {
+    margin-bottom: 1rem;
+  }
 
 .footer-nav__list {
 }
@@ -26,10 +34,14 @@
 .footer-nav__list-item {
   display: inline-block;
   padding-right: 3rem;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
-.breakpoint-phone .footer-nav__list-item {
-  padding-right: 2rem;
+.footer-nav__list-item a {
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.breakpoint-phone .footer-nav__list-item a {
   margin-bottom: 1rem;
 }
