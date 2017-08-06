@@ -339,6 +339,9 @@ strong {
   font-weight: bold;
   letter-spacing: 0.05rem;
 }
+.t-small {
+  font-size: 0.75em !important;
+}
 .swash {
   font-family: var(--font-logotype)
 }
@@ -708,3 +711,8 @@ p.c-price-list__description {
   .c-price-list__action--inactive:hover {
     background-color: #FFF;
   }
+
+
+.c-short-list__item {
+  margin-bottom: 0.5rem;
+}
