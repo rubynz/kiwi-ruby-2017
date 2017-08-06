@@ -287,6 +287,19 @@ p:last-child {
   margin-bottom: 0;
 }
 
+
+li {
+  font-size: 2rem;
+  line-height: 1;
+  margin-bottom: 1rem;
+  margin-left: 4rem;
+  list-style-type: square;
+}
+
+li:last-child {
+  margin-bottom: 2rem;
+}
+
 .breakpoint-desktop-up p {
   font-size: 2.5rem;
 }
