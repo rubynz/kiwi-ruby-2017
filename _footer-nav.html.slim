@@ -1,8 +1,0 @@
-.footer-nav class=("nav--#{nav_type}")
-  ul.footer-nav__list
-    - unless current_page.data.home
-      li.footer-nav__list-item
-        a.swash href="/" Kiwi&nbsp;Ruby
-    - data.nav.nav_items.each do |item|
-      li.footer-nav__list-item
-        a href="#{item.link}" = item.title
