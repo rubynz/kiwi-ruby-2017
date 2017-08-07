@@ -144,15 +144,19 @@ body {
   .breakpoint-tablet .nav--mobile__show,
   .breakpoint-desktop-up .nav--mobile__show {
     display: none;
+    z-index: 5;
   }
 
   .breakpoint-phone .nav__room {
-    padding: 0;
+    paddingtop: 4em;
   }
 
   .nav--mobile__show {
+    position: fixed;
+    background-color: #FFFFFF;
+    width: 100%;
     top: 0;
-    z-index: 2;
+    z-index: 6;
     padding: 2rem;
     font-size: 2rem;
     border-bottom: 1px solid #EEE;
@@ -167,9 +171,9 @@ body {
   .breakpoint-phone .nav--mobile .nav__content {
     background: var(--primary-contrast);
     width: 100%;
-    padding-top: 3rem;
+    padding-top: 6rem;
     padding-bottom: 3rem;
-    z-index: 1;
+    z-index: 5;
     text-align: left;
   }
 
