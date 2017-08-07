@@ -375,6 +375,9 @@ strong {
   font-weight: bold;
   letter-spacing: 0.05rem;
 }
+.t-small {
+  font-size: 0.75em !important;
+}
 .swash {
   font-family: var(--font-logotype)
 }
@@ -723,4 +726,33 @@ p.c-price-list__description {
   line-height: 1.3;
   font-weight: bold;
   margin-bottom: 0;
+}
+
+.c-price-list__action {
+  background-color: var(--primary-contrast);
+  border-radius: 4px;
+  color: white;
+  padding: 1rem 1.5rem;
+  display: inline-block;
+  transition: background 0.2s linear;
+}
+  .c-price-list__action:hover {
+    background-color: var(--primary-contrast-darker);
+  }
+
+  .c-price-list__action--inactive {
+    background-color: #FFF;
+    color: var(--primary-grey-darker);
+    border:1px solid #DDD;
+    font-weight: normal;
+    opacity: 0.5;
+  }
+
+  .c-price-list__action--inactive:hover {
+    background-color: #FFF;
+  }
+
+
+.c-short-list__item {
+  margin-bottom: 0.5rem;
 }

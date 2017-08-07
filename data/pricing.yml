@@ -8,7 +8,7 @@ prices:
       - type: "Normal bird"
         price: "$180"
         state: "active"
-      - type: "Student tickets"
+      - type: "Student tickets - thanks to <a href='https://www.summeroftech.co.nz'>Summer of Tech</a>"
         price: "$50"
         state: "active"
   - type: "Workshop day"

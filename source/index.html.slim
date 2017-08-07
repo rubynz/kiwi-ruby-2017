@@ -11,21 +11,20 @@ section
       ' Kiwi Ruby is a new Ruby conference being held in Wellington, New Zealand.
     p
       ' With a mixture of local and international speakers, there will be one day of workshops and one single-track day of talks. We'll cover topics that interest, excite, and delight Rubyists and the Ruby-curious of all levels.
-    p
-      ' It's being held on Thursday 2 November (workshops) and Friday 3 November (conference) at Te Papa on the Wellington waterfront.
-
-  .body-inner-wrapper__section#signup
-    h2 ✨ Sign me up
-    p
-      'Sign up to the mailing list to be the first to find out about Kiwi Ruby news.
-
-    a.button href="http://eepurl.com/cMyn29" target="_blank" rel="noopener noreferrer"
-      ' Subscribe
-  .body-inner-wrapper__section#volunteer
-    h2 🙋 I want to help
-    p
-      ' If you're keen to volunteer, <a href="http://eepurl.com/cOApHP">sign up here</a> and we'll send you an email when we need help.
-
+  .body-inner-wrapper__section#conference
+    h2 🎙 Conference
+    p The conference will be held in the beautiful Soundings Theatre at Te Papa on the 3rd of November. We'll provide lunch and plenty of opportunities for you to get to know other attendees.
+    p We have a stellar single-track lineup of talks. You'll learn something whether you've been writing Ruby for ten years or ten minutes.
+    .c-short-list
+      - data.speakers.speaker_list.each do |speaker|
+        .c-short-list__item
+          a href=("/talks##{speaker.slug}") = speaker.talk.title
+          '&nbsp;—
+          span=speaker.name
+  .body-inner-wrapper__section#workshops
+    h2 💻 Workshops
+    p We're holding one day of deep-dive workshops on the 2nd of November. One ticket gets you a day of workshops - either one full-day workshop, or one in the morning and one in the afternoon.
+    = partial "partials/workshop_times"
   .body-inner-wrapper__section#prices
     h2 🎟 Sign me up
     p Thanks to our <a href="/#sponsors">generous sponsors</a> for allowing us to set ticket prices at a level that we hope is affordable for you and your whole team.

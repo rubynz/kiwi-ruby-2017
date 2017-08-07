@@ -1,0 +1,16 @@
+.grid.c-price-list
+  - data.workshops.workshop_timeslots.each do |timeslot|
+    .col-1-3.c-price-list__item
+      span.c-price-list__type=timeslot.time
+      - timeslot.workshops.each do |workshop|
+        .c-price-list__rate
+          p
+            a href=("/workshops/##{workshop.slug}")
+              =workshop.title
+          p
+            strong=workshop.presenters.map(&:name).join(", ")
+          - if workshop.sponsors
+            p.t-small
+              ' Thanks to
+              - workshop.sponsors.each do |sponsor|
+                a(href=sponsor.link)=sponsor.name
