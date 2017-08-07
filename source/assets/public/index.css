@@ -293,11 +293,14 @@ li {
   line-height: 1;
   margin-bottom: 1rem;
   margin-left: 4rem;
-  list-style-type: square;
 }
 
 li:last-child {
   margin-bottom: 2rem;
+}
+
+.square-list {
+  list-style-type: square;
 }
 
 .breakpoint-desktop-up p {
