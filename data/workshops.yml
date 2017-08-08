@@ -1,66 +1,73 @@
-workshop_list:
-  - title: "Next Generation Web Apps with dry-rb"
-    slug: "dry-rb"
-    long: "Full day"
-    level: "Intermediate level"
-    description: "Found yourself tangled up in hard-to-maintain code? Been building app after app in the same way and never finding a way to make significant improvements? Vaunted object-oriented design principles proving too elusive or hard to apply? Thinking maybe it’s time to leave Ruby (gasp!) for something different?
-
-If you’ve answered yes to any of these questions, this workshop is for you!
-
-Come along and learn how to build a new generation of Ruby web app with dry-rb: an app that is robust, cleanly architected, and just as easy to build now as it will be to maintain later."
-    presenters:
-      - name: "Tim Riley"
-        avatar: "tim.jpeg"
-        bio: "Tim is a partner at Australian design and development agency Icelab, a co-founder and core developer of dry-rb, and a core developer of rom-rb. He’s been working exclusively with this stack for 2 years, and is excited about advancing the state of web development in Ruby."
-      - name: "Andrew Croome"
-        avatar: "andrew.jpeg"
-        bio: "Andrew is a Ruby developer with Icelab. He likes books, Melbourne weather and dry-rb. As the author of several novels, he loves clean code and clean prose."
-  - title: "Defensive DevOps"
-    slug: "defensive-devops"
-    long: "Half-day"
-    level: "Intermediate level"
-    description: "The DevOps revolution is in full swing, with a variety of tools and techniques being announced and implemented every day. Our systems no longer look to deploy on physical hardware, instead aiming to be hosted on the cloud and other virtualised systems.
-But, how do we do this securely? All these automation tools are still programming, and programming is always filled with bugs and security holes.
-In this session, we will go through the rise of the DevOps revolution, and what it means both from a technical and cultural standpoint. We’ll talk about how to model where your points of failure will be, and which ones will be the most catastrophic. We’ll talk about security, how it’s a reliability concern, and how best to make it part of your journey to sustainability.
-This workshop will be presented by aurynn shaw, founder of Eiara - Sustainable DevOps"
-    presenters:
-      - name: "aurynn shaw"
-        avatar: "aurynn.jpeg"
-        bio: "aurynn is the founder of Eiara, a DevOps consultancy based out of Wellington, New Zealand, focussing on helping clients develop technical DevOps capability, and the cultural knowledge to use it.
-
-aurynn brings a unique expertise in integrating deployment and security to the modern software development process, by treating both as part of the broader reliability and maintenance workflow.
-
-With over a decade as a professional software developer, aurynn’s expertise ranges from modern cloud deployments to massively parallel supercomputer environments. "
-    sponsors:
-      - name: "Eiara - Sustainable DevOps"
-        avatar: "eiara.png"
-        bio: "Eiara specialises in working with clients to develop DevOps processes and pipelines, bringing security and reliability to the entire software development process. Eiara also focusses on working with clients to manage the technical requirements and cultural impacts of new and existing processes within the organisation, to meed the short, medium and long-term needs of the business."
-        link: "http://www.eiara.nz"
-  - title: "RSpec++"
-    slug: "rspec"
-    long: "Half-day"
-    level: "Intermediate level"
-    description: "You've been using RSpec for a while, you know how to write tests, but you're not sure you're getting the most from it. Let's spend some time working with the more advanced features, changes in newer versions and how to customise your setup."
-    presenters:
-      - name: "Jon Rowe"
-        avatar: "jon.jpeg"
-        bio: "Tinker. Sailor. Developer. Spy? Originally from a tiny cold island nation, Britain, Jon now lives in Sydney where he spends time sailing the high seas, plotting and working as a gun for hire, I mean freelance Ruby developer. When not working on client work you can find Jon hacking on RSpec (as a core team member), helping other open source projects and working on his own little side project(s)."
-  - title: "Machine Learning for Developers"
-    slug: "machine-learning"
-    long: "Half-day"
-    level: "Intermediate level"
-    description: "You don't have to be a data scientist or an algorithm guru to effectively use machine learning. Come to this workshop to try machine learning out for yourself, and learn the main principles and processes for implementing machine learning. By the end of this workshop, you  will be able to identify problems that can be solved with machine learning, understand what makes a good training dataset, and validate your solutions."
-    presenters:
-      - name: "Mai Nguyen"
-        avatar: "mai.jpeg"
-        bio: "Mai is a Senior Developer at Loyalty NZ. Before moving to Wellington, she took a hiatus from tech to study winemaking, and travel the world. In her spare time she explores ways to use technology to make wine information more accessible to the public."
-  - title: "Engineering Empathy"
-    slug: "engineering-empathy"
-    long: "Half-day"
-    level: "Any level"
-    description: "This is a fun and interactive workshop where you will learn skills for giving and receiving effective feedback and having difficult conversations with confidence and empathy. You learn how trust and empathy affect your work and how to enhance your natural empathy to make your teams more productive. You will practice techniques that combat impostor syndrome and leave you feeling bold and courageous."
-    presenters:
-      - name: "Sarrah Jayne"
-        avatar: "sarrah.jpeg"
-        bio: "Sarrah is a teacher at Enspiral Dev Academy; for the last 2 years she has developed and delivered the soft skills programme that runs alongside the technical curriculum. Sarrah has a background in yoga and mindfulness and with that brings a unique perspective to empathy in the tech culture. She has taught about 300 students all of whom have found ample personal and professional growth.
-  Sarrah and Enspiral Dev Academy have recently started to expand the curriculum to take it into tech start ups and established businesses who are ready to take their team to the next level."
+workshop_timeslots:
+  - time: "All day"
+    workshops:
+      - title: "Next Generation Web Apps with dry-rb"
+        slug: "dry-rb"
+        long: "Full day"
+        level: "Intermediate level"
+        description:
+          - "Found yourself tangled up in hard-to-maintain code? Been building app after app in the same way and never finding a way to make significant improvements? Vaunted object-oriented design principles proving too elusive or hard to apply? Thinking maybe it’s time to leave Ruby (gasp!) for something different?"
+          - "If you’ve answered yes to any of these questions, this workshop is for you!"
+          - "Come along and learn how to build a new generation of Ruby web app with dry-rb: an app that is robust, cleanly architected, and just as easy to build now as it will be to maintain later."
+        presenters:
+          - name: "Tim Riley"
+            avatar: "tim.jpeg"
+            bio: "Tim is a partner at Australian design and development agency Icelab, a co-founder and core developer of dry-rb, and a core developer of rom-rb. He’s been working exclusively with this stack for 2 years, and is excited about advancing the state of web development in Ruby."
+          - name: "Andrew Croome"
+            avatar: "andrew.jpeg"
+            bio: "Andrew is a Ruby developer with Icelab. He likes books, Melbourne weather and dry-rb. As the author of several novels, he loves clean code and clean prose."
+  - time: "Morning"
+    workshops:
+      - title: "Defensive DevOps"
+        slug: "defensive-devops"
+        long: "Half-day"
+        level: "Intermediate level"
+        description:
+          - "The DevOps revolution is in full swing, with a variety of tools and techniques being announced and implemented every day. Our systems no longer look to deploy on physical hardware, instead aiming to be hosted on the cloud and other virtualised systems."
+          - "But, how do we do this securely? All these automation tools are still programming, and programming is always filled with bugs and security holes."
+          - "In this session, we will go through the rise of the DevOps revolution, and what it means both from a technical and cultural standpoint. We’ll talk about how to model where your points of failure will be, and which ones will be the most catastrophic. We’ll talk about security, how it’s a reliability concern, and how best to make it part of your journey to sustainability."
+          - "This workshop will be presented by aurynn shaw, founder of Eiara - Sustainable DevOps"
+        presenters:
+          - name: "aurynn shaw"
+            avatar: "aurynn.jpeg"
+            bio: "aurynn is the founder of Eiara, a DevOps consultancy based out of Wellington, New Zealand, focussing on helping clients develop technical DevOps capability, and the cultural knowledge to use it.
+    aurynn brings a unique expertise in integrating deployment and security to the modern software development process, by treating both as part of the broader reliability and maintenance workflow.
+    With over a decade as a professional software developer, aurynn’s expertise ranges from modern cloud deployments to massively parallel supercomputer environments. "
+        sponsors:
+          - name: "Eiara - Sustainable DevOps"
+            avatar: "eiara.png"
+            bio: "Eiara specialises in working with clients to develop DevOps processes and pipelines, bringing security and reliability to the entire software development process. Eiara also focusses on working with clients to manage the technical requirements and cultural impacts of new and existing processes within the organisation, to meet the short, medium and long-term needs of the business."
+            link: "http://www.eiara.nz"
+      - title: "RSpec++"
+        slug: "rspec"
+        long: "Half-day"
+        level: "Intermediate level"
+        description:
+          - "You've been using RSpec for a while, you know how to write tests, but you're not sure you're getting the most from it. Let's spend some time working with the more advanced features, changes in newer versions and how to customise your setup."
+        presenters:
+          - name: "Jon Rowe"
+            avatar: "jon.jpeg"
+            bio: "Tinker. Sailor. Developer. Spy? Originally from a tiny cold island nation, Britain, Jon now lives in Sydney where he spends time sailing the high seas, plotting and working as a gun for hire, I mean freelance Ruby developer. When not working on client work you can find Jon hacking on RSpec (as a core team member), helping other open source projects and working on his own little side project(s)."
+  - time: "Afternoon"
+    workshops:
+      - title: "Machine Learning for Developers"
+        slug: "machine-learning"
+        long: "Half-day"
+        level: "Intermediate level"
+        description:
+          - "You don't have to be a data scientist or an algorithm guru to effectively use machine learning. Come to this workshop to try machine learning out for yourself, and learn the main principles and processes for implementing machine learning. By the end of this workshop, you  will be able to identify problems that can be solved with machine learning, understand what makes a good training dataset, and validate your solutions."
+        presenters:
+          - name: "Mai Nguyen"
+            avatar: "mai.jpeg"
+            bio: "Mai is a Senior Developer at Loyalty NZ. Before moving to Wellington, she took a hiatus from tech to study winemaking, and travel the world. In her spare time she explores ways to use technology to make wine information more accessible to the public."
+      - title: "Engineering Empathy"
+        slug: "engineering-empathy"
+        long: "Half-day"
+        level: "Any level"
+        description:
+          - "This is a fun and interactive workshop where you will learn skills for giving and receiving effective feedback and having difficult conversations with confidence and empathy. You learn how trust and empathy affect your work and how to enhance your natural empathy to make your teams more productive. You will practice techniques that combat impostor syndrome and leave you feeling bold and courageous."
+        presenters:
+          - name: "Sarrah Jayne"
+            avatar: "sarrah.jpeg"
+            bio: "Sarrah is a teacher at Enspiral Dev Academy; for the last 2 years she has developed and delivered the soft skills programme that runs alongside the technical curriculum. Sarrah has a background in yoga and mindfulness and with that brings a unique perspective to empathy in the tech culture. She has taught about 300 students all of whom have found ample personal and professional growth.
+      Sarrah and Enspiral Dev Academy have recently started to expand the curriculum to take it into tech start ups and established businesses who are ready to take their team to the next level."

@@ -9,7 +9,7 @@
           span.c-price-list__price=price_category.price
       .c-price-list__action-section
         - if price.link
-          a.c-price-list__action href=("#{price.link}") target="_blank"
+          a.button href=("#{price.link}") target="_blank"
             =price.link_text
         - elsif price.link_text
           span.c-price-list__action.c-price-list__action--inactive=price.link_text

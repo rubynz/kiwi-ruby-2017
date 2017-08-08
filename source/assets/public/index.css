@@ -2,7 +2,8 @@
  * Rubyconf Variables
  */
 :root {
-  --font-body: "Source Sans Pro", Helvetica, Arial, sans-serif;
+  /*--font-body: "Source Sans Pro", Helvetica, Arial, sans-serif;*/
+  --font-body: "Work sans", Helvetica, Arial, sans-serif;
   --font-logotype: "OleoSwash", Courier, monospace;
   --font-heading: "YoungSerif", Courier, monospace;
   --font-subheading: "Source Sans Pro", Helvetica, Arial, sans-serif;
@@ -10,10 +11,10 @@
   --primary-color-darker: #e33558;
   --primary-color: #FE3E62;
   --primary-grey: #c2c2c2;
-  --primary-grey-darker: #666666;
+  --primary-grey-darker: #555555;
   --text-color: #767F85;
   --primary-contrast: #07c199;
-  --max-width: 85rem;
+  --max-width: 80rem;
   --primary-contrast-darker: #03A280;
 }
 /**
@@ -24,10 +25,17 @@
 /**
  * Import Fonts
  */
+
+ /* Work sans */
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,700');
+
+/* Source sans */
 @import url("https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro:400,600&subset=latin-ext");
 
+/* Swash */
 @import url('https://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps&subset=latin-ext');
 
+/* Young serif */
 @font-face {
   font-family: YoungSerif;
   src: url("./fonts/YoungSerif-Regular.woff2");
@@ -99,7 +107,7 @@ body {
 .nav {
   line-height: 3rem;
   padding: 1.5rem 1rem 1.5rem 0;
-  text-align: right;
+  text-align: center;
 }
   .nav__room {
     padding-top: 6rem;
@@ -114,41 +122,62 @@ body {
     width: 100%;
     top: 0;
     z-index: 5;
-    box-shadow: 1px 5px 5px rgba(0,0,0,0.1);
   }
 
-  .breakpoint-phone .nav__room {
-    padding: 0;
+  .nav__content {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    text-align: center;
+  }
+  .nav__item {
+    display: inline;
+    font-size: 1.6rem;
+    padding-left: 4rem;
+    text-decoration: none;
   }
 
-  .breakpoint-phone .nav__content {
-    display: flex;
-    flex-wrap: wrap;
+  .nav__item a:hover {
+    color: var(--primary-color-darker);
   }
 
   .nav.nav--mobile,
   .breakpoint-tablet .nav--mobile__show,
   .breakpoint-desktop-up .nav--mobile__show {
     display: none;
+    z-index: 5;
+  }
+
+  .breakpoint-phone .nav__room {
+    paddingtop: 4em;
   }
 
   .nav--mobile__show {
-    padding: 6px;
     position: fixed;
+    background-color: #FFFFFF;
+    width: 100%;
     top: 0;
-    z-index: 2;
+    z-index: 6;
+    padding: 2rem;
+    font-size: 2rem;
+    border-bottom: 1px solid #EEE;
+  }
+  .nav--mobile__show:hover {
+    cursor: pointer;
+  }
+  .nav--mobile__show span {
+    margin-left: 1rem;
   }
 
   .breakpoint-phone .nav--mobile .nav__content {
-    padding-bottom: 1em;
-    background: white;
-    box-shadow: rgba(167, 167, 167, 0.43) 0px 3px 8px;
+    background: var(--primary-contrast);
     width: 100%;
-    padding-top: 10px;
-    z-index: 1;
+    padding-top: 6rem;
+    padding-bottom: 3rem;
+    z-index: 5;
+    text-align: left;
   }
 
-   .breakpoint-phone .nav.nav--mobile {
+  .breakpoint-phone .nav.nav--mobile {
     position: fixed;
     padding: 0;
     margin: 0;
@@ -156,19 +185,19 @@ body {
     width: 100%;
   }
 
-  .nav__content {
-    max-width: var(--max-width);
-    margin: 0 auto;
-    text-align: right;
+  .nav--mobile .nav__item {
+    font-size: 2rem;
+    padding: 1rem 0rem;
+    display: block;
+    margin-left: 4rem;
+    margin-right: 2rem;  }
+
+  .nav--mobile .nav__item a {
+    padding: 0.5rem;
+    padding-left: 0;
+    color: #FFF;
   }
-  .nav__item {
-    color: var(--primary-color);
-    display: inline;
-    font-family: var(--font-subtitle);
-    font-size: 1.6rem;
-    padding-left: 4rem;
-    text-decoration: none;
-  }
+
 
 /*header/nav*/
 .header {
@@ -304,7 +333,7 @@ li:last-child {
 }
 
 .breakpoint-desktop-up p {
-  font-size: 2.5rem;
+  font-size: 1.8rem;
 }
 
 a {
@@ -314,29 +343,40 @@ a {
 
 h1 {
   color: var(--primary-color);
-  font-size: 3.4rem;
-  font-family: var(--font-heading);
-  margin-bottom: 1.5rem;
+  font-size: 4rem;
+  font-weight: 600;
+  font-family: var(--font-body);
+  margin-bottom: 6rem;
+  text-align: center;
 }
+  .breakpoint-desktop-up h1 {
+    font-size: 4rem;
+  }
 
 h2 {
   color: var(--primary-grey-darker);
-  font-family: var(--font-subheading);
+  font-family: var(--font-body);
   font-size: 2rem;
-  letter-spacing: .35rem;
-  text-transform: uppercase;
   font-weight: 600;
   margin-top: 0rem;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
+  line-height: 1.2;
+}
+  .breakpoint-desktop-up h2 {
+    font-size: 2.5rem;
+  }
+
+h3 {
+  color: var(--primary-grey-darker);
+  font-family: var(--font-body);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 0rem;
+  margin-bottom: 3rem;
 }
 
-.breakpoint-desktop-up h2 {
-  font-size: 3rem;
-  letter-spacing: .4rem;
-}
-.breakpoint-desktop-up h1 {
-  font-size: 4rem;
-}
 strong {
   font-weight: bold;
 }
@@ -354,6 +394,9 @@ strong {
   color: var(--primary-color);
   font-weight: bold;
   letter-spacing: 0.05rem;
+}
+.t-small {
+  font-size: 0.75em !important;
 }
 .swash {
   font-family: var(--font-logotype)
@@ -373,40 +416,33 @@ strong {
   margin-right: auto;
 }
 
-/*BUTTON*/
+/* Button styles */
+
 .button {
-  background-color: var(--primary-contrast);
-  color: #fff;
-  padding: 1rem 4rem;
+  background-color: #07c199;
+  border-radius: 4px;
+  color: white;
+  padding: 10px 15px;
+  padding: 1rem 1.5rem;
   display: inline-block;
-  font-family: var(--font-subheading);
-  font-variant: small-caps;
-  font-size: 1.6em;
-  letter-spacing: 0.15em;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-  transition: background-color .3s ease;
-  box-shadow: 0rem 0.2rem .7rem var(--primary-grey);
-  border-radius: 3px;
+  -webkit-transition: background 0.2s linear;
+  transition: background 0.2s linear;
 }
-  .button__text {
-    align-content: center;
-    color: white;
-    display: flex;
-    font-family: var(--font-body);
-    font-size: 2rem;
-    justify-content: center;
-    line-height: 5rem;
+  .button:hover {
+    background-color: #03A280;
   }
-  .button--with-spacing {
-    margin-top: 3.2rem;
-    margin-bottom: 1.8rem;
+
+  .button--inactive {
+    background-color: #FFF;
+    color: #555555;
+    border:1px solid #DDD;
+    font-weight: normal;
+    opacity: 0.5;
   }
-.breakpoint-phone .button {
-  font-size: 1.6rem;
-  margin-top: -1rem;
-}
+
+  .button--inactive:hover {
+    background-color: #FFF;
+  }
 
 /* Sponsorship section */
 
@@ -442,8 +478,9 @@ strong {
 .c-sponsor__description {
 }
   .c-sponsor__description p {
-    font-size: 1.8rem;
-    line-height: 1.3;
+    font-size: 1.3rem;
+    line-height: 1.4;
+    margin-bottom: 1rem;
   }
 
 .c-sponsor__logo {
@@ -481,7 +518,7 @@ strong {
 }
 
 .h-lots-of-padding-top {
-  padding-top: 3rem;
+  padding-top: 6rem;
 }
 
 /* Talks, Speakers & Workshops  */
@@ -530,27 +567,41 @@ strong {
   max-width: 6rem;
 }
 
-.c-speaker__talk-title,
-.c-workshop__title {
-  font-family: var(--font-heading);
-  color: var(--primary-color);
-  font-size: 3rem;
-  line-height: 1.2;
-  margin-bottom: 1rem;
+.c-speaker__talk-title {
+  margin-bottom: 0.5rem;
 }
 
-c-workshop__detail {
+.c-workshop__title {
   margin-bottom: 2rem;
+}
+
+.c-workshop__detail {
+  margin-bottom: 2rem;
+}
+
+h3.c-workshop__detail span {
+  margin-left: 1rem;
+  font-weight: normal;
+}
+
+.c-sponsor__title p {
+  font-size: 1.3rem;
+  line-height: 1.4;
+  margin-bottom: 0.5rem;
 }
 
 p.c-speaker__name,
 p.c-workshop__detail {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   line-height: 1.3;
   margin-bottom: 2rem;
 }
 
 .c-workshop__detail span {
+  font-weight: 300;
+  text-transform: none;
+  letter-spacing: 0;
+  margin-left: 0.5rem;
   color: var(--primary-grey-darker);
   font-weight: bold;
   margin-right: 1rem;
@@ -576,11 +627,7 @@ p.c-workshop__detail {
 }
 
 .c-presenter__title {
-  color: var(--primary-grey-darker);
-  font-size: 1.8rem;
-  line-height: 1.3;
-  margin-bottom: 0.5rem;
-  display: block;
+  margin-bottom: 1rem;
 }
 
 .c-workshop__presenter-details {
@@ -724,3 +771,8 @@ p.c-price-list__description {
   .c-price-list__action--inactive:hover {
     background-color: #FFF;
   }
+
+
+.c-short-list__item {
+  margin-bottom: 0.5rem;
+}
