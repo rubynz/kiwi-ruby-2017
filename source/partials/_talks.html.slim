@@ -3,7 +3,9 @@
     .c-speaker.col-1-2 id=speaker.slug
       img.c-speaker__avatar src=("/images/speaker-avatars/#{speaker.avatar}") alt=(speaker.name)
       h2.c-speaker__talk-title = speaker.talk.title
-      p.c-speaker__name
-        a href="/speakers/##{speaker.slug}"
-          = speaker.name
       p.c-talk__abstract= speaker.talk.abstract
+      .c-workshop__presenter
+        .c-workshop__presenter-details
+          h3.c-presenter__title = "#{speaker.name}"
+          .c-workshop__presenter-bio
+            p = speaker.bio
