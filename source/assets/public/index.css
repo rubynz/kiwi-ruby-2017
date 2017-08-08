@@ -132,7 +132,8 @@ body {
   .nav__item {
     display: inline;
     font-size: 1.6rem;
-    padding-left: 4rem;
+    padding-left: 1.5rem;
+    margin-left: 1rem;
     text-decoration: none;
   }
 
@@ -316,12 +317,10 @@ p:last-child {
   margin-bottom: 0;
 }
 
-
 li {
   font-size: 2rem;
   line-height: 1;
   margin-bottom: 1rem;
-  margin-left: 4rem;
 }
 
 li:last-child {
@@ -329,6 +328,7 @@ li:last-child {
 }
 
 .square-list {
+  margin-left: 4rem;
   list-style-type: square;
 }
 
