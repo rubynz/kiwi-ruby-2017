@@ -128,6 +128,10 @@ body {
     max-width: var(--max-width);
     margin: 0 auto;
     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
   }
   .nav__item {
     display: inline;
@@ -317,18 +321,14 @@ p:last-child {
   margin-bottom: 0;
 }
 
-li {
-  margin-bottom: 1rem;
-}
-
-li:last-child {
-  margin-bottom: 2rem;
-}
-
 .square-list {
   margin-left: 4rem;
   list-style-type: square;
+  margin-bottom: 1rem;
 }
+  .square-list:last-child {
+    margin-bottom: 2rem;
+  }
 
 .breakpoint-desktop-up p {
   font-size: 1.8rem;
