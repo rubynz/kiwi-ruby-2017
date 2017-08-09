@@ -13,5 +13,5 @@ nav_items:
   #   link: "/tickets"
   - title: "Childcare"
     link: "/childcare"
-  # - title: "Scholarships"
-  #   link: "/scholarships"
+  - title: "Scholarships"
+    link: "/scholarships"
