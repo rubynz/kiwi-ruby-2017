@@ -11,25 +11,25 @@ section
       ' Kiwi Ruby is a new Ruby conference being held in Wellington, New Zealand.
     p
       ' With a mixture of local and international speakers, there will be one day of workshops and one single-track day of talks. We'll cover topics that interest, excite, and delight Rubyists and the Ruby-curious of all levels.
+  .body-inner-wrapper__section#prices
+    h2 🎟 Sign me up
+    p Thanks to our <a href="/#sponsors">generous sponsors</a> for allowing us to set ticket prices at a level that we hope is affordable for you and your whole team.
+    p Early bird tickets are strictly limited and end on September 4.
+    = partial "partials/pricing"
+    .h-centred
+      a.button.button--big href="https://ti.to/kiwi-ruby/kiwi-ruby-2017" Buy tickets now!
   .body-inner-wrapper__section#conference
     h2 🎙 Conference
     p The conference will be held in the beautiful Soundings Theatre at Te Papa on the 3rd of November. We'll provide lunch and plenty of opportunities for you to get to know other attendees.
     p We have a stellar single-track lineup of talks. You'll learn something whether you've been writing Ruby for ten years or ten minutes.
     .c-short-list
       - data.speakers.speaker_list.each do |speaker|
-        .c-short-list__item
-          a href=("/talks##{speaker.slug}") = speaker.talk.title
-          '&nbsp;—
-          span=speaker.name
+        a.c-short-list__link href=("/talks/##{speaker.slug}")
+          img.c-short-list__avatar src=("/images/speaker-avatars/#{speaker.avatar}") alt=(speaker.name)
   .body-inner-wrapper__section#workshops
     h2 💻 Workshops
     p We're holding one day of deep-dive workshops on the 2nd of November. One ticket gets you a day of workshops - either one full-day workshop, or one in the morning and one in the afternoon.
     = partial "partials/workshop_times"
-  .body-inner-wrapper__section#prices
-    h2 🎟 Sign me up
-    p Thanks to our <a href="/#sponsors">generous sponsors</a> for allowing us to set ticket prices at a level that we hope is affordable for you and your whole team.
-    = partial "partials/pricing"
-    p Ticket sales will open on Thursday August 10 - <a href="http://eepurl.com/cMyn29" target="_blank" rel="noopener noreferrer">sign up to our mailing list</a> or <a href="https://www.twitter.com/kiwirubyconf" target="_blank" rel="noopener noreferrer">follow us on Twitter</a> so you don't miss out!
   .body-inner-wrapper__section
     h2 🗺 Where is it?
     p Kiwi Ruby is being held at Te Papa, on Cable Street on the Wellington waterfront. <a href="/location">Read more about Wellington and Te Papa here</a>.

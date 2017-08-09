@@ -50,6 +50,11 @@ sponsorship_levels:
         website: "https://www.powershop.co.nz"
         description_paragraphs:
           - "Flux Federation is the engine that powers Powershop in NZ, Australia and the UK. With a team of 100+ developers and designers (and the odd office dog) we deliver marvellous products and experiences for energy teams and their customers, all around the world."
+      - name: "Optimal Workshop"
+        logo: "optimal.png"
+        website: "http://www.optimalworkshop.com"
+        description_paragraphs:
+          - "Optimal Workshop is a user research platform that makes life easier for anyone trying to design things better. Their tree testing, card sorting, first-click, survey and qualitative research tools enable organisations, big and small, to test, benchmark and make evidence-based design decisions."
   - silver:
     logo_size: 4
     name: "Silver sponsors"

@@ -140,6 +140,9 @@ body {
     margin-left: 1rem;
     text-decoration: none;
   }
+  .nav__item--highlighted {
+    font-weight: bold;
+  }
 
   .nav__item a:hover {
     color: var(--primary-color-darker);
@@ -440,6 +443,10 @@ strong {
 
   .button--inactive:hover {
     background-color: #FFF;
+  }
+  .button--big {
+    font-size: 2.5rem;
+    padding: 2rem 2.5rem;
   }
 
 /* Sponsorship section */
@@ -770,7 +777,26 @@ p.c-price-list__description {
     background-color: #FFF;
   }
 
+.c-short-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.c-short-list__link {
+  flex-basis: 20%;
+}
+.c-short-list__avatar {
+  border-radius: 50%;
+  padding: 0.5rem;
+  width: 9rem;
+  height: 9rem;
+  margin: 1rem;
+  transition: padding 0.5s ease;
+}
+.c-short-list__avatar:hover {
+  padding: 0;
+}
 
-.c-short-list__item {
-  margin-bottom: 0.5rem;
+.h-centred {
+  text-align: center;
 }
