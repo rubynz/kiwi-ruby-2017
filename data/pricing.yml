@@ -23,9 +23,9 @@ prices:
   - type: "Workshop + Conf Combo"
     description: "Come to a day of workshops on November 2 and the conference on November 3."
     price_categories:
-      - type: "Early bird"
+      - type: "Early bird - sold out!"
         price: "$300"
-        state: "active"
+        state: "sold-out"
       - type: "Normal bird"
         price: "$350"
         state: "active"
