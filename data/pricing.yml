@@ -14,9 +14,9 @@ prices:
   - type: "Workshop day"
     description: "Pick a day's worth of <a href='/workshops'>mind-expanding workshops</a> at Te Papa on November 2."
     price_categories:
-      - type: "Early bird"
+      - type: "Early bird - sold out!"
         price: "$200"
-        state: "active"
+        state: "sold-out"
       - type: "Normal bird"
         price: "$220"
         state: "active"
