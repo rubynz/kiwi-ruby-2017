@@ -2,9 +2,9 @@ prices:
   - type: "Conference day"
     description: "Come see one day of <a href='/talks'>enlightening talks</a> at the Kiwi Ruby conference at Te Papa on November 3."
     price_categories:
-      - type: "Early bird"
+      - type: "Early bird - sold out!"
         price: "$150"
-        state: "active"
+        state: "sold-out"
       - type: "Normal bird"
         price: "$180"
         state: "active"
