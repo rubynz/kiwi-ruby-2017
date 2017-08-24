@@ -1,6 +1,9 @@
 link rel="manifest" src="/manifest.json"
-meta name="theme-color" content="#fff"
-link rel="apple-touch-startup-image" href="/launch.png"
+meta name="theme-color" content=data.site.theme_color
+link rel="apple-touch-startup-image" href="/touch-icon-256x256.png"
+link rel="mask-icon" href="/touch-icon.svg" color=data.site.theme_color
+meta name="msapplication-TileColor" content=data.site.theme_color
+meta name="msapplication-TileImage" content="/apple-touch-icon-144x144-precomposed.png"
 meta name="apple-mobile-web-app-title" content=data.site.name
 meta name="apple-mobile-web-app-capable" content="yes"
 meta name="apple-mobile-web-app-status-bar-style" content="black-transparent"
