@@ -62,12 +62,6 @@ html {
   font-size: 52.5%;
 }
 
-*, *:after, *:before {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
 body {
   font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
@@ -156,7 +150,7 @@ body {
   }
 
   .breakpoint-phone .nav__room {
-    paddingtop: 4em;
+    padding-top: 4em;
   }
 
   .nav--mobile__show {
@@ -426,8 +420,8 @@ strong {
   padding: 10px 15px;
   padding: 1rem 1.5rem;
   display: inline-block;
-  -webkit-transition: background 0.2s linear;
-  transition: background 0.2s linear;
+  -webkit-transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear;
 }
   .button:hover {
     background-color: #03A280;
@@ -528,11 +522,6 @@ strong {
 
 /* Talks, Speakers & Workshops  */
 
-.c-talk-list,
-.c-speaker-list,
-.c-workshop-list {
-}
-
 .c-speaker:nth-child(odd),
 .c-workshop:nth-child(odd) {
   clear:left;
@@ -555,7 +544,7 @@ strong {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 2rem;
-  max-width: 16rem;
+  max-width: 15rem;
 }
   .breakpoint-phone .c-speaker__avatar {
     max-width: 14rem;
@@ -635,9 +624,6 @@ p.c-workshop__detail {
   margin-bottom: 1rem;
 }
 
-.c-workshop__presenter-details {
-}
-
 .c-workshop__presenter-bio p {
   font-size: 1.3rem;
   line-height: 1.4;
@@ -687,8 +673,6 @@ p.c-workshop__detail {
   padding-top: 3rem;
 }
 
-.c-price-list__item {
-}
   .breakpoint-phone .c-price-list__item {
     margin-bottom: 4rem;
   }
