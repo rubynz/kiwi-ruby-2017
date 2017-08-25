@@ -8,13 +8,13 @@ sponsorship_levels:
     name: "Ruby sponsors"
     sponsors:
       - name: "Loyalty"
-        logo: "loyalty.png"
+        logo: "sponsor_loyalty_770.png"
         website: "https://www.loyalty.co.nz"
         description_paragraphs:
           - "Loyalty New Zealand is New Zealand’s expert in loyalty and runs the most comprehensive coalition loyalty programme in New Zealand, Fly Buys. We love to enable smarter business for our clients using customer insights and data analytics under our brand Lab360."
           - "We are proud to sponsor Kiwi Ruby to support our talented Technology team and help promote diversity in the local Ruby community, because we love to give."
       - name: "Trineo"
-        logo: "trineo.png"
+        logo: "sponsor_trineo_770.png"
         website: "https://www.trineo.co.nz"
         description_paragraphs:
           - "Trineo is a highly capable team with expertise in building software and experiences that drive value for businesses around the world. Every day we wrangle complex problems in data brokering, consumer/employee identity management, CRM and modern system integration on the web."
@@ -35,13 +35,13 @@ sponsorship_levels:
     name: "Gold sponsors"
     sponsors:
       - name: "Youdo"
-        logo: "youdo.png"
+        logo: "sponsor_youdo_500.png"
         website: "https://www.youdo.co.nz"
         description_paragraphs:
           - "YouDo is a Wellington software house with a country wide customer base.  We have been at the forefront of a number of energy industry and fintech innovations since our inception 10 years ago."
           - "Ruby at YouDo is an integral part of our web, mobile and data science applications.  Ruby’s beauty and elegance allows us to build complex solutions in a highly interactive environment."
       - name: "AddressFinder"
-        logo: "addressfinder.png"
+        logo: "sponsor_addressfinder_500.png"
         website: "http://blog.addressfinder.nz/post/162066941338/kiwi-ruby"
         description_paragraphs:
           - "AddressFinder is your cost-effective solution for collecting and verifying NZ and Australian addresses. Within a few keystrokes users get a predictive dropdown of suggested addresses. The selected address autocompletes all the address fields accurately."
@@ -60,14 +60,14 @@ sponsorship_levels:
     name: "Silver sponsors"
     sponsors:
       - name: "Boost"
-        logo: "boost-tall.png"
+        logo: "sponsor_boost_tall_500.png"
         website: "https://www.boost.co.nz"
   - supporter:
     logo_size: 5
     name: "Supporters"
     sponsors:
       - name: "The Last Pickle"
-        logo: "the-last-pickle.png"
+        logo: "sponsor_the-last-pickle_500.png"
         website: "http://thelastpickle.com/"
   - diversity:
     logo_size: 5
