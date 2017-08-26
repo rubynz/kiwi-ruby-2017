@@ -47,7 +47,6 @@
 }
 
 /* Importing css files */
-@import "./font-awesome/index.css";
 @import "./grid";
 @import "./footer";
 
