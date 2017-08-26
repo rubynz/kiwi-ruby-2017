@@ -147,11 +147,20 @@ body {
     color: var(--primary-color-darker);
   }
 
-  .nav.nav--mobile,
   .breakpoint-tablet .nav--mobile__show,
   .breakpoint-desktop-up .nav--mobile__show {
     display: none;
     z-index: 5;
+  }
+
+  .nav--mobile {
+    transition: opacity .3s;
+    opacity: 0;
+    pointer-events: none;
+  }
+  .nav--mobile.active {
+    opacity: 1;
+    pointer-events: initial;
   }
 
   .breakpoint-phone .nav__room {
