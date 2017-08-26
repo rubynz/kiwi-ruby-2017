@@ -55,10 +55,7 @@
  */
 
 html {
-  font-size: 62.5%;
-}
-.breakpoint-phone {
-  font-size: 52.5%;
+  font-size: 52.5%; 
 }
 
 *, *:after, *:before {
@@ -83,13 +80,7 @@ body {
 }
 
 /* This spacer sits outside the container in the layout file for viewport padding */
-
 .mw-spacer {
-  padding-left: 4rem;
-  padding-right: 4rem;
-}
-
-.breakpoint-phone .mw-spacer {
   padding-left: 2rem;
   padding-right: 2rem;
 }
@@ -110,9 +101,6 @@ body {
 }
   .nav__room {
     padding-top: 6rem;
-  }
-  .breakpoint-phone .nav--header {
-    display: none;
   }
 
   .nav--header {
@@ -147,12 +135,6 @@ body {
     color: var(--primary-color-darker);
   }
 
-  .breakpoint-tablet .nav--mobile__show,
-  .breakpoint-desktop-up .nav--mobile__show {
-    display: none;
-    z-index: 5;
-  }
-
   .nav--mobile {
     transition: opacity .3s;
     opacity: 0;
@@ -161,10 +143,6 @@ body {
   .nav--mobile.active {
     opacity: 1;
     pointer-events: initial;
-  }
-
-  .breakpoint-phone .nav__room {
-    paddingtop: 4em;
   }
 
   .nav--mobile__show {
@@ -182,23 +160,6 @@ body {
   }
   .nav--mobile__show span {
     margin-left: 1rem;
-  }
-
-  .breakpoint-phone .nav--mobile .nav__content {
-    background: var(--primary-contrast);
-    width: 100%;
-    padding-top: 6rem;
-    padding-bottom: 3rem;
-    z-index: 5;
-    text-align: left;
-  }
-
-  .breakpoint-phone .nav.nav--mobile {
-    position: fixed;
-    padding: 0;
-    margin: 0;
-    top: 0;
-    width: 100%;
   }
 
   .nav--mobile .nav__item {
@@ -244,11 +205,6 @@ body {
     margin-top: 0;
   }
 
-  /* the new stacking context created by the transform */
-  /* was giving me grief with the mobile nav */
-  .breakpoint-phone .hero__date {
-    transform: none;
-  }
   .hero__date {
     font-family: var(--font-subheading);
     text-transform: uppercase;
@@ -264,60 +220,6 @@ body {
     line-height: 1;
     text-align: center;
     letter-spacing: 0.2rem;
-  }
-.breakpoint-phone .hero {
-  width: 94%;
-}
-  .breakpoint-phone .hero__logo {
-    max-width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .breakpoint-phone .hero__slogan {
-    font-size: 3.3rem;
-    line-height: 4rem;
-    text-align: left;
-  }
-    .breakpoint-phone .hero__slogan span {
-      font-size: 3rem;
-      line-height: 4rem;
-    }
-/*.breakpoint-tablet .hero*/
-  .breakpoint-tablet .hero__logo {
-    margin-bottom: -1rem;
-    max-width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-/*.breakpoint-desktop-up .hero*/
-  .breakpoint-desktop-up .hero__logo-wrapper {
-    display: inline-block;
-    overflow: hidden;
-    vertical-align: middle;
-    padding-top: 1rem;
-  }
-    .breakpoint-desktop-up .hero__logo {
-      margin-left: -38rem;
-      margin-right: 0;
-      width: 120rem;
-      max-width: 60rem;
-      height: auto;
-      margin-top: 2rem;
-    }
-  .breakpoint-desktop-up .hero__hidden {
-    display: inline;
-    font-size: 7rem;
-    font-family: var(--font-logotype)
-  }
-  .breakpoint-desktop-up .hero__slogan {
-    display: inline-block;
-    font-size: 5rem;
-    line-height: 5.5rem;
-    margin-bottom: 0;
-    margin-left: 3rem;
-    margin-right: 0;
-    max-width: 60%;
-    vertical-align: middle;
   }
 
 /*Body text defaults*/
@@ -341,10 +243,6 @@ p:last-child {
     margin-bottom: 2rem;
   }
 
-.breakpoint-desktop-up p {
-  font-size: 1.8rem;
-}
-
 a {
   color: var(--primary-color);
   text-decoration: none;
@@ -358,9 +256,6 @@ h1 {
   margin-bottom: 6rem;
   text-align: center;
 }
-  .breakpoint-desktop-up h1 {
-    font-size: 4rem;
-  }
 
 h2 {
   color: var(--primary-grey-darker);
@@ -371,9 +266,6 @@ h2 {
   margin-bottom: 2.5rem;
   line-height: 1.2;
 }
-  .breakpoint-desktop-up h2 {
-    font-size: 2.5rem;
-  }
 
 h3 {
   color: var(--primary-grey-darker);
@@ -462,9 +354,6 @@ strong {
 .c-sponsor-group {
   margin-bottom: 6rem;
 }
-.breakpoint-phone .c-sponsor-group {
-  margin-bottom: 2rem;
-}
 
 .c-sponsor-level__name {
   font-family: var(--font-heading);
@@ -472,15 +361,6 @@ strong {
   font-size: 3rem;
   margin-bottom: 4rem;
 }
-  .breakpoint-phone .c-sponsor-level__name {
-    margin-bottom: 3rem;
-  }
-
-.c-sponsor {
-}
-  .breakpoint-phone .c-sponsor {
-    margin-bottom: 4rem;
-  }
 
 .c-sponsor__name {
   font-family: var(--font-subtitle);
@@ -504,12 +384,6 @@ strong {
   height: 100px;
   margin-bottom: 3rem;
 }
-  .breakpoint-phone .c-sponsor__logo {
-    height: 7.5rem;
-    width: auto;
-    max-width: 30rem;
-    margin-bottom: 2rem;
-  }
   .c-sponsor__logo img {
     max-width: 100%;
     max-height: 100%;
@@ -549,9 +423,6 @@ strong {
 .c-speaker {
   margin-bottom: 6rem;
 }
-  .breakpoint-phone .c-speaker {
-    margin-bottom: 4rem;
-  }
 
 .c-workshop {
   margin-bottom: 3rem;
@@ -565,9 +436,6 @@ strong {
   margin-bottom: 2rem;
   max-width: 16rem;
 }
-  .breakpoint-phone .c-speaker__avatar {
-    max-width: 14rem;
-  }
 
 .c-speaker__avatar--small {
   border-radius: 50%;
@@ -575,9 +443,6 @@ strong {
   position: absolute;
   right: 0;
   top: 0.5rem;
-}
-.breakpoint-phone .c-speaker__avatar--small {
-  max-width: 6rem;
 }
 
 .c-speaker__talk-title {
@@ -643,9 +508,6 @@ p.c-workshop__detail {
   margin-bottom: 1rem;
 }
 
-.c-workshop__presenter-details {
-}
-
 .c-workshop__presenter-bio p {
   font-size: 1.3rem;
   line-height: 1.4;
@@ -679,11 +541,6 @@ p.c-workshop__detail {
   float: left;
 }
 
-/* on phones stack all columns */
-.breakpoint-phone [class*='col-'] {
-  width: 100%;
-}
-
 /* setting gutter size - must match margin right on grid above */
 [class*='col-'] {
   padding-right: 3rem;
@@ -694,12 +551,6 @@ p.c-workshop__detail {
 .c-price-list {
   padding-top: 3rem;
 }
-
-.c-price-list__item {
-}
-  .breakpoint-phone .c-price-list__item {
-    margin-bottom: 4rem;
-  }
 
 .c-price-list__type {
   color: var(--primary-grey-darker);
@@ -808,3 +659,154 @@ p.c-price-list__description {
 .h-centred {
   text-align: center;
 }
+
+/* phone */
+@media (max-width: 639px) {
+  .nav--header {
+    display: none;
+  }
+  .nav__room {
+    padding-top: 4em;
+  }
+  
+  .nav--mobile .nav__content {
+    background: var(--primary-contrast);
+    width: 100%;
+    padding-top: 6rem;
+    padding-bottom: 3rem;
+    z-index: 5;
+    text-align: left;
+  }
+
+  .nav.nav--mobile {
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    width: 100%;
+  }
+  /* the new stacking context created by the transform */
+  /* was giving me grief with the mobile nav */
+  .hero__date {
+    transform: none;
+  }
+  .hero {
+    width: 94%;
+  }
+    .hero__logo {
+      max-width: 70%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .hero__slogan {
+      font-size: 3.3rem;
+      line-height: 4rem;
+      text-align: left;
+    }
+      .hero__slogan span {
+        font-size: 3rem;
+        line-height: 4rem;
+      }
+
+  .c-sponsor__logo {
+    height: 7.5rem;
+    width: auto;
+    max-width: 30rem;
+    margin-bottom: 2rem;
+  }
+  .c-sponsor-group {
+    margin-bottom: 2rem;
+  }  
+  .c-sponsor-level__name {
+    margin-bottom: 3rem;
+  }
+  .c-sponsor {
+    margin-bottom: 4rem;
+  }
+
+  .c-speaker__avatar--small {
+    max-width: 6rem;
+  }
+
+  .c-speaker__avatar {
+    max-width: 14rem;
+  }
+
+  .c-speaker {
+    margin-bottom: 4rem;
+  }
+
+  /* on phones stack all columns */
+  [class*='col-'] {
+    width: 100%;
+  }
+
+  .c-price-list__item {
+    margin-bottom: 4rem;
+  }
+}
+
+/* tablet-up */
+@media (min-width: 640px) {
+  html {font-size: 62.5%;}
+  .mw-spacer {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+  .nav--mobile__show {
+    display: none;
+  }
+}
+
+/* tablet */
+@media (min-width: 640px) and (max-width: 1023px) {
+  .hero__logo {
+    margin-bottom: -1rem;
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* desktop-up */
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  p {
+    font-size: 1.8rem;
+  }  
+  .hero__logo-wrapper {
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: middle;
+    padding-top: 1rem;
+  }
+    .hero__logo {
+      margin-left: -38rem;
+      margin-right: 0;
+      width: 120rem;
+      max-width: 60rem;
+      height: auto;
+      margin-top: 2rem;
+    }
+  .hero__hidden {
+    display: inline;
+    font-size: 7rem;
+    font-family: var(--font-logotype)
+  }
+  .hero__slogan {
+    display: inline-block;
+    font-size: 5rem;
+    line-height: 5.5rem;
+    margin-bottom: 0;
+    margin-left: 3rem;
+    margin-right: 0;
+    max-width: 60%;
+    vertical-align: middle;
+  }
+}
+
