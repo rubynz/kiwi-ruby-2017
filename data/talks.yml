@@ -1,0 +1,118 @@
+talk_list:
+  - timeslot: "09:00–09:30"
+    title: "Intro"
+    abstract: ""
+    slug: "intro"
+    speaker:
+      name: ""
+      avatar: ""
+  - timeslot: "09:30–10:00"
+    title: "Understanding 'Hello World'"
+    abstract: "'Hello, World!' is the first step of many a ruby journey. How much can we learn by going deep on everything it can teach us? Join me on a fun dive down through the stack as we go deep on everything from Strings, IO, Unix, the Ruby VM and x86 Assembler letting the simplest of programs be our guide."
+    slug: "eoin"
+    speaker:
+      name: "Eoin Kelly"
+      avatar: "eoin.jpeg"
+  - timeslot: "10:00–10:30"
+    title: "Choosing Failure"
+    abstract: "I have a simple proposal: Let’s choose to fail! My talk will explore how we can utilise deliberate failure to accelerate our personal learning, foster a creative and brave environment we’re proud of, and even prepare for worst-case scenarios in our production environments."
+    slug: "lena"
+    speaker:
+      name: "Lena Plaksina"
+      avatar: "lena.jpeg"
+  - timeslot: "10:30–11:00"
+    title: "Morning tea break"
+    abstract: ""
+    slug: "morning-tea"
+    speaker:
+      name: ""
+      avatar: ""      
+  - timeslot: "11:00–11:30"
+    title: "A New Ruby Toolbox"
+    abstract: "dry-rb and rom-rb are libraries for Rubyists who are looking for a different set of tools for web app development. Let’s take a walk through how to build an app with these families of gems, and look at some lessons I’ve learnt during my own dry-rb/rom-rb journey."
+    slug: "jojo"
+    speaker:
+      name: "Jojo Hall"
+      avatar: "jojo.jpeg"
+  - timeslot: "11:30–12:00"
+    title: "Help Me Help You - Levelling up your juniors more effectively"
+    abstract: "Are you making the most of your juniors? Supporting your juniors to help them reach their potential will pay off for them, you and your whole team. We’ll discuss how you can identify the right level of challenge to provide and ways to make the most of the time you have to give."
+    slug: "caitlin"
+    speaker:
+      name: "Caitlin Palmer-Bright"
+      avatar: "caitlin.jpeg"
+  - timeslot: "12:00–12:30"
+    title: "A Brief History of Time.new"
+    abstract: "Few topics confound developers as much as Date and Time calculations. TimeWithZone#dst?, Date#gregorian_leap?, what does it all mean? Combining modern Ruby with ancient history, let’s untangle the humanity underpinning the interminable strangeness of our modern timekeeping APIs."
+    slug: "daniel"
+    speaker:
+      name: "Daniel Fone"
+      avatar: "daniel.jpeg"
+  - timeslot: "12:30–13:30"
+    title: "Lunch break"
+    abstract: ""
+    slug: "lunch-break"
+    speaker:
+      name: ""
+      avatar: ""   
+  - timeslot: "13:30–14:00"
+    title: "Parenting + Programming"
+    abstract: "The demands of programming can be extensive. So can the demands of parenting. This talk collates advice from parent programmers around the world on working, working from home, staying sane, returning after extended leave, and what the wider community can or should do to support parents."
+    slug: "amanda"
+    speaker:
+      name: "Amanda Wagener"
+      avatar: "amanda.jpeg"
+  - timeslot: "14:00–14:30"
+    title: "Ruby Writing Machines"
+    abstract: "From the earliest days of computing, people have tried to devise programs to generate comprehensible and authentic creative writing. From spam email to Twitter bots, to entire novels generated from code, we’ll explore the world of generative text via tools and techniques implemented in Ruby."
+    slug: "mark"
+    speaker:
+      name: "Mark Rickerby"
+      avatar: "mark.jpeg"
+  - timeslot: "15:00–15:30"
+    title: "Here's to History: Programming Through Archaeology"
+    abstract: "Does your git log output resemble an archaeological site from 500BC? Ransacked by Persians with some Spartan conflict? Let me take you on a journey to Classical Greece to show you the surprising similarities between archaeology and programming to understand the decisions developers make in 2017."
+    slug: "eleanor"
+    speaker:
+      name: "Eleanor Kiefel Haggerty"
+      avatar: "eleanor.jpeg"
+  - timeslot: "15:30–16:00"
+    title: "Security Without Friction"
+    abstract: "How do you build an app that holds billions of dollars of assets without sacrificing security for developer happiness? I want to talk about some of the ideas and tools that you can use to build and secure your code, environment and company without increasing friction with developers."
+    slug: "graham"
+    speaker:
+      name: "Graham Jenson"
+      avatar: "graham.jpeg"
+  - timeslot: "16:00–16:30"
+    title: "Hello Gmom!: Pushing back against loneliness in end-of-life care."
+    abstract: "After suffering a debilitating stroke, Barbara, my girlfriend’s grandmother, was left disabled, bed-bound, and mostly non-verbal. We visited often, and were with her when she passed earlier this year. For Christmas, I built her a web application to be a window into the life of her granddaughter."
+    slug: "jeremy"
+    speaker:
+      name: "Jeremy Flores"
+      avatar: "jeremy.jpeg"
+  - timeslot: "16:30–17:00"
+    title: "Outro"
+    abstract: ""
+    slug: "outro"
+    speaker:
+      name: ""
+      avatar: ""  
+
+
+
+  # - name: "Mark Rickerby"
+  #   slug: "mark"
+  #   bio: "Mark Rickerby is a Sydney-based product manager, writer and programmer, interested in computational creativity, interactive storytelling and new ways of making books. He’s been working with Ruby for more than 10 years and is still learning how to use it better. In his spare time he likes to read books the old fashioned way."
+  #   avatar: "mark.jpeg"
+  #   talk:
+  #     title: "Ruby Writing Machines"
+  #     abstract: "From the earliest days of computing, people have tried to devise programs to generate comprehensible and authentic creative writing. From spam email to Twitter bots, to entire novels generated from code, we’ll explore the world of generative text via tools and techniques implemented in Ruby."
+  #     timeslot: 09:00–09:30
+  # - name: "Amanda Wagener"
+  #   slug: "amanda"
+  #   bio: "Amanda fled academia for the Ruby world almost a decade ago, and has been loving the language and the community ever since. She has attended Ruby events at either end of the earth and points in between. Currently she divides her time between wrangling code and wrangling small children."
+  #   avatar: "amanda.jpeg"
+  #   talk:
+  #     title: "Parenting + Programming"
+  #     abstract: "The demands of programming can be extensive. So can the demands of parenting. This talk collates advice from parent programmers around the world on working, working from home, staying sane, returning after extended leave, and what the wider community can or should do to support parents."
+  #     timeslot: 09:00–09:30
