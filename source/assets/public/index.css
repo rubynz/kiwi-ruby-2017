@@ -581,6 +581,10 @@ strong {
   width: 100%;
 }
 
+.c-talk:last-of-type {
+  border-bottom: 0;
+}
+
 .c-talk__speaker {
   align-items: center;
   display: flex;
