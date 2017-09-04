@@ -51,7 +51,7 @@ talk_list:
   - timeslot: "12:30–13:30"
     title: "Lunch break"
     abstract: ""
-    slug: "lunch-break"
+    slug: "lunch"
     speaker:
       name: ""
       avatar: ""   
@@ -69,6 +69,13 @@ talk_list:
     speaker:
       name: "Mark Rickerby"
       avatar: "mark.jpeg"
+  - timeslot: "14:30–15:00"
+    title: "Afternoon tea break"
+    abstract: ""
+    slug: "afternoon-tea"
+    speaker:
+      name: ""
+      avatar: ""        
   - timeslot: "15:00–15:30"
     title: "Here's to History: Programming Through Archaeology"
     abstract: "Does your git log output resemble an archaeological site from 500BC? Ransacked by Persians with some Spartan conflict? Let me take you on a journey to Classical Greece to show you the surprising similarities between archaeology and programming to understand the decisions developers make in 2017."
