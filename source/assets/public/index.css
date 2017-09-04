@@ -581,8 +581,19 @@ strong {
   width: 100%;
 }
 
-.c-talk__detail {
+.c-talk__speaker {
+  align-items: center;
+  display: flex;
+}
 
+.c-talk__speaker-avatar {
+  border-radius: 50%;
+  margin-right: 2rem;
+  max-width: 4rem;
+}
+
+.c-talk__speaker-details {
+  margin-bottom: 0;
 }
 
 .c-speaker__talk-title {

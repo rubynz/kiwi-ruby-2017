@@ -5,7 +5,6 @@
       .c-talk__detail.col-3-4
         h2.c-talk__title = talk.title
         p.c-talk__abstract= talk.abstract
-        img.c-talk__speaker-avatar src=("/images/speaker-avatars/#{talk.speaker.avatar}") alt=(talk.speaker.name)
-        .c-workshop__presenter
-          .c-workshop__presenter-details
-            h3.c-presenter__title = "#{talk.speaker.name}"
+        .c-talk__speaker
+          img.c-talk__speaker-avatar src=("/images/speaker-avatars/#{talk.speaker.avatar}") alt=(talk.speaker.name)
+          h3.c-talk__speaker-details = "#{talk.speaker.name}"
