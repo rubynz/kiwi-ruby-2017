@@ -7,4 +7,6 @@
         p.c-talk__abstract= talk.abstract
         .c-talk__speaker
           img.c-talk__speaker-avatar src=("/images/speaker-avatars/#{talk.speaker.avatar}") alt=(talk.speaker.name)
-          h3.c-talk__speaker-details = "#{talk.speaker.name}"
+          h3.c-talk__speaker-details 
+            a href="/speakers/##{talk.slug}"
+              = talk.speaker.name 
