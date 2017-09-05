@@ -1,18 +1,18 @@
 .grid.c-talk-list
 - data.schedule.schedule_items.each do |schedule_item|
-    .c-talk id = schedule_item.slug
-      .c-talk__timeslot.col-1-4 = schedule_item.timeslot
-      .c-talk__detail.col-3-4
+  .c-talk id = schedule_item.slug
+    .c-talk__timeslot.col-1-4 = schedule_item.timeslot
+    .c-talk__detail.col-3-4
 
-        - if schedule_item.talk
-          - talk = data.speakers.speaker_list.find { |speaker| speaker.slug == schedule_item.slug }
-          h2.c-talk__title = speaker.talk.title
-          p.c-talk__abstract = speaker.talk.abstract
-          .c-talk__speaker
-            img.c-talk__speaker-avatar src=("/images/speaker-avatars/#{speaker.avatar}") alt=(speaker.name)
-            h3.c-talk__speaker-details 
-              a href="/speakers/##{speaker.slug}"
-                = speaker.name 
-        - else
-          h2.c-talk__title = schedule_item.title
-          p.c-talk__abstract = schedule_item.description
+      - speaker = data.speakers.speaker_list.find { |speaker| speaker.slug == schedule_item.slug }
+      - if speaker
+        h2.c-talk__title = speaker.talk.title
+        p.c-talk__abstract = speaker.talk.abstract
+        .c-talk__speaker
+          img.c-talk__speaker-avatar src=("/images/speaker-avatars/#{speaker.avatar}") alt=(speaker.name)
+          h3.c-talk__speaker-details 
+            a href="/speakers/##{speaker.slug}"
+              = speaker.name 
+      - else
+        h2.c-talk__title = schedule_item.title
+        p.c-talk__abstract = schedule_item.description
