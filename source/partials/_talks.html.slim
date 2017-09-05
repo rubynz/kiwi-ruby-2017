@@ -1,12 +1,18 @@
 .grid.c-talk-list
-  - data.talks.talk_list.each do |talk|
-    .c-talk id=talk.slug
-      .c-talk__timeslot.col-1-4 = talk.timeslot
+- data schedule.schedule_items.each do |schedule_item|
+    .c-talk id=schedule_item.slug
+      .c-talk__timeslot.col-1-4 = schedule_item.timeslot
       .c-talk__detail.col-3-4
-        h2.c-talk__title = talk.title
-        p.c-talk__abstract= talk.abstract
-        .c-talk__speaker
-          img.c-talk__speaker-avatar src=("/images/speaker-avatars/#{talk.speaker.avatar}") alt=(talk.speaker.name)
-          h3.c-talk__speaker-details 
-            a href="/speakers/##{talk.slug}"
-              = talk.speaker.name 
+
+        - if timeslot.talk
+          - talk = data.speakers.speaker_list.find { |speaker| speaker.slug == timeslot.talk }
+            h2.c-talk__title = talk.title
+            p.c-talk__abstract= talk.abstract
+            .c-talk__speaker
+               img.c-talk__speaker-avatar src=("/images/speaker-avatars/#{speaker.avatar}") alt=(speaker.name)
+            h3.c-talk__speaker-details 
+              a href="/speakers/##{speaker.slug}"
+                = speaker.name 
+        - else
+          h2.c-talk__title = schedule_item.title
+          h2.c-talk__abstract = schedule_item.description
