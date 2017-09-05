@@ -5,18 +5,19 @@ title: Events
 section.h-lots-of-padding-top
   .body-inner-wrapper__section#about
     h1 🎉 Side Events
+    p We hope you make lots of Ruby friends at Kiwi Ruby. We're throwing some social events around the conference to facilitate this.
     - data.events.events.each do |event|
       .c-event
         h2=event.name
-        h3.c-event__details
-          span= event.time
-          span.c-event__spacer &nbsp;•&nbsp;
-          span= event.location
-        h3.c-event__details
-          span= event.payment
-          - if event.rsvp_link
-            span.c-event__spacer &nbsp;•&nbsp;
-            a(href=event.rsvp_link)=event.rsvp_text
-        - if event.description_paragraphs
-          - event.description_paragraphs.each do |paragraph|
-            p=paragraph
+        .grid
+          .col-1-2
+            h3.c-event__details= "📅 #{event.time}"
+            h3.c-event__details= "📍 #{event.location}"
+            h3.c-event__details= "💸 #{event.payment}"
+            - if event.rsvp_link
+              h3.c-event__details
+                a(href=event.rsvp_link)="📬 #{event.rsvp_text}"
+          .col-1-2
+            - if event.description_paragraphs
+              - event.description_paragraphs.each do |paragraph|
+                p=paragraph

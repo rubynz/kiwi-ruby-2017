@@ -373,6 +373,7 @@ h3 {
   text-transform: uppercase;
   letter-spacing: 0.1em;
   font-size: 1.2rem;
+  line-height: 1.5;
   font-weight: 600;
   margin-top: 0rem;
   margin-bottom: 3rem;
@@ -797,10 +798,7 @@ p.c-price-list__description {
   padding: 0;
 }
 
-
-.c-event {
-}
-.c-event::after {
+.c-event::before {
   content: "🎉";
   display: block;
   width: 1rem;
