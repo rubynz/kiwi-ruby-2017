@@ -797,6 +797,16 @@ p.c-price-list__description {
   padding: 0;
 }
 
+
+.c-event {
+}
+.c-event::after {
+  content: "🎉";
+  display: block;
+  width: 1rem;
+  margin: 5rem auto;
+}
+
 .h-centred {
   text-align: center;
 }

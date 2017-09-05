@@ -4,7 +4,19 @@ title: Events
 
 section.h-lots-of-padding-top
   .body-inner-wrapper__section#about
-    h2 🎉 Side Events
-    h3 🎊 Flux pre-party
-    h3 🐦 Zealandia tour
-    h3 ♣️ Board games & craft beer
+    h1 🎉 Side Events
+    - data.events.events.each do |event|
+      .c-event
+        h2=event.name
+        h3.c-event__details
+          span= event.time
+          span.c-event__spacer &nbsp;•&nbsp;
+          span= event.location
+        h3.c-event__details
+          span= event.payment
+          - if event.rsvp_link
+            span.c-event__spacer &nbsp;•&nbsp;
+            a(href=event.rsvp_link)=event.rsvp_text
+        - if event.description_paragraphs
+          - event.description_paragraphs.each do |paragraph|
+            p=paragraph
