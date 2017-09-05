@@ -538,7 +538,7 @@ strong {
   clear:left;
 }
 
-.c-speaker {
+.c-speaker, .c-talk {
   margin-bottom: 6rem;
 }
   .breakpoint-phone .c-speaker {
@@ -570,6 +570,34 @@ strong {
 }
 .breakpoint-phone .c-speaker__avatar--small {
   max-width: 6rem;
+}
+
+.c-talk {
+  border-bottom: 2px solid #ddd;
+  clear: both;
+  content: "";
+  display: table;
+  padding-bottom: 6rem;
+  width: 100%;
+}
+
+.c-talk:last-of-type {
+  border-bottom: 0;
+}
+
+.c-talk__speaker {
+  align-items: center;
+  display: flex;
+}
+
+.c-talk__speaker-avatar {
+  border-radius: 50%;
+  margin-right: 2rem;
+  max-width: 4rem;
+}
+
+.c-talk__speaker-details {
+  margin-bottom: 0;
 }
 
 .c-speaker__talk-title {
@@ -665,6 +693,10 @@ p.c-workshop__detail {
 }
 .col-1-4 {
   width: 25%;
+}
+
+.col-3-4 {
+  width: 75%;
 }
 
 [class*='col-'] {
