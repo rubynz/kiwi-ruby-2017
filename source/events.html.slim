@@ -10,14 +10,14 @@ section.h-lots-of-padding-top
       .c-event
         h2=event.name
         .grid
-          .col-1-2
+          .col-1-4
             h3.c-event__details= "📅 #{event.time}"
             h3.c-event__details= "📍 #{event.location}"
             h3.c-event__details= "💸 #{event.payment}"
             - if event.rsvp_link
               h3.c-event__details
                 a(href=event.rsvp_link)="📬 #{event.rsvp_text}"
-          .col-1-2
+          .col-3-4
             - if event.description_paragraphs
               - event.description_paragraphs.each do |paragraph|
                 p=paragraph

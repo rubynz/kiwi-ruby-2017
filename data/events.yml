@@ -8,10 +8,11 @@ events:
       - "It will be some kind of party at Southern Cross, where probably people hang out and talk."
   - name: "🍻 Kiwi Ruby After Party"
     time: "Friday 3 November, 5:30pm"
-    location: "Macs Brew Bar, Taranaki Street Wharf"
-    payment: "Snacks provided, tab for non-alcoholic drinks, cash bar for alcohol"
+    location: "Macs Brew Bar, Taranaki St Wharf"
+    payment: "Snacks provided, cash bar"
     description_paragraphs:
       - "We will have an after party for you to talk about the exciting things you learned and thought about at Kiwi Ruby."
+      - "We'll provide a tab for non-alcoholic drinks and a whole lot of snacks."
       - "Karaoke may ensue."
   - name: "🐦🦆 Zealandia tour"
     time: "Saturday 4 November, 12:45pm"
