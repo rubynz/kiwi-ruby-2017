@@ -11,6 +11,8 @@ section
       ' Kiwi Ruby is a new Ruby conference being held in Wellington, New Zealand.
     p
       ' With a mixture of local and international speakers, there will be one day of workshops and one single-track day of talks. We'll cover topics that interest, excite, and delight Rubyists and the Ruby-curious of all levels.
+    p
+      ' We'll also have a selection of <a href="/events">social events</a> around the conference. 
   .body-inner-wrapper__section#prices
     h2 🎟 Sign me up
     p Thanks to our <a href="/#sponsors">generous sponsors</a> for allowing us to set ticket prices at a level that we hope is affordable for you and your whole team.
@@ -24,8 +26,10 @@ section
     p We have a stellar single-track lineup of talks. You'll learn something whether you've been writing Ruby for ten years or ten minutes.
     .c-short-list
       - data.speakers.speaker_list.each do |speaker|
-        a.c-short-list__link href=("/talks/##{speaker.slug}")
+        a.c-short-list__link href=("/speakers/##{speaker.slug}")
           img.c-short-list__avatar src=("/images/speaker-avatars/#{speaker.avatar}") alt=(speaker.name)
+    .h-centred
+      a.button.button--big href=("/talks") View talk schedule
   .body-inner-wrapper__section#workshops
     h2 💻 Workshops
     p We're holding one day of deep-dive workshops on the 2nd of November. One ticket gets you a day of workshops - either one full-day workshop, or one in the morning and one in the afternoon.
