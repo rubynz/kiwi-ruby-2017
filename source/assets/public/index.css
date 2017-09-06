@@ -58,12 +58,6 @@ html {
   font-size: 52.5%; 
 }
 
-*, *:after, *:before {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
 body {
   font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
@@ -140,6 +134,7 @@ body {
     opacity: 0;
     pointer-events: none;
   }
+
   .nav--mobile.active {
     opacity: 1;
     pointer-events: initial;
@@ -273,6 +268,7 @@ h3 {
   text-transform: uppercase;
   letter-spacing: 0.1em;
   font-size: 1.2rem;
+  line-height: 1.5;
   font-weight: 600;
   margin-top: 0rem;
   margin-bottom: 3rem;
@@ -326,8 +322,8 @@ strong {
   padding: 10px 15px;
   padding: 1rem 1.5rem;
   display: inline-block;
-  -webkit-transition: background 0.2s linear;
-  transition: background 0.2s linear;
+  -webkit-transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear;
 }
   .button:hover {
     background-color: #03A280;
@@ -410,17 +406,12 @@ strong {
 
 /* Talks, Speakers & Workshops  */
 
-.c-talk-list,
-.c-speaker-list,
-.c-workshop-list {
-}
-
 .c-speaker:nth-child(odd),
 .c-workshop:nth-child(odd) {
   clear:left;
 }
 
-.c-speaker {
+.c-speaker, .c-talk {
   margin-bottom: 6rem;
 }
 
@@ -434,7 +425,7 @@ strong {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 2rem;
-  max-width: 16rem;
+  max-width: 15rem;
 }
 
 .c-speaker__avatar--small {
@@ -443,6 +434,34 @@ strong {
   position: absolute;
   right: 0;
   top: 0.5rem;
+}
+
+.c-talk {
+  border-bottom: 2px solid #ddd;
+  clear: both;
+  content: "";
+  display: table;
+  padding-bottom: 6rem;
+  width: 100%;
+}
+
+.c-talk:last-of-type {
+  border-bottom: 0;
+}
+
+.c-talk__speaker {
+  align-items: center;
+  display: flex;
+}
+
+.c-talk__speaker-avatar {
+  border-radius: 50%;
+  margin-right: 2rem;
+  max-width: 4rem;
+}
+
+.c-talk__speaker-details {
+  margin-bottom: 0;
 }
 
 .c-speaker__talk-title {
@@ -535,6 +554,13 @@ p.c-workshop__detail {
 }
 .col-1-4 {
   width: 25%;
+}
+.col-3-4 {
+  width: 75%;
+}
+
+.col-3-4 {
+  width: 75%;
 }
 
 [class*='col-'] {
@@ -656,6 +682,13 @@ p.c-price-list__description {
   padding: 0;
 }
 
+.c-event::before {
+  content: "🎉";
+  display: block;
+  width: 1rem;
+  margin: 5rem auto;
+}
+
 .h-centred {
   text-align: center;
 }
@@ -668,7 +701,7 @@ p.c-price-list__description {
   .nav__room {
     padding-top: 4em;
   }
-  
+
   .nav--mobile .nav__content {
     background: var(--primary-contrast);
     width: 100%;
