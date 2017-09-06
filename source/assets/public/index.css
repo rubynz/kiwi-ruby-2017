@@ -150,11 +150,19 @@ body {
     font-size: 2rem;
     border-bottom: 1px solid #EEE;
   }
+  
+  .nav--mobile__show::before {
+    content: '';
+    background: url("images/bg_menu.svg") 50% 0 no-repeat;
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    vertical-align: middle;
+    margin-right: 1rem;
+  }
+  
   .nav--mobile__show:hover {
     cursor: pointer;
-  }
-  .nav--mobile__show span {
-    margin-left: 1rem;
   }
 
   .nav--mobile .nav__item {
@@ -701,7 +709,7 @@ p.c-price-list__description {
   .nav__room {
     padding-top: 4em;
   }
-
+  
   .nav--mobile .nav__content {
     background: var(--primary-contrast);
     width: 100%;
