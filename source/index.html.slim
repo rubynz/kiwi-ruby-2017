@@ -24,8 +24,10 @@ section
     p We have a stellar single-track lineup of talks. You'll learn something whether you've been writing Ruby for ten years or ten minutes.
     .c-short-list
       - data.speakers.speaker_list.each do |speaker|
-        a.c-short-list__link href=("/talks/##{speaker.slug}")
+        a.c-short-list__link href=("/speakers/##{speaker.slug}")
           img.c-short-list__avatar src=("/images/speaker-avatars/#{speaker.avatar}") alt=(speaker.name)
+    .h-centred
+      a.button.button--big href=("/talks") View talk schedule
   .body-inner-wrapper__section#workshops
     h2 💻 Workshops
     p We're holding one day of deep-dive workshops on the 2nd of November. One ticket gets you a day of workshops - either one full-day workshop, or one in the morning and one in the afternoon.
