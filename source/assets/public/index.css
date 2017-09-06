@@ -786,7 +786,8 @@ p.c-price-list__description {
     padding-left: 4rem;
     padding-right: 4rem;
   }
-  .nav--mobile__show {
+  .nav--mobile__show,
+  .nav--mobile {
     display: none;
   }
 }
@@ -811,7 +812,7 @@ p.c-price-list__description {
   }
   p {
     font-size: 1.8rem;
-  }  
+  }
   .hero__logo-wrapper {
     display: inline-block;
     overflow: hidden;
@@ -840,6 +841,9 @@ p.c-price-list__description {
     margin-right: 0;
     max-width: 60%;
     vertical-align: middle;
+  }
+  .hero__date {
+    font-size: 1.8rem;
   }
 }
 
