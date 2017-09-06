@@ -136,6 +136,7 @@ body {
     transition: opacity .3s;
     opacity: 0;
     pointer-events: none;
+    z-index: 1;
   }
 
   .nav--mobile.active {
@@ -858,4 +859,3 @@ p.c-price-list__description {
     font-size: 1.8rem;
   }
 }
-

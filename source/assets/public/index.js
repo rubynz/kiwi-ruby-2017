@@ -16,6 +16,7 @@ function removeClass () {
   body.removeEventListener('click', bodyClickHandler);
 }
 
-mobileNavTrigger.addEventListener('click', function(){
+mobileNavTrigger.addEventListener('click', function(e){
+  e.preventDefault();
   mobileNavContainer.classList.contains('active') ? removeClass() : addClass();
 });
