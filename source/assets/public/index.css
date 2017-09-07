@@ -771,7 +771,7 @@ p.c-price-list__description {
     margin-bottom: 4rem;
   }
 
-  .c-speaker__avatar--small {
+  .c-workshop__presenter-details .c-speaker__avatar--small {
     max-width: 6rem;
   }
 
