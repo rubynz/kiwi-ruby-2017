@@ -29,7 +29,7 @@ events:
       - "Bring warm clothes, walking shoes, <a href='https://www.visitzealandia.com/Visit#VisitingHours'>money for admission</a>, and <a href='https://www.metlink.org.nz/tickets-and-fares/'>bus fare</a> ($7 return or less with Snapper). Zealandia is suitable for the whole family, and has a number of stroller and wheelchair accessible trails."
     payment: "Bring admission and bus fare"
     rsvp_link: "https://docs.google.com/forms/d/e/1FAIpQLSeoNeEPJfKXZYPPagdiHWRxpgPdTOIpKjvs6ou1KAN-x2o5LA/viewform?usp=sf_link"
-    rsvp_text: "RSVP optional"
+    rsvp_text: "RSVP here"
   - name: "🎲 Board Games & Craft Beer"
     slug: "boardgames"
     time: "Saturday 4 November, 3:00pm"
