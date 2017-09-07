@@ -1,0 +1,6 @@
+meta property="og:description" name="description" content=(current_page.data.description ? current_page.data.description : data.site.description)
+meta property="og:image" content="/opengraph.png"
+meta property="og:type" content="website"
+meta property="og:site_name" content=data.site.name
+meta property="og:title" content=(current_page.data.title ? "#{current_page.data.title + ' — ' + data.site.name}"  : data.site.name)
+meta property="og:url" content="#{data.site.url + current_page.url}"
