@@ -3,7 +3,6 @@
  */
 :root {
   --font-body: "Work sans", Helvetica, Arial, sans-serif;
-  --font-heading: "Work sans", Helvetica, Arial, sans-serif;
   --font-logotype: "OleoSwash", Courier, monospace;
   --primary-color-darker: #e33558;
   --primary-color: #FE3E62;
@@ -209,7 +208,6 @@ body {
   .hero__slogan {
     color: var(--primary-color);
     display: block;
-    font-family: var(--font-heading);
     font-size: 4rem;
     line-height: 5rem;
     margin-bottom: 5rem;
@@ -440,7 +438,6 @@ strong {
 }
 
 .c-sponsor-level__name {
-  font-family: var(--font-heading);
   color: var(--primary-color);
   font-size: 3rem;
   margin-bottom: 4rem;
