@@ -505,16 +505,12 @@ strong {
 .c-responsive-map {
     max-width: 85rem;
     position: relative;
-    padding-bottom: 55%;
-    height: 0;
-    overflow: hidden;
 }
-.c-responsive-map iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100% !important;
-    height: 100% !important;
+.c-responsive-map a {
+  border: none;
+}
+.c-responsive-map img {
+  max-width: 100%;
 }
 
 .h-lots-of-padding-top {
