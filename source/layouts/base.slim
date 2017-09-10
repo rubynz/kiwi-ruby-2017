@@ -2,24 +2,21 @@ doctype html
 html lang="en-NZ"
   head
     meta charset="UTF-8"
-    = partial "partials/head_breakpoints"
-    = partial "partials/head_ga"
+    meta name="viewport" content="width=device-width,user-scalable=1"
     title
       => current_page.data.title
       ' —
       = data.site.name
     link rel="stylesheet" href=asset_path(:css, "assets/public")
-    script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
-    script async=true src=asset_path(:js, "assets/public")
     = partial "partials/head_opengraph"
     = partial "partials/head_pwa"
   body.nav__room
-    div.nav--mobile__show
-      i.fa.fa-bars aria-hidden="true"
-      span Menu
+    a.nav--mobile__show href="#" Menu
     = partial "partials/nav", locals: { nav_type: "header" }
     = partial "partials/nav", locals: { nav_type: "mobile" }
     .mw-spacer
       .container
         = yield
         = partial "partials/footer"
+  = partial "partials/footer_ga"
+  script src=asset_path(:js, "assets/public")
