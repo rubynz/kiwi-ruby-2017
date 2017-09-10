@@ -1,8 +1,23 @@
+- url = data.venue.maps.img_src_base \
+  + "&key=#{config[:google_maps_key]}" \
+  + "&markers=#{data.venue.location.lat}%2C#{data.venue.location.long}"
+- fallBackUrl = url \
+  + "&scale=#{data.venue.maps.sizes.first.scale}" \
+  + "&zoom=#{data.venue.maps.sizes.first.zoom}" \
+  + "&size=#{data.venue.maps.sizes.first.dimensions}"
 .c-responsive-map
-  <iframe width="450"
-  '        height="250"
-  '        frameborder="0"
-  '        style="border:0"
-  '        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDaFJR5kaMRyXO_-1alNS9BNbMHrLHVilk&q='Te Papa, Wellington, New Zealand'"
-  '        allowfullscreen>
-  </iframe>
+  a href=data.venue.maps.url target="_blank" rel="noopener nofollow"
+    picture
+      - data.venue.maps.sizes.each do |item|
+        - itemUrl = url \
+          + "&scale=#{item.scale}" \
+          + "&zoom=#{item.zoom}" \
+          + "&size=#{item.dimensions}"
+        source [ 
+          media="(#{item.breakpoint})"
+          srcset=itemUrl
+        ]
+      img [
+        alt="Map to #{data.venue.nickname}"
+        src=fallBackUrl
+      ]
