@@ -6,7 +6,7 @@ location:
   lat: -41.2905022
   long: 174.7817372
 maps:
-  url: https://goo.gl/maps/ZSehkwLEvk52
+  url: https://goo.gl/maps/LPGG4pc91892
   img_src_base: https://maps.googleapis.com/maps/api/staticmap?center=Te+Papa%2C+Wellington%2C+New+Zealand&maptype=roadmap
   sizes:
   - name: large
@@ -14,7 +14,7 @@ maps:
     zoom: 16
     dimensions: "640x400"
     scale: 2
-  - name: small 
+  - name: small
     breakpoint: "max-width: 639px"
     zoom: 15
     dimensions: "320x200"
