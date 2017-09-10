@@ -13,7 +13,7 @@ However, we won't accept PRs from people who aren't already involved with organi
 - Significant amounts of new content (with some exceptions, like changes to your own speaker bio)
 - Significant design changes
 
-If the PR is after the event and a new one hasn't been announced, there may be no one to review it.
+If the PR is after the event and a new one hasn't been announced, there may be no one around to review it.
 
 ### Issues
 
