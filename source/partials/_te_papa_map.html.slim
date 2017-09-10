@@ -1,12 +1,23 @@
+- url = data.venue.maps.img_src_base \
+  + "&key=#{config[:google_maps_key]}" \
+  + "&markers=#{data.venue.location.lat}%2C#{data.venue.location.long}"
+- fallBackUrl = url \
+  + "&scale=#{data.venue.maps.sizes.first.scale}" \
+  + "&zoom=#{data.venue.maps.sizes.first.zoom}" \
+  + "&size=#{data.venue.maps.sizes.first.dimensions}"
 .c-responsive-map
   a href=data.venue.maps.url target="_blank" rel="noopener nofollow"
     picture
       - data.venue.maps.sizes.each do |item|
+        - itemUrl = url \
+          + "&scale=#{item.scale}" \
+          + "&zoom=#{item.zoom}" \
+          + "&size=#{item.dimensions}"
         source [ 
           media="(#{item.breakpoint})"
-          srcset="#{data.venue.maps.img_src_base}&scale=#{item.scale}&zoom=#{item.zoom}&size=#{item.dimensions}&markers=#{data.venue.location.lat}%2C#{data.venue.location.long}"
+          srcset=itemUrl
         ]
       img [
         alt="Map to #{data.venue.nickname}"
-        src="#{data.venue.maps.img_src_base}&scale=#{data.venue.maps.sizes.first.scale}&zoom=#{data.venue.maps.sizes.first.zoom}&size=#{data.venue.maps.sizes.first.dimensions}&markers=#{data.venue.location.lat}%2C#{data.venue.location.long}"
+        src=fallBackUrl
       ]

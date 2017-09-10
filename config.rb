@@ -15,7 +15,6 @@ set :markdown,        fenced_code_blocks: true,
                       no_intra_emphasis: true,
                       lax_spacing: true,
                       with_toc_data: true
-
 # Helpers ----------------------------------------------------------------------
 
 require "lib/typography_helpers"
@@ -84,12 +83,16 @@ activate :directory_indexes
 
 # Reload the browser automatically whenever files change
 configure :development do
+  set :env, "development"
+  set :google_maps_key, nil
   activate :livereload
 end
 
 # Build-specific configuration -------------------------------------------------
 
 configure :build do
+  set :env, "production"
+  set :google_maps_key, "AIzaSyBdI51q8kJ9s19RmWunLFFUZKFTxDXTSBA"
 end
 
 # Deployment configuration -----------------------------------------------------
