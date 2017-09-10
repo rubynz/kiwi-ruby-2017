@@ -8,6 +8,7 @@ require('./index.css')
 // Require the base JS, basically our entry point for JS
 // If your target doesn't require JavaScript you can comment this out
 require('./index.js')
+require('./ga.js');
 
 // Require all images and CSS by default
 // This will inspect all subdirectories from the context (first param) and
