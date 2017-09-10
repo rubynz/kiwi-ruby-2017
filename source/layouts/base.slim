@@ -11,9 +11,8 @@ html lang="en-NZ"
     = partial "partials/head_opengraph"
     = partial "partials/head_pwa"
   body.nav__room
-    div.nav--mobile__show
-      i.fa.fa-bars aria-hidden="true"
-      span Menu
+    a.nav--mobile__show href="#menu_mobile"
+      | Menu
     = partial "partials/nav", locals: { nav_type: "header" }
     = partial "partials/nav", locals: { nav_type: "mobile" }
     .mw-spacer

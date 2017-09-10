@@ -157,7 +157,10 @@ body {
     padding: 2rem;
     font-size: 2rem;
     border-bottom: 1px solid #EEE;
-    color: var(--font-body);
+    color: var(--text-color);
+  }
+  .nav--mobile__show:visited {
+    color: var(--text-color);
   }
   .nav--mobile__show::before {
     content: '';
