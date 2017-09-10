@@ -47,7 +47,6 @@
 }
 
 /* Importing css files */
-@import "./font-awesome/index.css";
 @import "./grid";
 @import "./footer";
 
@@ -162,12 +161,16 @@ body {
     padding: 2rem;
     font-size: 2rem;
     border-bottom: 1px solid #EEE;
+    color: var(--font-body);
   }
-  .nav--mobile__show:hover {
-    cursor: pointer;
-  }
-  .nav--mobile__show span {
-    margin-left: 1rem;
+  .nav--mobile__show::before {
+    content: '';
+    background: url("images/bg_menu.svg") 50% 0 no-repeat;
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    vertical-align: middle;
+    margin-right: 1rem;
   }
 
   .breakpoint-phone .nav--mobile .nav__content {
