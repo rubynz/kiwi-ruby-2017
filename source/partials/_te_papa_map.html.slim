@@ -6,7 +6,7 @@
   + "&zoom=#{data.venue.maps.sizes.first.zoom}" \
   + "&size=#{data.venue.maps.sizes.first.dimensions}"
 .c-responsive-map
-  a href=data.venue.maps.url target="_blank" rel="noopener nofollow"
+  a href=data.venue.maps.url target="_blank" rel="nopener"
     picture
       - data.venue.maps.sizes.each do |item|
         - itemUrl = url \

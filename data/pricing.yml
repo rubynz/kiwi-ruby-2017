@@ -1,6 +1,6 @@
 prices:
   - type: "Conference day"
-    description: "Come see one day of <a href='/talks'>enlightening talks</a> at the Kiwi Ruby conference at Te Papa on November 3."
+    description: "Come see one day of <a href='/talks/'>enlightening talks</a> at the Kiwi Ruby conference at Te Papa on November 3."
     price_categories:
       - type: "Early bird - sold out!"
         price: "$150"
@@ -12,7 +12,7 @@ prices:
         price: "$50"
         state: "active"
   - type: "Workshop day"
-    description: "Pick a day's worth of <a href='/workshops'>mind-expanding workshops</a> at Te Papa on November 2."
+    description: "Pick a day's worth of <a href='/workshops/'>mind-expanding workshops</a> at Te Papa on November 2."
     price_categories:
       - type: "Early bird - sold out!"
         price: "$200"
