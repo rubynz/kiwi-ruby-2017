@@ -8,7 +8,7 @@ Kiwi Ruby is a community conference, Ruby NZ is a community organisation, and we
 - General behind the scenes improvements
 - Fixing spelling mistakes, links etc
 
-However, we won't accept PRs from people who aren't already involved with organising the conference if they contain:
+However, we won't accept PRs from people who aren't already involved with the conference if they contain:
 
 - Significant amounts of new content (with some exceptions, like changes to your own speaker bio)
 - Significant design changes
