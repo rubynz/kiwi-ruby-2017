@@ -21,9 +21,9 @@
           - workshop.sponsors.each do |sponsor|
             .c-workshop__presenter-details
               h3.t-small-caps Sponsored by:
-              a href=(sponsor.link) target="_blank" rel="nopener"
+              a href=sponsor.link target="_blank" rel="noopener"
                 img.c-workshop__sponsor.c-speaker__avatar src=("/images/workshop-avatars/#{sponsor.avatar}") alt=(sponsor.name)
-              a.c-presenter__title href=(sponsor.link) target="_blank" rel="noopener"
+              a.c-presenter__title href=sponsor.link target="_blank" rel="noopener"
                 ="#{sponsor.name}"
               .c-workshop__presenter-bio
                 p = sponsor.bio
