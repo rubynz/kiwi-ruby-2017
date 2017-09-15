@@ -7,7 +7,7 @@ html lang="en-NZ"
       => current_page.data.title
       ' —
       = data.site.name
-    link rel="stylesheet" href=asset_path(:css, "assets/public")
+    = inline_css "assets/public.css"
     = partial "partials/head_opengraph"
     = partial "partials/head_pwa"
   body.nav__room
