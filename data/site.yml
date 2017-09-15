@@ -1,6 +1,6 @@
 name: "Kiwi Ruby"
-short_name: "Kiwi Ruby"
+short_name: "KiwiRuby"
 description: "Kiwi Ruby is a new Ruby conference being held in Wellington, New Zealand in November 2017. It will be very good."
 theme_color: "#ffffff"
 theme_background_color: "#ffffff"
-url: "http://kiwi.ruby.nz"
+url: "https://kiwi.ruby.nz"
