@@ -29,7 +29,7 @@
 
 @font-face {
   font-family: OleoSwash;
-  src: url("./fonts/OleoScriptSwashCaps-Regular.woff2");
+  src: url("/assets/public/fonts/OleoScriptSwashCaps-Regular.woff2");
 }
 
 /* Importing css files */
