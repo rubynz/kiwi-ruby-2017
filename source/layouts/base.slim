@@ -8,6 +8,8 @@ html lang="en-NZ"
       ' —
       = data.site.name
     link rel="stylesheet" href=asset_path(:css, "assets/public")
+    = partial "partials/head_dns_prefetch"
+    = partial "partials/head_preload_assets"
     = partial "partials/head_opengraph"
     = partial "partials/head_pwa"
   body.nav__room
@@ -19,4 +21,4 @@ html lang="en-NZ"
       .container
         = yield
         = partial "partials/footer"
-    script async=true src=asset_path(:js, "assets/public")
+    script src=asset_path(:js, "assets/public")

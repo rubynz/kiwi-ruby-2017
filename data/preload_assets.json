@@ -1,0 +1,8 @@
+[
+  {
+    "path": "assets/public",
+    "type": "application/javascript",
+    "as": "script",
+    "ext": "js"
+  }
+]
