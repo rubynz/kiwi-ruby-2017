@@ -1,33 +1,26 @@
 /**
  * JavaScript goes here
  */
-$(document).ready(function () {
-  mobileNav();
+
+var body = document.body;
+var mobileNavContainer = document.querySelector('.nav--mobile');
+var mobileNavTrigger = document.querySelector('.nav--mobile__show');
+
+function bodyClickHandler(event) {
+  var trigger = event.target;
+  if (trigger == mobileNavTrigger) {return;}
+  closeMenu();
+}
+function openMenu () {
+  mobileNavContainer.classList.add('active');
+  body.addEventListener('click', bodyClickHandler);
+}
+function closeMenu () {
+  mobileNavContainer.classList.remove('active');
+  body.removeEventListener('click', bodyClickHandler);
+}
+
+mobileNavTrigger.addEventListener('click', function(e){
+  e.preventDefault();
+  mobileNavContainer.classList.contains('active') ? closeMenu() : openMenu();
 });
-
-function hide ($element) {
-  $($element).hide(200);
-  $($element).removeClass('active');
-}
-
-function mobileNav () {
-  var $mobileNav = $('.nav--mobile');
-
-  $('.nav--mobile__show').click(function () {
-    if ( $mobileNav.hasClass('active') ) {
-      hide($mobileNav);
-      return;
-    }
-
-    $mobileNav.addClass('active');
-    $mobileNav.show(200);
-  });
-
-  $('body').click(function (event) {
-    if (!$mobileNav.hasClass('active')) { return; }
-    if ($(event.target).is('.nav--mobile__show') || $(event.target).parent().is('.nav--mobile__show')) { return; }
-
-    $($mobileNav).removeClass('active');
-    hide($mobileNav);
-  });
-}

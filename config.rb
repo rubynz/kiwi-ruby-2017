@@ -3,6 +3,15 @@ require 'slim'
 # General configuration --------------------------------------------------------
 
 activate :dotenv
+activate :asset_hash, ignore: %w{
+                        opengraph.png
+                        *touch-icon*.*
+                        service-worker.js
+                        *.xml
+                        *.txt
+                        *.json
+                        favicon.ico
+                      }
 
 # Set Markdown engine to use redcarpet
 set :markdown_engine, :redcarpet
