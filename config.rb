@@ -29,10 +29,9 @@ helpers TypographyHelpers
 page "*.xml", layout: false
 page "*.json", layout: false
 page "*.txt", layout: false
-page "*.js", layout: false
 
 # Catch-all for other routes
-page "*", layout: "layouts/base"
+page "*.html", layout: "layouts/base"
 
 # Webpack configuration --------------------------------------------------------
 
@@ -51,7 +50,6 @@ activate :external_pipeline,
 configure :development do
   set :env, "development"
   set :google_maps_key, nil
-  set :enable_service_worker, false
   activate :livereload
 end
 
@@ -60,7 +58,6 @@ end
 configure :build do
   set :env, "production"
   set :google_maps_key, "AIzaSyBdI51q8kJ9s19RmWunLFFUZKFTxDXTSBA"
-  set :enable_service_worker, true
   activate :asset_hash, ignore: %w{
     opengraph.png
     *touch-icon*.*
