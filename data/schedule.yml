@@ -63,4 +63,4 @@ schedule_items:
     slug: "outro"
   - timeslot: "17:00-???"
     title: "After party"
-    description: "Come across the wharf to Macs Brew Bar for the <a href='/events#afterparty'>after party</a>."
+    description: "Come across the wharf to Macs Brew Bar for the <a href='/events/#afterparty'>after party</a>."
