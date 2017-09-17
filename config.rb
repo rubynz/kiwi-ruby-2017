@@ -43,7 +43,7 @@ ignore "assets/**/*.js"
 # Reload the browser automatically whenever files change
 configure :development do
   set :env, "development"
-  set :enable_sw, true
+  set :enable_sw, false
   set :google_maps_key, nil
   activate :livereload
 end
@@ -67,10 +67,10 @@ end
 dev_server_task = :enable_sw ? "npm run watch:sw" : "npm run watch"
 
 activate :external_pipeline,
-        name: :webpack,
-        command: build? ? "npm run build" : dev_server_task,
-        source: ".tmp/dist",
-        latency: 1
+          name: :webpack,
+          command: build? ? "npm run build" : dev_server_task,
+          source: ".tmp/dist",
+          latency: 1
 
 # Deployment configuration -----------------------------------------------------
 
