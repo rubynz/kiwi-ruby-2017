@@ -9,7 +9,10 @@ require('./index.css')
 // If your target doesn't require JavaScript you can comment this out
 require('./index.js')
 require('./ga.js');
-require('./register_service_worker.js');
+
+if (ENABLE_SW || NODE_ENV === 'production') {
+  require('./register_service_worker.js');
+}
 
 // Require all images and CSS by default
 // This will inspect all subdirectories from the context (first param) and
