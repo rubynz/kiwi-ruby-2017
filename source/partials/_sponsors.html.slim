@@ -10,11 +10,11 @@
           - level.sponsors.each do |sponsor|
             .c-sponsor.col-1
               - if sponsor.logo
-                a.c-sponsor__logo href=("#{sponsor.website}") target="_blank"
+                a.c-sponsor__logo href=sponsor.website target="_blank" rel="noopener"
                   img src=("/images/sponsor-logos/#{sponsor.logo}") alt=("#{sponsor.name}")
 
               - if sponsor.show_name
-                a href=("#{sponsor.website}") target="_blank"
+                a href=sponsor.website target="_blank" rel="noopener"
                   h4.c-sponsor__name = sponsor.name
 
               - if sponsor.description_paragraphs
