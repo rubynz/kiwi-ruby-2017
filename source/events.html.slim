@@ -6,7 +6,7 @@ section.h-lots-of-padding-top
   .body-inner-wrapper__section#about
     h1 🎉 Side Events
     p We hope you make lots of Ruby friends at Kiwi Ruby. We're throwing some social events around the conference to facilitate this.
-    p The Ruby NZ <a href="http://ruby.nz/code-of-conduct/">code of conduct</a> applies to all of these events. We'll do our best to provide a safe and fun environment and you do your best to be friendly ✨
+    p The Ruby NZ <a href="http://ruby.nz/code-of-conduct/" rel="noopener">code of conduct</a> applies to all of these events. We'll do our best to provide a safe and fun environment and you do your best to be friendly ✨
     - data.events.events.each do |event|
       .c-event(id=event.slug)
         h2=event.name
@@ -19,7 +19,8 @@ section.h-lots-of-padding-top
             h3.c-event__details= "💸 #{event.payment}"
             - if event.rsvp_link
               h3.c-event__details
-                a(href=event.rsvp_link)="📬 #{event.rsvp_text}"
+                a href=event.rsvp_link rel="noopener"
+                  | 📬 #{event.rsvp_text}
           .col-3-4
             - if event.description_paragraphs
               - event.description_paragraphs.each do |paragraph|

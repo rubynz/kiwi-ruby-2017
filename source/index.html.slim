@@ -12,14 +12,14 @@ section
     p
       ' With a mixture of local and international speakers, there will be one day of workshops and one single-track day of talks. We'll cover topics that interest, excite, and delight Rubyists and the Ruby-curious of all levels.
     p
-      ' We'll also have a selection of <a href="/events">social events</a> around the conference. 
+      ' We'll also have a selection of <a href="/events/">social events</a> around the conference. 
   .body-inner-wrapper__section#prices
     h2 🎟 Sign me up
     p Thanks to our <a href="/#sponsors">generous sponsors</a> for allowing us to set ticket prices at a level that we hope is affordable for you and your whole team.
     p Early bird tickets are strictly limited and end on September 4.
     = partial "partials/pricing"
     .h-centred
-      a.button.button--big href="https://ti.to/kiwi-ruby/kiwi-ruby-2017" Buy tickets now!
+      a.button.button--big href="https://ti.to/kiwi-ruby/kiwi-ruby-2017" rel="noopener" Buy tickets now!
   .body-inner-wrapper__section#conference
     h2 🎙 Conference
     p The conference will be held in the beautiful Soundings Theatre at Te Papa on the 3rd of November. We'll provide lunch and plenty of opportunities for you to get to know other attendees.
@@ -29,14 +29,14 @@ section
         a.c-short-list__link href=("/speakers/##{speaker.slug}")
           img.c-short-list__avatar src=("/images/speaker-avatars/#{speaker.avatar}") alt=(speaker.name)
     .h-centred
-      a.button.button--big href=("/talks") View talk schedule
+      a.button.button--big href=("/talks/") View talk schedule
   .body-inner-wrapper__section#workshops
     h2 💻 Workshops
     p We're holding one day of deep-dive workshops on the 2nd of November. One ticket gets you a day of workshops - either one full-day workshop, or one in the morning and one in the afternoon.
     = partial "partials/workshop_times"
   .body-inner-wrapper__section
     h2 🗺 Where is it?
-    p Kiwi Ruby is being held at Te Papa, on Cable Street on the Wellington waterfront. <a href="/location">Read more about Wellington and Te Papa here</a>.
+    p Kiwi Ruby is being held at Te Papa, on Cable Street on the Wellington waterfront. <a href="/location/">Read more about Wellington and Te Papa here</a>.
     = partial "partials/te_papa_map"
   .body-inner-wrapper__section#sponsors
     h2 😎 Sponsors
