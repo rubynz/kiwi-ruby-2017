@@ -1,6 +1,7 @@
 .grid.c-speaker-list
   - data.speakers.speaker_list.each do |speaker|
-    .c-speaker.col-1-2 id=speaker.slug
+    .c-speaker.col-1-2.nav-offset__container
+      a.nav-offset__anchor id=speaker.slug
       img.c-speaker__avatar src=("/images/speaker-avatars/#{speaker.avatar}") alt=(speaker.name)
       h2.c-speaker__talk-title = speaker.name
       p.c-speaker__name
@@ -8,4 +9,3 @@
           = speaker.talk.title
       .c-speaker__bio
         p = speaker.bio
-

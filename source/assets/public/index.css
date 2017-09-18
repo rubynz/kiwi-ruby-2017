@@ -202,7 +202,13 @@ body {
     color: #FFF;
   }
 
-
+  a.nav-offset__anchor {
+    position: absolute;
+    top: -12rem;
+  }
+  .nav-offset__container {
+    position: relative;
+  }
 /*header/nav*/
 .header {
   width: 100%;
