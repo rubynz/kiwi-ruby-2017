@@ -1,8 +1,9 @@
 - data.workshops.workshop_timeslots.each do |timeslot|
-  h2=timeslot.time
+  h2.t-small-caps=timeslot.time
   .grid.c-workshop-list
     - timeslot.workshops.each do |workshop|
-      .c-workshop.col-1-2 id=workshop.slug
+      .c-workshop.col-1-2.nav-offset__container
+        a.nav-offset__anchor id=workshop.slug
         .c-workshop__details
           h2.c-workshop__title = workshop.title
           h3.c-workshop__detail
