@@ -7,7 +7,10 @@ html lang="en-NZ"
       => current_page.data.title
       ' —
       = data.site.name
-    = inline_css "assets/public.css"
+    - if current_page.data.home
+      = inline_css "assets/public.css"
+    - else
+      link rel="stylesheet" href=asset_path(:css, "assets/public")
     = partial "partials/head_opengraph"
     = partial "partials/head_pwa"
   body.nav__room
