@@ -1,7 +1,9 @@
 {
   "name": "til",
   "private": true,
-  "dependencies": {},
+  "dependencies": {
+    "turbolinks": "^5.0.3"
+  },
   "devDependencies": {
     "css-loader": "^0.23.1",
     "eslint": "^1.10.3",
