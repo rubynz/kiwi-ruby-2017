@@ -3,7 +3,6 @@
  */
 :root {
   --font-body: "Work sans", Helvetica, Arial, sans-serif;
-  --font-logotype: "OleoSwash", Courier, monospace;
   --primary-color-darker: #e33558;
   --primary-color: #FE3E62;
   --primary-grey: #c2c2c2;
@@ -23,14 +22,6 @@
  */
  /* Work sans */
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:400,700');
-
-/* Swash */
-@import url('https://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps&subset=latin-ext');
-
-@font-face {
-  font-family: OleoSwash;
-  src: url("./fonts/OleoScriptSwashCaps-Regular.woff2");
-}
 
 /* Importing css files */
 @import "./grid";
@@ -299,7 +290,10 @@ body {
   .breakpoint-desktop-up .hero__hidden {
     display: inline;
     font-size: 7rem;
-    font-family: var(--font-logotype)
+    color: transparent;
+    background: url("./images/logotype-horizontal.svg");
+    background-repeat: no-repeat;
+    background-position: center;
   }
   .breakpoint-desktop-up .hero__slogan {
     display: inline-block;
@@ -399,9 +393,6 @@ strong {
 }
 .t-small {
   font-size: 0.75em !important;
-}
-.swash {
-  font-family: var(--font-logotype)
 }
 
 /*BODY TEXT*/
