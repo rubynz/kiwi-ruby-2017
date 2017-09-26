@@ -26,6 +26,4 @@ function mobileMenu() {
     mobileNavContainer.classList.contains('active') ? closeMenu() : openMenu();
   });
 }
-mobileMenu();
 window.mobileMenu = mobileMenu;
-
