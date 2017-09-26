@@ -1,0 +1,32 @@
+/* Button styles */
+
+.button {
+  background-color: #07c199;
+  border-radius: 4px;
+  color: white;
+  padding: 10px 15px;
+  padding: 1rem 1.5rem;
+  display: inline-block;
+  -webkit-transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear;
+}
+  .button:hover {
+    background-color: #03A280;
+  }
+
+  .button--inactive {
+    background-color: #FFF;
+    color: #555555;
+    border:1px solid #DDD;
+    font-weight: normal;
+    opacity: 0.5;
+  }
+
+  .button--inactive:hover {
+    background-color: #FFF;
+  }
+  .button--big {
+    font-size: 2.5rem;
+    padding: 2rem 2.5rem;
+  }
+

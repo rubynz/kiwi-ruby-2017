@@ -1,0 +1,20 @@
+/* Square list: About page */
+.square-list {
+  margin-left: 4rem;
+  list-style-type: square;
+  margin-bottom: 1rem;
+}
+  .square-list:last-child {
+    margin-bottom: 2rem;
+  }
+
+/* T-list: Location page */
+.t-list {
+  list-style-type: disc;
+  font-size: 2rem;
+  line-height: 1.45;
+  margin-bottom: 2rem;
+}
+.t-list li {
+  margin-bottom: 1rem;
+}

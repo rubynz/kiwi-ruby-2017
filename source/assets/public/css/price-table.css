@@ -1,0 +1,93 @@
+/* Price table */
+
+.c-price-list {
+  padding-top: 3rem;
+}
+
+  .breakpoint-phone .c-price-list__item {
+    margin-bottom: 4rem;
+  }
+
+.c-price-list__type {
+  color: var(--primary-grey-darker);
+  display: block;
+  border-bottom: 2px solid #DDD;
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+}
+
+p.c-price-list__description {
+  font-size: 1.8rem;
+  line-height: 1.3;
+}
+
+.c-price-list__rate {
+  margin-bottom: 2rem;
+  display: block;
+  position: relative;
+  padding-right: 7rem;
+}
+.c-price-list__rate p {
+  font-size: 1.8rem;
+  line-height: 1.3;
+  margin-bottom: 0;
+}
+.c-price-list__rate:last-child {
+  margin-bottom: 0;
+}
+
+.c-price-list__rate--inactive {
+  color: rgba(0,0,0,0.4);
+}
+.c-price-list__rate--sold-out,
+.c-price-list__rate--sold-out span {
+  text-decoration: line-through;
+  color: rgba(0,0,0,0.4);
+}
+
+.c-price-list__price {
+  font-size: 1.8rem;
+  line-height: 1.3;
+  font-weight: bold;
+  display: block;
+  color: var(--primary-grey-darker);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.c-price-list__action-section {
+  padding-top: 1rem;
+}
+
+.c-price-list__action-section p {
+  font-size: 1.8rem;
+  line-height: 1.3;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.c-price-list__action {
+  background-color: var(--primary-contrast);
+  border-radius: 4px;
+  color: white;
+  padding: 1rem 1.5rem;
+  display: inline-block;
+  transition: background-color 0.2s linear;
+}
+  .c-price-list__action:hover {
+    background-color: var(--primary-contrast-darker);
+  }
+
+  .c-price-list__action--inactive {
+    background-color: #FFF;
+    color: var(--primary-grey-darker);
+    border:1px solid #DDD;
+    font-weight: normal;
+    opacity: 0.5;
+  }
+
+  .c-price-list__action--inactive:hover {
+    background-color: #FFF;
+  }

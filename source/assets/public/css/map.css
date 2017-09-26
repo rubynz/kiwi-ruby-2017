@@ -1,0 +1,10 @@
+.c-responsive-map {
+  max-width: 85rem;
+  position: relative;
+}
+.c-responsive-map a {
+  border: none;
+}
+.c-responsive-map img {
+  max-width: 100%;
+}
