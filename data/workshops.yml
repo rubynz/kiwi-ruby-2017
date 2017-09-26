@@ -1,5 +1,5 @@
 workshop_timeslots:
-  - time: "All day"
+  - time: "All day • 9:30am—5:30pm"
     workshops:
       - title: "Next Generation Web Apps with dry-rb"
         slug: "dry-rb"
@@ -16,7 +16,7 @@ workshop_timeslots:
           - name: "Andrew Croome"
             avatar: "andrew.jpeg"
             bio: "Andrew is a Ruby developer with Icelab. He likes books, Melbourne weather and dry-rb. As the author of several novels, he loves clean code and clean prose."
-  - time: "Morning"
+  - time: "Morning • 9:30am—1:00pm"
     workshops:
       - title: "Defensive DevOps"
         slug: "defensive-devops"
@@ -48,7 +48,7 @@ workshop_timeslots:
           - name: "Jon Rowe"
             avatar: "jon.jpeg"
             bio: "Tinker. Sailor. Developer. Spy? Originally from a tiny cold island nation, Britain, Jon now lives in Sydney where he spends time sailing the high seas, plotting and working as a gun for hire, I mean freelance Ruby developer. When not working on client work you can find Jon hacking on RSpec (as a core team member), helping other open source projects and working on his own little side project(s)."
-  - time: "Afternoon"
+  - time: "Afternoon • 2pm—5:30pm"
     workshops:
       - title: "Machine Learning for Developers (SOLD OUT)"
         slug: "machine-learning"

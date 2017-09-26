@@ -8,7 +8,8 @@ section.h-lots-of-padding-top
     p We hope you make lots of Ruby friends at Kiwi Ruby. We're throwing some social events around the conference to facilitate this.
     p The Ruby NZ <a href="http://ruby.nz/code-of-conduct/" rel="noopener">code of conduct</a> applies to all of these events. We'll do our best to provide a safe and fun environment and you do your best to be friendly ✨
     - data.events.events.each do |event|
-      .c-event(id=event.slug)
+      .c-event.nav-offset__container
+        a.nav-offset__anchor id=event.slug
         h2=event.name
         .grid
           .col-1-4

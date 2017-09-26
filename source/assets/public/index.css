@@ -164,7 +164,7 @@ body {
   }
   .nav--mobile__show::before {
     content: '';
-    background: url("images/bg_menu.svg") 50% 0 no-repeat;
+    background: url("./images/bg_menu.svg") 50% 0 no-repeat;
     display: inline-block;
     width: 2rem;
     height: 2rem;
@@ -202,7 +202,13 @@ body {
     color: #FFF;
   }
 
-
+  a.nav-offset__anchor {
+    position: absolute;
+    top: -12rem;
+  }
+  .nav-offset__container {
+    position: relative;
+  }
 /*header/nav*/
 .header {
   width: 100%;

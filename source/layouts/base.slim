@@ -12,6 +12,7 @@ html lang="en-NZ"
     = partial "partials/head_preload_assets"
     = partial "partials/head_opengraph"
     = partial "partials/head_pwa"
+    script async=true src=asset_path(:js, "assets/public")
   body.nav__room
     a.nav--mobile__show href="#menu_mobile"
       | Menu
@@ -21,4 +22,3 @@ html lang="en-NZ"
       .container
         = yield
         = partial "partials/footer"
-    script src=asset_path(:js, "assets/public")
