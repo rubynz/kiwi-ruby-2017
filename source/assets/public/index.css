@@ -155,7 +155,7 @@ body {
   }
   .nav--mobile__show::before {
     content: '';
-    background: url("./images/bg_menu.svg") 50% 0 no-repeat;
+    background: url("/assets/public/images/bg_menu.svg") 50% 0 no-repeat;
     display: inline-block;
     width: 2rem;
     height: 2rem;
@@ -291,7 +291,7 @@ body {
     display: inline;
     font-size: 7rem;
     color: transparent;
-    background: url("./images/logotype-horizontal.svg");
+    background: url("/assets/public/images/logotype-horizontal.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
