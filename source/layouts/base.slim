@@ -9,6 +9,7 @@ html lang="en-NZ"
       = data.site.name
     - if current_page.data.home
       = inline_css "assets/public.css"
+      link rel="preload" href=asset_path(:css, "assets/public")
     - else
       link rel="stylesheet" href=asset_path(:css, "assets/public")
     = partial "partials/head_dns_prefetch"
