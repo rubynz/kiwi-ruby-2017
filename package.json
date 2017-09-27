@@ -27,6 +27,7 @@
   },
   "scripts": {
     "clean": "rm -rf ./.tmp/dist/*",
+    "watch:sw": "ENABLE_SW=true NODE_ENV=development webpack --config ./webpack.config.js --watch -d",
     "watch": "NODE_ENV=development webpack --config ./webpack.config.js --watch -d",
     "build": "NODE_ENV=production webpack --config ./webpack.config.js -p --bail",
     "lint": "eslint '/targets/**/*.js'; exit 0"

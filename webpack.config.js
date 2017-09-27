@@ -76,6 +76,10 @@ module.exports = {
       // Extract all CSS into static files
       new ExtractTextPlugin("[name].css", {
         allChunks: true
+      }),
+      new webpack.DefinePlugin({
+        'NODE_ENV': JSON.stringify(process.env.NODE_ENV),
+        'ENABLE_SW': JSON.stringify(process.env.ENABLE_SW)
       })
     ],
 
