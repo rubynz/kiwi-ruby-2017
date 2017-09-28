@@ -5,7 +5,8 @@ home: true
 section
   = partial "partials/head_big"
 section
-  .body-inner-wrapper__section#info
+  .body-inner-wrapper__section.nav-offset__container
+    a.nav-offset__anchor#info
     h2 🤔 Tell me more
     p
       ' Kiwi Ruby is a new Ruby conference being held in Wellington, New Zealand.
@@ -13,14 +14,16 @@ section
       ' With a mixture of local and international speakers, there will be one day of workshops and one single-track day of talks. We'll cover topics that interest, excite, and delight Rubyists and the Ruby-curious of all levels.
     p
       ' We'll also have a selection of <a href="/events/">social events</a> around the conference.
-  .body-inner-wrapper__section#prices
+  .body-inner-wrapper__section.nav-offset__container
+    a.nav-offset__anchor#prices
     h2 🎟 Sign me up
     p Thanks to our <a href="/#sponsors">generous sponsors</a> for allowing us to set ticket prices at a level that we hope is affordable for you and your whole team.
     p Ticket sales will close on 19 October or when sold out.
     = partial "partials/pricing"
     .h-centred
       a.button.button--big href="https://ti.to/kiwi-ruby/kiwi-ruby-2017" rel="noopener" Buy tickets now!
-  .body-inner-wrapper__section#conference
+  .body-inner-wrapper__section.nav-offset__container
+    a.nav-offset__anchor#conference
     h2 🎙 Conference
     p The conference will be held in the beautiful Soundings Theatre at Te Papa on the 3rd of November. We'll provide lunch and plenty of opportunities for you to get to know other attendees.
     p We have a stellar single-track lineup of talks. You'll learn something whether you've been writing Ruby for ten years or ten minutes.
@@ -30,7 +33,8 @@ section
           img.c-short-list__avatar src=("/images/speaker-avatars/#{speaker.avatar}") alt=(speaker.name)
     .h-centred
       a.button.button--big href=("/talks/") View talk schedule
-  .body-inner-wrapper__section#workshops
+  .body-inner-wrapper__section.nav-offset__container
+    a.nav-offset__anchor#workshops
     h2 💻 Workshops
     p We're holding one day of deep-dive workshops on the 2nd of November. One ticket gets you a day of workshops - either one full-day workshop, or one in the morning and one in the afternoon.
     = partial "partials/workshop_times"
@@ -38,7 +42,8 @@ section
     h2 🗺 Where is it?
     p Kiwi Ruby is being held at Te Papa, on Cable Street on the Wellington waterfront. <a href="/location/">Read more about Wellington and Te Papa here</a>.
     = partial "partials/te_papa_map"
-  .body-inner-wrapper__section#sponsors
+  .body-inner-wrapper__section.nav-offset__container
+    a.nav-offset__anchor#sponsors
     h2 😎 Sponsors
     p Kiwi Ruby wouldn't be possible without the support of our friends.
     p If you're interested in sponsoring, please get in touch with us at <a href="mailto:kiwi@ruby.nz">kiwi@ruby.nz</a>.

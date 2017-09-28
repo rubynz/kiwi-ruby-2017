@@ -85,7 +85,7 @@
     display: inline;
     font-size: 7rem;
     color: transparent;
-    background: url("./images/logotype-horizontal.svg");
+    background: url("/assets/public/images/logotype-horizontal.svg");
     background-repeat: no-repeat;
     background-position: center;
   }

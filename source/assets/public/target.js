@@ -11,6 +11,10 @@ require('./index.js');
 require('./ga.js');
 require('./turbolinks.js');
 
+if (ENABLE_SW || NODE_ENV === 'production') {
+  require('./register_service_worker.js');
+}
+
 // Require all images and CSS by default
 // This will inspect all subdirectories from the context (first param) and
 // require files matching the regex.

@@ -7,7 +7,11 @@ html lang="en-NZ"
       => current_page.data.title
       ' —
       = data.site.name
-    link rel="stylesheet" href=asset_path(:css, "assets/public")
+    - if current_page.data.home
+      = inline_css "assets/public.css"
+      link rel="preload" href=asset_path(:css, "assets/public")
+    - else
+      link rel="stylesheet" href=asset_path(:css, "assets/public")
     = partial "partials/head_dns_prefetch"
     = partial "partials/head_preload_assets"
     = partial "partials/head_opengraph"
