@@ -28,14 +28,15 @@
 @import "./css/footer";
 @import "./css/nav";
 @import "./css/hero";
+@import "./css/typography";
+@import "./css/lists";
 @import "./css/buttons";
 @import "./css/sponsors";
 @import "./css/speakers-talks-workshops";
 @import "./css/price-table";
 @import "./css/short-list";
 @import "./css/map";
-@import "./css/typography";
-@import "./css/lists";
+
 
 /**
  * Styling
