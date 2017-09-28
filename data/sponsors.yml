@@ -35,7 +35,7 @@ sponsorship_levels:
     name: "Gold sponsors"
     sponsors:
       - name: "Youdo"
-        logo: "youdo.jpg"
+        logo: "sponsor_youdo_500.png"
         website: "https://www.youdo.co.nz"
         description_paragraphs:
           - "YouDo is a Wellington software house with a country wide customer base.  We have been at the forefront of a number of energy industry and fintech innovations since our inception 10 years ago."
