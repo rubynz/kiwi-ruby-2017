@@ -2,7 +2,7 @@
  * Rubyconf Variables
  */
 :root {
-  --font-body: "Work sans", Helvetica, Arial, sans-serif;
+  --font-body: "WorkSans", Helvetica, Arial, sans-serif;
   --primary-color-darker: #e33558;
   --primary-color: #FE3E62;
   --primary-grey: #c2c2c2;
@@ -12,18 +12,9 @@
   --max-width: 80rem;
   --primary-contrast-darker: #03A280;
 }
-/**
- * Reset styles
- */
+
+@import "./css/fonts";
 @import "./reset/index.css";
-
-/**
- * Import Fonts
- */
- /* Work sans */
-@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,700');
-
-/* Importing css files */
 @import "./grid";
 @import "./footer";
 

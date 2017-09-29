@@ -1,0 +1,16 @@
+@font-face {
+  font-family: 'WorkSans';
+  font-weight: normal;
+  font-style: normal;
+  src: local('Work Sans Regular'),
+       url('/fonts/worksans-regular.woff2') format('woff2'),
+       url('/fonts/worksans-regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'WorkSans';
+  font-weight: bold;
+  font-style: normal;
+  src: local('Work Sans Bold'),
+       url('/fonts/worksans-bold.woff2') format('woff2'),
+       url('/fonts/worksans-bold.woff') format('woff');
+}
