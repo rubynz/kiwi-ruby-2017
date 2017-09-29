@@ -22,6 +22,7 @@ activate :directory_indexes
 
 require "lib/typography_helpers"
 helpers TypographyHelpers
+require_relative './lib/build_cleaner'
 
 # Page options -----------------------------------------------------------------
 
@@ -51,6 +52,7 @@ end
 # Build-specific configuration -------------------------------------------------
 
 configure :build do
+  activate :build_cleaner
   set :env, "production"
   set :google_maps_key, "AIzaSyBdI51q8kJ9s19RmWunLFFUZKFTxDXTSBA"
   activate :asset_hash, ignore: %w{
