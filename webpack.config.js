@@ -66,7 +66,9 @@ module.exports = {
           cssimport({
             addDependencyTo: webpack
           }),
-          cssnext()
+          cssnext({
+            browsers: '> 5%, ie 11, last 2 versions'
+          })
         ]
       };
     },
