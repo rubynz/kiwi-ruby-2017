@@ -64,7 +64,7 @@ configure :build do
   }
 end
 
-dev_server_task = :enable_sw ? "npm run watch:sw" : "npm run watch"
+dev_server_task = :enable_sw == true ? "npm run watch:sw" : "npm run watch"
 
 activate :external_pipeline,
           name: :webpack,
