@@ -4,7 +4,7 @@
 function mobileMenu() {
   var NAV_ACTIVE_CLASS = 'js-active';
   var body = document.body;
-  var mobileNavContainer = document.querySelector('nav');
+  var mobileNavContainer = document.querySelector('#menu');
   var mobileNavTrigger = document.querySelector('.nav--mobile__show');
 
   function bodyClickHandler(event) {
