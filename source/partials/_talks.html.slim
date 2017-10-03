@@ -1,19 +1,20 @@
 .grid.c-talk-list
 - data.schedule.schedule_items.each do |schedule_item|
-  .c-talk.nav-offset__container
-    .c-talk__timeslot.col-1-4 = schedule_item.timeslot
+  .c-talk.nav-offset__container class=("c-talk--#{schedule_item.type}")
+    - unless schedule_item.timeslot.blank?
+      .c-talk__timeslot.col-1-4 = schedule_item.timeslot
     a.nav-offset__anchor id=schedule_item.slug
-    .c-talk__detail.col-3-4
+    .c-talk__detail class=(schedule_item.timeslot.blank? ? "col-1" : "col-3-4" )
 
       - speaker = data.speakers.speaker_list.find { |speaker| speaker.slug == schedule_item.slug }
       - if speaker
         h2.c-talk__title = speaker.talk.title
-        p.c-talk__abstract = speaker.talk.abstract
         .c-talk__speaker
           img.c-talk__speaker-avatar src=("/images/speaker-avatars/#{speaker.avatar}") alt=(speaker.name)
           h3.c-talk__speaker-details
             a href="/speakers/##{speaker.slug}"
               = speaker.name
+        p.c-talk__abstract = speaker.talk.abstract
       - else
         h2.c-talk__title = schedule_item.title
         p.c-talk__abstract = schedule_item.description

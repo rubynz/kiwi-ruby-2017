@@ -519,13 +519,6 @@ strong {
   clear:left;
 }
 
-.c-speaker, .c-talk {
-  margin-bottom: 6rem;
-}
-  .breakpoint-phone .c-speaker {
-    margin-bottom: 4rem;
-  }
-
 .c-workshop {
   margin-bottom: 3rem;
 }
@@ -554,21 +547,37 @@ strong {
 }
 
 .c-talk {
-  border-bottom: 2px solid #ddd;
   clear: both;
   content: "";
   display: table;
-  padding-bottom: 6rem;
+  padding: 3rem;
   width: 100%;
+}
+
+.c-talk--break {
+  background:
+  repeating-linear-gradient(
+  45deg,
+  rgba(254,62,98, 0.05),
+  rgba(254,62,98, 0.05) 10px,
+  rgba(254,62,98, 0.1) 10px,
+  rgba(254,62,98, 0.1) 20px
+  )
+  ;
 }
 
 .c-talk:last-of-type {
   border-bottom: 0;
 }
 
+.c-talk__title {
+  margin-bottom: 1rem;
+}
+
 .c-talk__speaker {
   align-items: center;
   display: flex;
+  margin-bottom: 1rem;
 }
 
 .c-talk__speaker-avatar {
