@@ -1,7 +1,7 @@
-.nav (class="nav--#{nav_type}" id="menu_#{nav_type}" data-turbolinks-permanent)
-  ul.nav__content
-    li.nav__item
+nav (id="menu" data-turbolinks-permanent)
+  ul
+    li
       a href="/" Kiwi&nbsp;Ruby
     - data.nav.nav_items.each do |item|
-      li.nav__item class=("nav__item--highlighted" if item.highlighted)
+      li class=("nav__item--highlighted" if item.highlighted)
         a href=item.link rel=("noopener" if item.external) = item.title
