@@ -69,6 +69,9 @@ sponsorship_levels:
       - name: "The Last Pickle"
         logo: "sponsor_the-last-pickle_500.png"
         website: "http://thelastpickle.com/"
+      - name: "Travis CI"
+        logo: "travis-ci.png"
+        website: "https://www.travis-ci.org"
   - diversity:
     logo_size: 5
     name: "Diversity program sponsor"
@@ -77,8 +80,4 @@ sponsorship_levels:
     logo_size: 5
     name: "Childcare sponsor"
     description: "Thanks to this sponsor, we can offer on-site childcare to attendees at no charge."
-    sponsors:
-  - coffee:
-    logo_size: 5
-    name: "Coffee sponsor"
     sponsors:
