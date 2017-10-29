@@ -42,7 +42,7 @@ sponsorship_levels:
           - "Ruby at YouDo is an integral part of our web, mobile and data science applications.  Ruby’s beauty and elegance allows us to build complex solutions in a highly interactive environment."
       - name: "AddressFinder"
         logo: "sponsor_addressfinder_500.png"
-        website: "http://blog.addressfinder.nz/post/162066941338/kiwi-ruby"
+        website: "https://blog.addressfinder.io/kiwi-ruby-2901b4d3d45b"
         description_paragraphs:
           - "AddressFinder is your cost-effective solution for collecting and verifying NZ and Australian addresses. Within a few keystrokes users get a predictive dropdown of suggested addresses. The selected address autocompletes all the address fields accurately."
       - name: "Flux Federation"
