@@ -1,4 +1,5 @@
 /* Navigation */
+
 .nav__room {
   padding-top: 6rem;
 }
@@ -129,4 +130,3 @@
     color: var(--primary-color-darker);
   }
 }
-

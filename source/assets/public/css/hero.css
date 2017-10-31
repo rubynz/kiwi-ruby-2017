@@ -1,0 +1,101 @@
+.hero {
+  margin-top: 5rem;
+  margin-bottom: 0;
+  width: 80%;
+}
+  .hero__logo {
+    display: block;
+    width: 100%;
+    max-width: 50rem;
+    height: auto;
+  }
+  .hero__hidden {
+    display: none;
+  }
+  .hero__slogan {
+    color: var(--primary-color);
+    display: block;
+    font-size: 4rem;
+    line-height: 5rem;
+    margin-bottom: 5rem;
+    max-width: 70rem;
+    margin-top: 0;
+  }
+
+  /* the new stacking context created by the transform */
+  /* was giving me grief with the mobile nav */
+  .breakpoint-phone .hero__date {
+    transform: none;
+  }
+  .hero__date {
+    text-transform: uppercase;
+    transform:scale(.9,.9); /* W3C */
+    -webkit-transform:scale(.9,.9); /* Safari and Chrome */
+    -moz-transform:scale(.9,.9); /* Firefox */
+    -ms-transform:scale(.9,.9); /* IE 9 */
+    -o-transform:scale(.9,.9); /* Opera */
+    font-weight: 600;
+    font-size: 3.3rem;
+    color: var(--primary-grey-darker);
+    padding-top: .8rem;
+    line-height: 1;
+    text-align: center;
+    letter-spacing: 0.2rem;
+  }
+.breakpoint-phone .hero {
+  width: 94%;
+}
+  .breakpoint-phone .hero__logo {
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .breakpoint-phone .hero__slogan {
+    font-size: 3.3rem;
+    line-height: 4rem;
+    text-align: left;
+  }
+    .breakpoint-phone .hero__slogan span {
+      font-size: 3rem;
+      line-height: 4rem;
+    }
+/*.breakpoint-tablet .hero*/
+  .breakpoint-tablet .hero__logo {
+    margin-bottom: -1rem;
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+/*.breakpoint-desktop-up .hero*/
+  .breakpoint-desktop-up .hero__logo-wrapper {
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: middle;
+    padding-top: 1rem;
+  }
+    .breakpoint-desktop-up .hero__logo {
+      margin-left: -38rem;
+      margin-right: 0;
+      width: 120rem;
+      max-width: 60rem;
+      height: auto;
+      margin-top: 2rem;
+    }
+  .breakpoint-desktop-up .hero__hidden {
+    display: inline;
+    font-size: 7rem;
+    color: transparent;
+    background: url("/assets/public/images/logotype-horizontal.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .breakpoint-desktop-up .hero__slogan {
+    display: inline-block;
+    font-size: 5rem;
+    line-height: 5.5rem;
+    margin-bottom: 0;
+    margin-left: 3rem;
+    margin-right: 0;
+    max-width: 60%;
+    vertical-align: middle;
+  }

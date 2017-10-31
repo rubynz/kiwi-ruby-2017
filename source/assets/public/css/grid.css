@@ -2,7 +2,7 @@
 
 /* margin right - negative right margin to allow for last col's gutter */
 .grid {
-  margin-right: -4rem;
+  margin-right: -3rem;
 }
   .breakpoint-phone .grid {
     margin-right: -2rem;
@@ -22,6 +22,9 @@
 }
 .col-1-4 {
   width: 25%;
+}
+.col-3-4 {
+  width: 75%;
 }
 
 [class*='col-'] {
@@ -44,7 +47,7 @@
 
 /* setting gutter size - must match margin right on grid above */
 [class*='col-'] {
-  padding-right: 4rem;
+  padding-right: 3rem;
 }
 .breakpoint-phone [class*='col-'] {
   padding-right: 2rem;
