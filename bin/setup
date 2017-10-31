@@ -8,7 +8,4 @@ Dir.chdir(APP_ROOT) do
   puts "== Installing dependencies =="
   system "bundle"
   system "npm install"
-
-  puts "== Initializing config =="
-  FileUtils.cp ".env.example", ".env" unless File.exist?(".env")
 end

@@ -22,6 +22,7 @@ activate :directory_indexes
 
 require "lib/typography_helpers"
 helpers TypographyHelpers
+require_relative './lib/build_cleaner'
 
 # Page options -----------------------------------------------------------------
 
@@ -51,6 +52,7 @@ end
 # Build-specific configuration -------------------------------------------------
 
 configure :build do
+  activate :build_cleaner
   set :env, "production"
   set :google_maps_key, "AIzaSyBdI51q8kJ9s19RmWunLFFUZKFTxDXTSBA"
   activate :asset_hash, ignore: %w{
@@ -64,7 +66,7 @@ configure :build do
   }
 end
 
-dev_server_task = :enable_sw ? "npm run watch:sw" : "npm run watch"
+dev_server_task = :enable_sw == true ? "npm run watch:sw" : "npm run watch"
 
 activate :external_pipeline,
           name: :webpack,

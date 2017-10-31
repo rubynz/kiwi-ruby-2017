@@ -1,0 +1,132 @@
+/* Navigation */
+
+.nav__room {
+  padding-top: 6rem;
+}
+
+#menu {
+  line-height: 3rem;
+  padding: 1.5rem 1rem 1.5rem 0;
+  text-align: center;
+}
+
+#menu ul {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: space-between;
+}
+
+#menu li {
+  display: inline;
+  font-size: 1.6rem;
+  padding-left: 1.5rem;
+  margin-left: 1rem;
+  text-decoration: none;
+}
+
+#menu .nav__item--highlighted {
+  font-weight: bold;
+}
+
+.nav--mobile__show {
+  position: fixed;
+  background-color: #FFFFFF;
+  width: 100%;
+  top: 0;
+  z-index: 6;
+  padding: 2rem;
+  font-size: 2rem;
+  border-bottom: 1px solid #EEE;
+  color: var(--text-color);
+}
+
+.nav--mobile__show:visited {
+  color: var(--text-color);
+}
+
+.nav--mobile__show::before {
+  content: '';
+  background: url("/assets/public/images/bg_menu.svg") 50% 0 no-repeat;
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  vertical-align: middle;
+  margin-right: 1rem;
+}
+
+.nav-offset__container {
+  position: relative;
+}
+
+.nav-offset__anchor {
+  position: absolute;
+  top: -12rem;
+}
+
+@media (max-width:749px) {
+  .nav__room {
+    padding-top: 4em;
+  }
+
+  #menu {
+    transform-origin: 0 0;
+    transform: scale(0);
+    transition: transform .2s;
+    z-index: 1;
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    width: 100%;
+  }
+
+  #menu.js-active {
+    transform: scale(1);
+  }
+  
+  #menu ul {
+    background: var(--primary-contrast);
+    width: 100%;
+    padding-top: 6rem;
+    padding-bottom: 3rem;
+    z-index: 5;
+    text-align: left;
+  }
+
+  #menu li {
+    font-size: 2rem;
+    padding: 1rem 0;
+    display: block;
+    margin-left: 4rem;
+    margin-right: 2rem;
+  }
+
+  #menu a {
+    padding: 0.5rem;
+    padding-left: 0;
+    color: #FFF;
+  }
+
+}
+
+@media (min-width:750px) {
+  .nav--mobile__show {
+    display: none;
+  }
+
+  #menu {
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    top: 0;
+    z-index: 5;
+  }
+
+  #menu li a:hover {
+    color: var(--primary-color-darker);
+  }
+}
