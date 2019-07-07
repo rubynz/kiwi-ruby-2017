@@ -1,0 +1,11 @@
+.announcement-banner {
+  width: 100%;
+  background-color: var(--primary-color);
+  color: #FFF;
+  padding: 1em;
+}
+
+.announcement-banner a {
+  color: #FFF;
+  text-decoration: underline;
+}
